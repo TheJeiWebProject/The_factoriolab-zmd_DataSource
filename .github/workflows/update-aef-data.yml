@@ -24,27 +24,56 @@ jobs:
           path: upstream
           fetch-depth: 1
 
+      - name: Capture upstream commit
+        id: upstream
+        run: echo "sha=$(git -C upstream rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Read previous upstream commit
+        id: previous
+        shell: bash
+        run: |
+          prev=""
+          if [ -f UPSTREAM_SNAPSHOT.json ]; then
+            prev="$(sed -n 's/.*"upstreamCommit":[[:space:]]*"\([^"]*\)".*/\1/p' UPSTREAM_SNAPSHOT.json | head -n1)"
+          fi
+          echo "sha=$prev" >> "$GITHUB_OUTPUT"
+
+      - name: Compare upstream commits
+        id: check
+        shell: bash
+        run: |
+          current="${{ steps.upstream.outputs.sha }}"
+          previous="${{ steps.previous.outputs.sha }}"
+          if [ -n "$current" ] && [ "$current" = "$previous" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Upstream commit unchanged: $current"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Upstream commit changed: $previous -> $current"
+          fi
+
       - name: Setup Node.js
+        if: steps.check.outputs.changed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install dependencies
+        if: steps.check.outputs.changed == 'true'
         run: npm install
 
-      - name: Capture upstream commit
-        id: upstream
-        run: echo "sha=$(git -C upstream rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
       - name: Inherit upstream LICENSE
+        if: steps.check.outputs.changed == 'true'
         run: cp upstream/LICENSE LICENSE
 
       - name: Build AEF pack
+        if: steps.check.outputs.changed == 'true'
         env:
           UPSTREAM_COMMIT: ${{ steps.upstream.outputs.sha }}
         run: npm run build -- --source upstream/src/data/aef/data.json --out-dir dist
 
       - name: Update upstream snapshot
+        if: steps.check.outputs.changed == 'true'
         run: |
           cat > UPSTREAM_SNAPSHOT.json <<EOF
           {
@@ -54,7 +83,12 @@ jobs:
           }
           EOF
 
+      - name: Skip build when upstream unchanged
+        if: steps.check.outputs.changed != 'true'
+        run: echo "No upstream changes detected. Skipping build and commit."
+
       - name: Commit and push changes
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
