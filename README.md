@@ -43,7 +43,7 @@ npm install
 3. Build from a local upstream checkout (default expects `./upstream`):
 
 ```bash
-npm run build -- --source upstream/src/data/aef/data.json --out-dir dist
+npm run build -- --source upstream/src/data/aef/data.json --out-dir dist --asset-base-url https://your-pack-host.example.com
 ```
 
 or if your upstream repo is at `../factoriolab`:
@@ -66,3 +66,6 @@ It will:
 4. Rebuild `dist/`.
 5. Update `UPSTREAM_SNAPSHOT.json`.
 6. Commit and push if there are changes.
+
+Note: for external pack deployment, `iconSprite.url` is generated as an absolute URL
+(`--asset-base-url`), and should not use internal `/packs/{packId}/...` paths.

@@ -5,7 +5,7 @@
     },
     "name": "采种机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -448px",
       "color": "#757c76",
       "size": 64
@@ -28,7 +28,7 @@
     },
     "name": "拆解机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -384px",
       "color": "#98988e",
       "size": 64
@@ -51,7 +51,7 @@
     },
     "name": "赤铜粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px 0px",
       "color": "#a25f52",
       "size": 64
@@ -67,7 +67,7 @@
     },
     "name": "赤铜块",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px 0px",
       "color": "#8b3b30",
       "size": 64
@@ -83,7 +83,7 @@
     },
     "name": "赤铜矿",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px 0px",
       "color": "#ab6860",
       "size": 64
@@ -99,7 +99,7 @@
     },
     "name": "赤铜零件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px 0px",
       "color": "#7d524a",
       "size": 64
@@ -115,7 +115,7 @@
     },
     "name": "赤铜瓶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px 0px",
       "color": "#6c4948",
       "size": 64
@@ -131,7 +131,7 @@
     },
     "name": "赤铜瓶(锦草溶液)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -512px",
       "color": "#968982",
       "size": 64
@@ -147,7 +147,7 @@
     },
     "name": "赤铜瓶(芽针溶液)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -576px",
       "color": "#89865a",
       "size": 64
@@ -163,7 +163,7 @@
     },
     "name": "赤铜装备原件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -320px",
       "color": "#71433f",
       "size": 64
@@ -179,7 +179,7 @@
     },
     "name": "传送带",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px 0px",
       "color": "#d99065",
       "size": 64
@@ -199,7 +199,7 @@
     },
     "name": "低容谷地电池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -320px",
       "color": "#9e9f99",
       "size": 64
@@ -215,7 +215,7 @@
     },
     "name": "低容武陵电池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -384px",
       "color": "#6a8872",
       "size": 64
@@ -231,7 +231,7 @@
     },
     "name": "电驱矿机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -448px",
       "color": "#868785",
       "size": 64
@@ -254,7 +254,7 @@
     },
     "name": "惰性壤晶废液",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -128px",
       "color": "#265b40",
       "size": 64
@@ -270,7 +270,7 @@
     },
     "name": "二型电驱矿机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -448px",
       "color": "#918a89",
       "size": 64
@@ -293,7 +293,7 @@
     },
     "name": "反应池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -448px",
       "color": "#898b8d",
       "size": 64
@@ -316,7 +316,7 @@
     },
     "name": "废水处理机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -384px",
       "color": "#7a7c7d",
       "size": 64
@@ -339,7 +339,7 @@
     },
     "name": "粉碎机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -384px",
       "color": "#939799",
       "size": 64
@@ -362,7 +362,7 @@
     },
     "name": "封装机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -448px",
       "color": "#868888",
       "size": 64
@@ -385,7 +385,7 @@
     },
     "name": "柑实",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -192px",
       "color": "#65681f",
       "size": 64
@@ -401,7 +401,7 @@
     },
     "name": "柑实粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -192px",
       "color": "#d5c274",
       "size": 64
@@ -417,7 +417,7 @@
     },
     "name": "柑实罐头",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -256px",
       "color": "#7f847c",
       "size": 64
@@ -433,7 +433,7 @@
     },
     "name": "柑实种子",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -256px",
       "color": "#928029",
       "size": 64
@@ -449,7 +449,7 @@
     },
     "name": "钢块",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -64px",
       "color": "#56829c",
       "size": 64
@@ -465,7 +465,7 @@
     },
     "name": "钢制零件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -64px",
       "color": "#5e748d",
       "size": 64
@@ -481,7 +481,7 @@
     },
     "name": "钢质瓶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -64px",
       "color": "#5b6d83",
       "size": 64
@@ -497,7 +497,7 @@
     },
     "name": "高晶粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -256px",
       "color": "#b1afc1",
       "size": 64
@@ -513,7 +513,7 @@
     },
     "name": "高晶零件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -64px",
       "color": "#969199",
       "size": 64
@@ -529,7 +529,7 @@
     },
     "name": "高晶纤维",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -256px",
       "color": "#9998a5",
       "size": 64
@@ -545,7 +545,7 @@
     },
     "name": "高晶质瓶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -64px",
       "color": "#76758f",
       "size": 64
@@ -561,7 +561,7 @@
     },
     "name": "高晶装备原件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -320px",
       "color": "#a2a4b0",
       "size": 64
@@ -577,7 +577,7 @@
     },
     "name": "高容谷地电池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -384px",
       "color": "#9e999c",
       "size": 64
@@ -593,7 +593,7 @@
     },
     "name": "工业爆炸物",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -384px",
       "color": "#8c7e7a",
       "size": 64
@@ -609,7 +609,7 @@
     },
     "name": "谷地调度券",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -384px",
       "color": "#c5c8b4",
       "size": 64
@@ -625,7 +625,7 @@
     },
     "name": "管道",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px 0px",
       "color": "#80afc8",
       "size": 64
@@ -642,7 +642,7 @@
     },
     "name": "灌装机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -384px",
       "color": "#808183",
       "size": 64
@@ -665,7 +665,7 @@
     },
     "name": "锦草",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -192px",
       "color": "#7a8462",
       "size": 64
@@ -681,7 +681,7 @@
     },
     "name": "锦草粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -192px",
       "color": "#babca0",
       "size": 64
@@ -697,7 +697,7 @@
     },
     "name": "锦草溶液",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -128px",
       "color": "#e4f6e3",
       "size": 64
@@ -713,7 +713,7 @@
     },
     "name": "锦草软饮",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -256px",
       "color": "#526d71",
       "size": 64
@@ -729,7 +729,7 @@
     },
     "name": "锦草种子",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -192px",
       "color": "#979e75",
       "size": 64
@@ -745,7 +745,7 @@
     },
     "name": "晶体外壳",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -64px",
       "color": "#947543",
       "size": 64
@@ -761,7 +761,7 @@
     },
     "name": "晶体外壳粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -64px",
       "color": "#6c431e",
       "size": 64
@@ -777,7 +777,7 @@
     },
     "name": "精炼炉",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -384px",
       "color": "#aa9f99",
       "size": 64
@@ -800,7 +800,7 @@
     },
     "name": "精选柑实罐头",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -256px",
       "color": "#838882",
       "size": 64
@@ -816,7 +816,7 @@
     },
     "name": "精选荞愈胶囊",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -320px",
       "color": "#b5959c",
       "size": 64
@@ -832,7 +832,7 @@
     },
     "name": "据点供货(四号谷地)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -384px",
       "color": "#c5c8b4",
       "size": 64
@@ -855,7 +855,7 @@
     },
     "name": "据点供货(武陵)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -384px",
       "color": "#8ca0a0",
       "size": 64
@@ -878,7 +878,7 @@
     },
     "name": "蓝铁粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -128px",
       "color": "#36526a",
       "size": 64
@@ -894,7 +894,7 @@
     },
     "name": "蓝铁块",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -64px",
       "color": "#618095",
       "size": 64
@@ -910,7 +910,7 @@
     },
     "name": "蓝铁矿",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -64px",
       "color": "#59708d",
       "size": 64
@@ -926,7 +926,7 @@
     },
     "name": "蓝铁瓶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -64px",
       "color": "#3b597b",
       "size": 64
@@ -942,7 +942,7 @@
     },
     "name": "蓝铁瓶(锦草溶液)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -576px",
       "color": "#7b909a",
       "size": 64
@@ -958,7 +958,7 @@
     },
     "name": "蓝铁瓶(清水)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -576px",
       "color": "#44869e",
       "size": 64
@@ -974,7 +974,7 @@
     },
     "name": "蓝铁瓶(芽针溶液)",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -576px",
       "color": "#6c8c7a",
       "size": 64
@@ -990,7 +990,7 @@
     },
     "name": "蓝铁装备原件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -320px",
       "color": "#8898bf",
       "size": 64
@@ -1006,7 +1006,7 @@
     },
     "name": "密制晶体",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px 0px",
       "color": "#746937",
       "size": 64
@@ -1022,7 +1022,7 @@
     },
     "name": "配件机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -384px",
       "color": "#848580",
       "size": 64
@@ -1045,7 +1045,7 @@
     },
     "name": "荞花",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -192px",
       "color": "#605926",
       "size": 64
@@ -1061,7 +1061,7 @@
     },
     "name": "荞花粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -192px",
       "color": "#ad6c66",
       "size": 64
@@ -1077,7 +1077,7 @@
     },
     "name": "荞花种子",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -256px",
       "color": "#9e6244",
       "size": 64
@@ -1093,7 +1093,7 @@
     },
     "name": "荞愈胶囊",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -320px",
       "color": "#b39497",
       "size": 64
@@ -1109,7 +1109,7 @@
     },
     "name": "清水",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -128px",
       "color": "#5ae5f9",
       "size": 64
@@ -1125,7 +1125,7 @@
     },
     "name": "壤晶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -256px",
       "color": "#3b423d",
       "size": 64
@@ -1141,7 +1141,7 @@
     },
     "name": "壤晶废液",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -128px",
       "color": "#386443",
       "size": 64
@@ -1157,7 +1157,7 @@
     },
     "name": "热能池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -448px",
       "color": "#939da1",
       "size": 64
@@ -1180,7 +1180,7 @@
     },
     "name": "砂叶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -192px",
       "color": "#917729",
       "size": 64
@@ -1196,7 +1196,7 @@
     },
     "name": "砂叶粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -192px",
       "color": "#9c7008",
       "size": 64
@@ -1212,7 +1212,7 @@
     },
     "name": "砂叶种子",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -256px",
       "color": "#856812",
       "size": 64
@@ -1228,7 +1228,7 @@
     },
     "name": "水泵",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -448px",
       "color": "#8f8d87",
       "size": 64
@@ -1251,7 +1251,7 @@
     },
     "name": "水驱矿机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -448px",
       "color": "#8e8e8a",
       "size": 64
@@ -1274,7 +1274,7 @@
     },
     "name": "塑形机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -448px",
       "color": "#919291",
       "size": 64
@@ -1297,7 +1297,7 @@
     },
     "name": "碳粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px 0px",
       "color": "#4c4c4c",
       "size": 64
@@ -1313,7 +1313,7 @@
     },
     "name": "碳块",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px 0px",
       "color": "#3e4048",
       "size": 64
@@ -1329,7 +1329,7 @@
     },
     "name": "天有洪炉",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -448px",
       "color": "#a2a79a",
       "size": 64
@@ -1352,7 +1352,7 @@
     },
     "name": "铁制零件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -64px",
       "color": "#6e81a9",
       "size": 64
@@ -1368,7 +1368,7 @@
     },
     "name": "酮化灌木",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -128px",
       "color": "#635c3e",
       "size": 64
@@ -1384,7 +1384,7 @@
     },
     "name": "酮化灌木粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px -128px",
       "color": "#7c7436",
       "size": 64
@@ -1400,7 +1400,7 @@
     },
     "name": "酮化树种",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -128px",
       "color": "#aca368",
       "size": 64
@@ -1416,7 +1416,7 @@
     },
     "name": "稳定碳块",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px 0px",
       "color": "#484b53",
       "size": 64
@@ -1432,7 +1432,7 @@
     },
     "name": "污水",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -128px",
       "color": "#606060",
       "size": 64
@@ -1448,7 +1448,7 @@
     },
     "name": "武陵调度券",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -384px",
       "color": "#8ca0a0",
       "size": 64
@@ -1464,7 +1464,7 @@
     },
     "name": "息壤",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -256px",
       "color": "#335246",
       "size": 64
@@ -1480,7 +1480,7 @@
     },
     "name": "息壤装备原件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -320px",
       "color": "#5d5644",
       "size": 64
@@ -1496,7 +1496,7 @@
     },
     "name": "细磨柑实粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -192px",
       "color": "#90845b",
       "size": 64
@@ -1512,7 +1512,7 @@
     },
     "name": "细磨荞花粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -192px",
       "color": "#896361",
       "size": 64
@@ -1528,7 +1528,7 @@
     },
     "name": "芽针",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-64px -192px",
       "color": "#5c5f4b",
       "size": 64
@@ -1544,7 +1544,7 @@
     },
     "name": "芽针粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -192px",
       "color": "#b3907a",
       "size": 64
@@ -1560,7 +1560,7 @@
     },
     "name": "芽针溶液",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -128px",
       "color": "#c2ed7c",
       "size": 64
@@ -1576,7 +1576,7 @@
     },
     "name": "芽针针剂",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -320px",
       "color": "#a69690",
       "size": 64
@@ -1592,7 +1592,7 @@
     },
     "name": "芽针种子",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -192px",
       "color": "#9e7f6a",
       "size": 64
@@ -1608,7 +1608,7 @@
     },
     "name": "研磨机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -448px",
       "color": "#898a8a",
       "size": 64
@@ -1631,7 +1631,7 @@
     },
     "name": "液化息壤",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -128px",
       "color": "#467866",
       "size": 64
@@ -1647,7 +1647,7 @@
     },
     "name": "优质柑实罐头",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -256px",
       "color": "#878c69",
       "size": 64
@@ -1663,7 +1663,7 @@
     },
     "name": "优质锦草软饮",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "0px -320px",
       "color": "#5a866a",
       "size": 64
@@ -1679,7 +1679,7 @@
     },
     "name": "优质荞愈胶囊",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -320px",
       "color": "#bca2a2",
       "size": 64
@@ -1695,7 +1695,7 @@
     },
     "name": "优质芽针针剂",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -320px",
       "color": "#9c8077",
       "size": 64
@@ -1711,7 +1711,7 @@
     },
     "name": "源矿",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-576px -128px",
       "color": "#805f3c",
       "size": 64
@@ -1727,7 +1727,7 @@
     },
     "name": "源石粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -128px",
       "color": "#4d3c2b",
       "size": 64
@@ -1743,7 +1743,7 @@
     },
     "name": "致密晶体粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-768px 0px",
       "color": "#9e6439",
       "size": 64
@@ -1759,7 +1759,7 @@
     },
     "name": "致密蓝铁粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-640px -64px",
       "color": "#5b7e97",
       "size": 64
@@ -1775,7 +1775,7 @@
     },
     "name": "致密碳粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px 0px",
       "color": "#484848",
       "size": 64
@@ -1791,7 +1791,7 @@
     },
     "name": "致密源石粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-512px -128px",
       "color": "#76532f",
       "size": 64
@@ -1807,7 +1807,7 @@
     },
     "name": "中容谷地电池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-832px -320px",
       "color": "#9c999d",
       "size": 64
@@ -1823,7 +1823,7 @@
     },
     "name": "中容武陵电池",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -384px",
       "color": "#5c6857",
       "size": 64
@@ -1839,7 +1839,7 @@
     },
     "name": "种植机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-256px -448px",
       "color": "#7c827f",
       "size": 64
@@ -1862,7 +1862,7 @@
     },
     "name": "装备原件机",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-704px -448px",
       "color": "#979593",
       "size": 64
@@ -1885,7 +1885,7 @@
     },
     "name": "紫晶粉末",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -256px",
       "color": "#62507b",
       "size": 64
@@ -1901,7 +1901,7 @@
     },
     "name": "紫晶矿",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-448px -256px",
       "color": "#5d486c",
       "size": 64
@@ -1917,7 +1917,7 @@
     },
     "name": "紫晶零件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-192px -64px",
       "color": "#9294a1",
       "size": 64
@@ -1933,7 +1933,7 @@
     },
     "name": "紫晶纤维",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-320px -256px",
       "color": "#715f92",
       "size": 64
@@ -1949,7 +1949,7 @@
     },
     "name": "紫晶质瓶",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-128px -64px",
       "color": "#5c4c7d",
       "size": 64
@@ -1965,7 +1965,7 @@
     },
     "name": "紫晶装备原件",
     "iconSprite": {
-      "url": "/packs/aef/icons.webp",
+      "url": "https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource/icons.webp",
       "position": "-384px -320px",
       "color": "#a2a0b0",
       "size": 64
