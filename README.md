@@ -21,10 +21,11 @@ Output directory: `dist/`
 
 ## License
 
-This repository inherits and includes the upstream MIT license from `factoriolab-zmd`.
+This repository uses two license files:
 
-- See `LICENSE` for full text.
-- See `NOTICE.md` for attribution details.
+- `LICENSE`: TheJeiWebProject license for this repository.
+- `UPSTREAM_LICENSE`: inherited upstream MIT license from `factoriolab-zmd`.
+- `NOTICE.md`: attribution and scope notes.
 
 ## Local Build
 
@@ -57,7 +58,7 @@ It will:
 
 1. Checkout this repo.
 2. Checkout upstream `Bakingss/factoriolab-zmd`.
-3. Copy upstream `LICENSE`.
+3. Copy upstream `LICENSE` into `UPSTREAM_LICENSE`.
 4. Rebuild `dist/`.
 5. Update `UPSTREAM_SNAPSHOT.json`.
 6. Commit and push if there are changes.

@@ -64,7 +64,7 @@ jobs:
 
       - name: Inherit upstream LICENSE
         if: steps.check.outputs.changed == 'true'
-        run: cp upstream/LICENSE LICENSE
+        run: cp upstream/LICENSE UPSTREAM_LICENSE
 
       - name: Build AEF pack
         if: steps.check.outputs.changed == 'true'
@@ -92,7 +92,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add LICENSE NOTICE.md UPSTREAM_SNAPSHOT.json dist
+          git add UPSTREAM_LICENSE NOTICE.md UPSTREAM_SNAPSHOT.json dist
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
