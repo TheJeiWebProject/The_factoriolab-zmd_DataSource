@@ -500,7 +500,7 @@ Options:
   writeJson(path.join(outDir, 'recipes.json'), recipes);
   writeJson(path.join(outDir, 'tags.json'), tags);
   writeJson(path.join(outDir, 'source-meta.json'), {
-    sourceRepository: 'https://github.com/Bakingss/factoriolab-zmd',
+    sourceRepository: 'https://github.com/endfield-calc/factoriolab/tree/ark-endfield-3rd-test',
     sourceRelativePath: 'src/data/aef/data.json',
     sourceAbsolutePath: source,
     upstreamCommit: process.env.UPSTREAM_COMMIT ?? null,

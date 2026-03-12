@@ -2,7 +2,7 @@
 
 Independent AEF data-source repository for JEI Web.
 
-This project converts upstream `factoriolab-zmd` data into JEI pack files:
+This project converts upstream `factoriolab` data into JEI pack files:
 
 - `manifest.json`
 - `items.json`
@@ -19,7 +19,7 @@ Output directory: `dist/`
 
 ## Upstream
 
-- Upstream repository: https://github.com/Bakingss/factoriolab-zmd
+- Upstream repository: https://github.com/endfield-calc/factoriolab/tree/ark-endfield-3rd-test
 - Upstream data used: `src/data/aef/data.json` and `src/data/aef/icons.webp`
 - Latest synced upstream commit is stored in `UPSTREAM_SNAPSHOT.json`
 
@@ -28,7 +28,7 @@ Output directory: `dist/`
 This repository uses two license files:
 
 - `LICENSE`: TheJeiWebProject license for this repository.
-- `UPSTREAM_LICENSE`: inherited upstream MIT license from `factoriolab-zmd`.
+- `UPSTREAM_LICENSE`: inherited upstream MIT license from `factoriolab`.
 - `NOTICE.md`: attribution and scope notes.
 
 ## Local Build
@@ -46,7 +46,7 @@ npm install
 npm run build -- --source upstream/src/data/aef/data.json --out-dir dist
 ```
 
-or if your upstream repo is at `../factoriolab-zmd`:
+or if your upstream repo is at `../factoriolab`:
 
 ```bash
 npm run build:local
@@ -61,7 +61,7 @@ GitHub Actions workflow:
 It will:
 
 1. Checkout this repo.
-2. Checkout upstream `Bakingss/factoriolab-zmd`.
+2. Checkout upstream `endfield-calc/factoriolab` (`ark-endfield-3rd-test` branch).
 3. Copy upstream `LICENSE` into `UPSTREAM_LICENSE`.
 4. Rebuild `dist/`.
 5. Update `UPSTREAM_SNAPSHOT.json`.

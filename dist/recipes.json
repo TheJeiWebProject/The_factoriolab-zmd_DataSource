@@ -1461,6 +1461,159 @@
     }
   },
   {
+    "id": "aef:copper_ore-liquid_water@miner_4",
+    "type": "aef:machine/miner_4",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_ore",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:copper_powder@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_nugget",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_nugget@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_ore",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_nugget",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_nugget",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_nugget",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_bottle-liquid_plant_grass_1@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle-liquid_plant_grass_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_bottle-liquid_plant_grass_2@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle-liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
     "id": "aef:liquid_water@pump_1",
     "type": "aef:machine/pump_1",
     "slotContents": {
@@ -1520,6 +1673,112 @@
     },
     "params": {
       "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_xiranite_poly@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_lowpoly",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_poly@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_cleaner_1-sewage@liquid_cleaner_1",
+    "type": "aef:machine/liquid_cleaner_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2,
+      "usage": 50,
+      "cost": -1
+    }
+  },
+  {
+    "id": "aef:liquid_cleaner_1-xiranite_lowpoly@liquid_cleaner_1",
+    "type": "aef:machine/liquid_cleaner_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_lowpoly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2,
+      "usage": 50,
+      "cost": -1
+    }
+  },
+  {
+    "id": "aef:liquid_cleaner_1-xiranite_poly@liquid_cleaner_1",
+    "type": "aef:machine/liquid_cleaner_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2,
+      "usage": 50,
+      "cost": -1
     }
   },
   {
@@ -1611,6 +1870,30 @@
       "out1": {
         "kind": "item",
         "id": "aef.vanilla.bottled_food_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_food_5@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle-liquid_plant_grass_1",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_cmpt",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_5",
         "amount": 1
       }
     },
@@ -1715,6 +1998,30 @@
     }
   },
   {
+    "id": "aef:bottled_rec_hp_5@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_bottle-liquid_plant_grass_2",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_cmpt",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_5",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
     "id": "aef:equip_script_1@winder_1",
     "type": "aef:machine/winder_1",
     "slotContents": {
@@ -1803,6 +2110,30 @@
       "out1": {
         "kind": "item",
         "id": "aef.vanilla.equip_script_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_4_1@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_cmpt",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_4_1",
         "amount": 1
       }
     },
@@ -1907,6 +2238,30 @@
     }
   },
   {
+    "id": "aef:proc_battery_5@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 20
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_poly",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_5",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
     "id": "aef:proc_bomb_1@tools_asm_mc_1",
     "type": "aef:machine/tools_asm_mc_1",
     "slotContents": {
@@ -2003,6 +2358,21 @@
     "params": {
       "time": 40,
       "usage": -1600
+    }
+  },
+  {
+    "id": "aef:power_proc_battery_5@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_5",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 40,
+      "usage": -3200
     }
   },
   {
@@ -2306,6 +2676,26 @@
     }
   },
   {
+    "id": "aef:jinlong_coupon-copper_cmpt@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_cmpt",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2,
+      "cost": 150
+    }
+  },
+  {
     "id": "aef:jinlong_coupon-bottled_food_4@settlement-jinlong_coupon",
     "type": "aef:machine/settlement-jinlong_coupon",
     "slotContents": {
@@ -2346,6 +2736,26 @@
     }
   },
   {
+    "id": "aef:jinlong_coupon-bottled_rec_hp_5@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_5",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 22
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
     "id": "aef:jinlong_coupon-proc_battery_4@settlement-jinlong_coupon",
     "type": "aef:machine/settlement-jinlong_coupon",
     "slotContents": {
@@ -2358,6 +2768,26 @@
         "kind": "item",
         "id": "aef.vanilla.jinlong_coupon",
         "amount": 25
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-proc_battery_5@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_5",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 54
       }
     },
     "params": {

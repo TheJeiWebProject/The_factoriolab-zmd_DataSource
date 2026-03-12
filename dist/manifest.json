@@ -2,7 +2,7 @@
   "packId": "aef",
   "gameId": "aef",
   "displayName": "Arknights:Endfield",
-  "version": "全面测试",
+  "version": "v1.1.9",
   "files": {
     "items": "items.json",
     "itemsLite": "itemsLite.json",

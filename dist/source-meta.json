@@ -1,7 +1,7 @@
 {
-  "sourceRepository": "https://github.com/Bakingss/factoriolab-zmd",
+  "sourceRepository": "https://github.com/endfield-calc/factoriolab/tree/ark-endfield-3rd-test",
   "sourceRelativePath": "src/data/aef/data.json",
-  "sourceAbsolutePath": "D:\\Projcets\\factoriolab-zmd\\src\\data\\aef\\data.json",
-  "upstreamCommit": null,
-  "generatedAt": "2026-03-12T11:16:31.446Z"
+  "sourceAbsolutePath": "D:\\Projcets\\The_factoriolab-zmd_DataSource\\upstream\\src\\data\\aef\\data.json",
+  "upstreamCommit": "d6dba64b9aa6345967c021f822622b477b81a39f",
+  "generatedAt": "2026-03-12T11:48:07.654Z"
 }

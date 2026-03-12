@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node src/build-aef-pack.mjs",
-    "build:local": "node src/build-aef-pack.mjs --source ../factoriolab-zmd/src/data/aef/data.json --out-dir dist"
+    "build:local": "node src/build-aef-pack.mjs --source ../factoriolab/src/data/aef/data.json --out-dir dist"
   },
   "engines": {
     "node": ">=20"

@@ -17,10 +17,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout upstream factoriolab-zmd
+      - name: Checkout upstream factoriolab
         uses: actions/checkout@v4
         with:
-          repository: Bakingss/factoriolab-zmd
+          repository: endfield-calc/factoriolab
+          ref: ark-endfield-3rd-test
           path: upstream
           fetch-depth: 1
 
@@ -77,7 +78,7 @@ jobs:
         run: |
           cat > UPSTREAM_SNAPSHOT.json <<EOF
           {
-            "upstreamRepository": "https://github.com/Bakingss/factoriolab-zmd",
+            "upstreamRepository": "https://github.com/endfield-calc/factoriolab/tree/ark-endfield-3rd-test",
             "upstreamCommit": "${{ steps.upstream.outputs.sha }}",
             "generatedAt": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
           }
