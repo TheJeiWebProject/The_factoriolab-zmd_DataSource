@@ -72,7 +72,7 @@ jobs:
         env:
           UPSTREAM_COMMIT: ${{ steps.upstream.outputs.sha }}
         run: >
-          npm run build --
+          node src/build-aef-pack.mjs
           --source upstream/src/data/aef/data.json
           --out-dir dist
 

@@ -43,7 +43,7 @@ npm install
 3. Build from a local upstream checkout (default expects `./upstream`):
 
 ```bash
-npm run build -- --source upstream/src/data/aef/data.json --out-dir dist
+node src/build-aef-pack.mjs --source upstream/src/data/aef/data.json --out-dir dist
 ```
 
 or if your upstream repo is at `../factoriolab`:
