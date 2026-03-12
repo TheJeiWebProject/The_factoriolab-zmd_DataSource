@@ -94,6 +94,74 @@ function parseCliArgs(argv) {
   return out;
 }
 
+function writePagesServiceFiles(outDir, displayName, packId, version) {
+  // Prevent GitHub Pages from excluding underscore-prefixed paths.
+  fs.writeFileSync(path.join(outDir, '.nojekyll'), '', 'utf8');
+
+  // Keep accidental runtime junk out of published artifacts.
+  fs.writeFileSync(path.join(outDir, '.gitignore'), 'node_modules\n.DS_Store\nThumbs.db\n', 'utf8');
+
+  // CORS headers for platforms supporting `_headers` (Cloudflare Pages / Netlify).
+  const headersContent = `/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, POST, OPTIONS
+  Access-Control-Allow-Headers: *
+`;
+  fs.writeFileSync(path.join(outDir, '_headers'), headersContent, 'utf8');
+
+  // CORS headers for Tencent EdgeOne Pages.
+  writeJson(path.join(outDir, 'edgeone.json'), {
+    headers: [
+      {
+        source: '/*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, HEAD, POST, OPTIONS' },
+          { key: 'Access-Control-Allow-Headers', value: '*' },
+        ],
+      },
+    ],
+  });
+
+  const generatedAt = new Date().toISOString();
+  const indexHtml = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${displayName}</title>
+  <style>
+    body { font-family: sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1 { margin-bottom: 0.5rem; }
+    .meta { color: #666; margin-bottom: 1.5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.4rem 0; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>${displayName}</h1>
+  <div class="meta">
+    <div>Pack ID: ${packId}</div>
+    <div>Version: ${version}</div>
+    <div>Generated: ${generatedAt}</div>
+  </div>
+  <h2>Files</h2>
+  <ul>
+    <li><a href="manifest.json">manifest.json</a></li>
+    <li><a href="items.json">items.json</a></li>
+    <li><a href="itemsLite.json">itemsLite.json</a></li>
+    <li><a href="tags.json">tags.json</a></li>
+    <li><a href="recipeTypes.json">recipeTypes.json</a></li>
+    <li><a href="recipes.json">recipes.json</a></li>
+    <li><a href="source-meta.json">source-meta.json</a></li>
+  </ul>
+</body>
+</html>`;
+  fs.writeFileSync(path.join(outDir, 'index.html'), indexHtml, 'utf8');
+}
+
 function recipeProducers(r) {
   if (Array.isArray(r.producers) && r.producers.length) return r.producers;
   return ['unknown'];
@@ -412,6 +480,18 @@ Options:
       recipeTypes: 'recipeTypes.json',
       recipes: 'recipes.json',
     },
+    planner: {
+      targetRatePresets: {
+        halfPerMinute: 3,
+        fullPerMinute: 6,
+      },
+    },
+    startupDialog: {
+      id: 'aef-item-id-notice-v1',
+      title: '重要说明',
+      message: '请注意：本工具中显示的物品 ID（如 endfield.xxx）仅供本站内部索引与配方关联使用，并非游戏内的真实物品 ID。请勿将其作为游戏内控制台代码或其他修改工具的参考依据。\n\n此数据包内容较少，若想查看更多内容请使用 “Arknights:Endfield Skland Wiki” 数据包。',
+      confirmText: '我知道了',
+    },
   });
 
   writeJson(path.join(outDir, 'items.json'), items);
@@ -426,6 +506,7 @@ Options:
     upstreamCommit: process.env.UPSTREAM_COMMIT ?? null,
     generatedAt: new Date().toISOString(),
   });
+  writePagesServiceFiles(outDir, displayName, packId, version);
 
   console.log(`Wrote AEF pack to ${outDir}`);
 }

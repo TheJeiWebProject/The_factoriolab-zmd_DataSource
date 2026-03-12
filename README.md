@@ -12,6 +12,9 @@ This project converts upstream `factoriolab-zmd` data into JEI pack files:
 - `recipes.json`
 - `source-meta.json`
 
+Pages deployment helper files are also generated in `dist/`:
+`.nojekyll`, `_headers`, `edgeone.json`, `index.html`.
+
 Output directory: `dist/`
 
 ## Upstream
