@@ -1,0 +1,2350 @@
+[
+  {
+    "id": "aef:plant_moss_seed_1@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_1@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_powder_1@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_enr_powder_1@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_seed_3@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_3",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_3@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_powder_3@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 3
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_seed_1@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_1@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_powder_1@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_plant_grass_1@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-plant_moss_powder_1@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-plant_moss_powder_2@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-plant_moss_powder_3@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 3
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-plant_grass_powder_1@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-plant_grass_powder_2@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_powder-carbon_mtl@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_seed_2@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_2",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_2@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_powder_2@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_moss_enr_powder_2@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_bbflower_seed_1@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_seed_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_bbflower_1@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_seed_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_bbflower_powder_1@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_powder_1",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_seed_2@seedcol_1",
+    "type": "aef:machine/seedcol_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_2@planter_1",
+    "type": "aef:machine/planter_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_2",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:plant_grass_powder_2@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_2",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_plant_grass_2@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_mtl-plant_moss_1@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_mtl-plant_moss_2@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_mtl-plant_moss_3@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_mtl-plant_grass_1@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_mtl-plant_grass_2@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:originium_ore@miner_2",
+    "type": "aef:machine/miner_2",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_ore",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:originium_ore@miner_3",
+    "type": "aef:machine/miner_3",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_ore",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:crystal_powder-originium_powder@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_powder-crystal_shell@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_shell-originium_ore@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_ore",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_shell-crystal_powder@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_enr_powder-crystal_powder@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_powder",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_enr@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:originium_powder@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_ore",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:originium_enr_powder@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:crystal_enr_powder-originium_enr_powder@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_enr_powder-carbon_powder@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_enr_powder-plant_moss_enr_powder_1@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_enr_powder-plant_moss_enr_powder_2@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:carbon_enr@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:quartz_sand@miner_2",
+    "type": "aef:machine/miner_2",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_sand",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:quartz_sand@miner_3",
+    "type": "aef:machine/miner_3",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_sand",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:quartz_powder@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:quartz_glass-quartz_sand@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_sand",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:quartz_glass-quartz_powder@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:quartz_enr_powder@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_powder",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:quartz_enr@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:glass_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:glass_enr_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_enr_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:glass_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:glass_enr_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_enr_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_ore@miner_3",
+    "type": "aef:machine/miner_3",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_ore",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 3
+    }
+  },
+  {
+    "id": "aef:iron_powder@grinder_1",
+    "type": "aef:machine/grinder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_nugget-iron_ore@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_ore",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_nugget-iron_powder@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_enr_powder@thickener_1",
+    "type": "aef:machine/thickener_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_enr@furnance_1",
+    "type": "aef:machine/furnance_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_enr_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_enr_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_bottle-liquid_water@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_water",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_bottle-liquid_plant_grass_1@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:iron_bottle-liquid_plant_grass_2@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:dismantler-iron_bottle-liquid_plant_grass_1@dismantler_1",
+    "type": "aef:machine/dismantler_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:dismantler-iron_bottle-liquid_plant_grass_2@dismantler_1",
+    "type": "aef:machine/dismantler_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_water@pump_1",
+    "type": "aef:machine/pump_1",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 1
+    }
+  },
+  {
+    "id": "aef:liquid_xiranite@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_powder@xiranite_oven_1",
+    "type": "aef:machine/xiranite_oven_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:bottled_food_1@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_bottle",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_food_2@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_food_3@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_bottle",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_2",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_food_4@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_1",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_rec_hp_1@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_bottle",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_rec_hp_2@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_rec_hp_3@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_bottle",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_1",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:bottled_rec_hp_4@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle-liquid_plant_grass_2",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_1@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_2@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_3@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_4@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:proc_battery_1@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_cmpt",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:proc_battery_2@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 15
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:proc_battery_3@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_cmpt",
+        "amount": 10
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 15
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:proc_battery_4@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 15
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:proc_bomb_1@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_cmpt",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_bomb_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:power_originium_ore@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_ore",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 8,
+      "usage": -50
+    }
+  },
+  {
+    "id": "aef:power_proc_battery_1@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 40,
+      "usage": -220
+    }
+  },
+  {
+    "id": "aef:power_proc_battery_2@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 40,
+      "usage": -420
+    }
+  },
+  {
+    "id": "aef:power_proc_battery_3@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_3",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 40,
+      "usage": -1100
+    }
+  },
+  {
+    "id": "aef:power_proc_battery_4@power_sta_1",
+    "type": "aef:machine/power_sta_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_4",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 40,
+      "usage": -1600
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-crystal_shell@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-glass_bottle@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_bottle",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-glass_cmpt@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_cmpt",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-iron_cmpt@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-iron_enr_cmpt@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_cmpt",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 3
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_food_1@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 10
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_food_2@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 27
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_food_3@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 70
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_rec_hp_1@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 10
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_rec_hp_2@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 27
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-bottled_rec_hp_3@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 70
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-proc_battery_1@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 16
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-proc_battery_2@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 30
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:tundra_coupon-proc_battery_3@settlement-tundra_coupon",
+    "type": "aef:machine/settlement-tundra_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_3",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.tundra_coupon",
+        "amount": 70
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-xiranite_powder@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-bottled_rec_hp_4@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_4",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 16
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-proc_battery_4@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_4",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 25
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-bottled_food_4@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_4",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 16
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  }
+]

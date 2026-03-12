@@ -1,0 +1,12 @@
+{
+  "packId": "aef",
+  "gameId": "aef",
+  "displayName": "Arknights:Endfield",
+  "version": "全面测试",
+  "files": {
+    "items": "items.json",
+    "tags": "tags.json",
+    "recipeTypes": "recipeTypes.json",
+    "recipes": "recipes.json"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "item": {
+    "aef:material": {
+      "values": [
+        "aef.vanilla.carbon_enr",
+        "aef.vanilla.carbon_enr_powder",
+        "aef.vanilla.carbon_mtl",
+        "aef.vanilla.carbon_powder",
+        "aef.vanilla.crystal_enr",
+        "aef.vanilla.crystal_enr_powder",
+        "aef.vanilla.crystal_powder",
+        "aef.vanilla.crystal_shell",
+        "aef.vanilla.glass_bottle",
+        "aef.vanilla.glass_cmpt",
+        "aef.vanilla.glass_enr_bottle",
+        "aef.vanilla.glass_enr_cmpt",
+        "aef.vanilla.iron_bottle",
+        "aef.vanilla.iron_bottle-liquid_plant_grass_1",
+        "aef.vanilla.iron_bottle-liquid_plant_grass_2",
+        "aef.vanilla.iron_bottle-liquid_water",
+        "aef.vanilla.iron_cmpt",
+        "aef.vanilla.iron_enr",
+        "aef.vanilla.iron_enr_bottle",
+        "aef.vanilla.iron_enr_cmpt",
+        "aef.vanilla.iron_enr_powder",
+        "aef.vanilla.iron_nugget",
+        "aef.vanilla.iron_ore",
+        "aef.vanilla.iron_powder",
+        "aef.vanilla.liquid_plant_grass_1",
+        "aef.vanilla.liquid_plant_grass_2",
+        "aef.vanilla.liquid_water",
+        "aef.vanilla.liquid_xiranite",
+        "aef.vanilla.originium_enr_powder",
+        "aef.vanilla.originium_ore",
+        "aef.vanilla.originium_powder",
+        "aef.vanilla.plant_bbflower_1",
+        "aef.vanilla.plant_bbflower_powder_1",
+        "aef.vanilla.plant_bbflower_seed_1",
+        "aef.vanilla.plant_grass_1",
+        "aef.vanilla.plant_grass_2",
+        "aef.vanilla.plant_grass_powder_1",
+        "aef.vanilla.plant_grass_powder_2",
+        "aef.vanilla.plant_grass_seed_1",
+        "aef.vanilla.plant_grass_seed_2",
+        "aef.vanilla.plant_moss_1",
+        "aef.vanilla.plant_moss_2",
+        "aef.vanilla.plant_moss_3",
+        "aef.vanilla.plant_moss_enr_powder_1",
+        "aef.vanilla.plant_moss_enr_powder_2",
+        "aef.vanilla.plant_moss_powder_1",
+        "aef.vanilla.plant_moss_powder_2",
+        "aef.vanilla.plant_moss_powder_3",
+        "aef.vanilla.plant_moss_seed_1",
+        "aef.vanilla.plant_moss_seed_2",
+        "aef.vanilla.plant_moss_seed_3",
+        "aef.vanilla.quartz_enr",
+        "aef.vanilla.quartz_enr_powder",
+        "aef.vanilla.quartz_glass",
+        "aef.vanilla.quartz_powder",
+        "aef.vanilla.quartz_sand",
+        "aef.vanilla.xiranite_powder"
+      ]
+    },
+    "aef:product": {
+      "values": [
+        "aef.vanilla.bottled_food_1",
+        "aef.vanilla.bottled_food_2",
+        "aef.vanilla.bottled_food_3",
+        "aef.vanilla.bottled_food_4",
+        "aef.vanilla.bottled_rec_hp_1",
+        "aef.vanilla.bottled_rec_hp_2",
+        "aef.vanilla.bottled_rec_hp_3",
+        "aef.vanilla.bottled_rec_hp_4",
+        "aef.vanilla.equip_script_1",
+        "aef.vanilla.equip_script_2",
+        "aef.vanilla.equip_script_3",
+        "aef.vanilla.equip_script_4",
+        "aef.vanilla.proc_battery_1",
+        "aef.vanilla.proc_battery_2",
+        "aef.vanilla.proc_battery_3",
+        "aef.vanilla.proc_battery_4",
+        "aef.vanilla.proc_bomb_1"
+      ]
+    },
+    "aef:settlement": {
+      "values": [
+        "aef.vanilla.jinlong_coupon",
+        "aef.vanilla.tundra_coupon"
+      ]
+    },
+    "aef:machine": {
+      "values": [
+        "aef.vanilla.cmpt_mc_1",
+        "aef.vanilla.dismantler_1",
+        "aef.vanilla.filling_pd_mc_1",
+        "aef.vanilla.furnance_1",
+        "aef.vanilla.grinder_1",
+        "aef.vanilla.miner_2",
+        "aef.vanilla.miner_3",
+        "aef.vanilla.mix_pool_1",
+        "aef.vanilla.planter_1",
+        "aef.vanilla.power_sta_1",
+        "aef.vanilla.pump_1",
+        "aef.vanilla.seedcol_1",
+        "aef.vanilla.settlement-jinlong_coupon",
+        "aef.vanilla.settlement-tundra_coupon",
+        "aef.vanilla.shaper_1",
+        "aef.vanilla.thickener_1",
+        "aef.vanilla.tools_asm_mc_1",
+        "aef.vanilla.winder_1",
+        "aef.vanilla.xiranite_oven_1"
+      ]
+    },
+    "aef:belt-and-pipe": {
+      "values": [
+        "aef.vanilla.belt",
+        "aef.vanilla.pipe"
+      ]
+    }
+  }
+}

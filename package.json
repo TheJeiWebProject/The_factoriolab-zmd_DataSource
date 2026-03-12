@@ -1,0 +1,14 @@
+{
+  "name": "the_factoriolab-zmd_datasource",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent AEF data source converter from factoriolab-zmd to JEI pack format",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build-aef-pack.mjs",
+    "build:local": "node src/build-aef-pack.mjs --source ../factoriolab-zmd/src/data/aef/data.json --out-dir dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
