@@ -5,6 +5,7 @@
   "version": "全面测试",
   "files": {
     "items": "items.json",
+    "itemsLite": "itemsLite.json",
     "tags": "tags.json",
     "recipeTypes": "recipeTypes.json",
     "recipes": "recipes.json"

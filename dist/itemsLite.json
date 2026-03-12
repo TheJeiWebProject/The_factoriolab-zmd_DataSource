@@ -1,0 +1,1692 @@
+[
+  {
+    "key": {
+      "id": "aef.vanilla.seedcol_1"
+    },
+    "name": "采种机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px -384px",
+      "color": "#757c76",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#87"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.dismantler_1"
+    },
+    "name": "拆解机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -384px",
+      "color": "#98988e",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#77"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.belt"
+    },
+    "name": "传送带",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px 0px",
+      "color": "#d99065",
+      "size": 64
+    },
+    "tags": [
+      "belt-and-pipe",
+      "belt"
+    ],
+    "belt": {
+      "speed": 0.5
+    },
+    "detailPath": "items.json#95"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.proc_battery_1"
+    },
+    "name": "低容谷地电池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -320px",
+      "color": "#9e9f99",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#69"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.proc_battery_4"
+    },
+    "name": "低容武陵电池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -320px",
+      "color": "#6a8872",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#72"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.miner_2"
+    },
+    "name": "电驱矿机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -384px",
+      "color": "#868785",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 5,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#81"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.miner_3"
+    },
+    "name": "二型电驱矿机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -384px",
+      "color": "#918a89",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#82"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.mix_pool_1"
+    },
+    "name": "反应池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -384px",
+      "color": "#898b8d",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#83"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.grinder_1"
+    },
+    "name": "粉碎机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -384px",
+      "color": "#939799",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 5,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#80"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.tools_asm_mc_1"
+    },
+    "name": "封装机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -448px",
+      "color": "#868888",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#92"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_2"
+    },
+    "name": "柑实",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -192px",
+      "color": "#65681f",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#14"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_powder_2"
+    },
+    "name": "柑实粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -192px",
+      "color": "#d5c274",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#15"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_food_1"
+    },
+    "name": "柑实罐头",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -256px",
+      "color": "#7f847c",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#57"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_seed_2"
+    },
+    "name": "柑实种子",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -192px",
+      "color": "#928029",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#13"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_enr"
+    },
+    "name": "钢块",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -64px",
+      "color": "#56829c",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#46"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_enr_cmpt"
+    },
+    "name": "钢制零件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -64px",
+      "color": "#5e748d",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#50"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_enr_bottle"
+    },
+    "name": "钢质瓶",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -64px",
+      "color": "#5b6d83",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#48"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.quartz_enr_powder"
+    },
+    "name": "高晶粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px -192px",
+      "color": "#b1afc1",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#36"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.glass_enr_cmpt"
+    },
+    "name": "高晶零件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -64px",
+      "color": "#969199",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#41"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.quartz_enr"
+    },
+    "name": "高晶纤维",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -256px",
+      "color": "#9998a5",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#37"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.glass_enr_bottle"
+    },
+    "name": "高晶质瓶",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -64px",
+      "color": "#76758f",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#39"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.equip_script_3"
+    },
+    "name": "高晶装备原件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -320px",
+      "color": "#a2a4b0",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#67"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.proc_battery_3"
+    },
+    "name": "高容谷地电池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -320px",
+      "color": "#9e999c",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#71"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.proc_bomb_1"
+    },
+    "name": "工业爆炸物",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -320px",
+      "color": "#8c7e7a",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#73"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.tundra_coupon"
+    },
+    "name": "谷地调度券",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -320px",
+      "color": "#c5c8b4",
+      "size": 64
+    },
+    "tags": [
+      "settlement"
+    ],
+    "detailPath": "items.json#74"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.pipe"
+    },
+    "name": "管道",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px 0px",
+      "color": "#80afc8",
+      "size": 64
+    },
+    "tags": [
+      "belt-and-pipe",
+      "pipe"
+    ],
+    "detailPath": "items.json#96"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.filling_pd_mc_1"
+    },
+    "name": "灌装机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -384px",
+      "color": "#808183",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#78"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_1"
+    },
+    "name": "锦草",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -128px",
+      "color": "#7a8462",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#8"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_powder_1"
+    },
+    "name": "锦草粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -128px",
+      "color": "#babca0",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#9"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_plant_grass_1"
+    },
+    "name": "锦草溶液",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -64px",
+      "color": "#e4f6e3",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#10"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_food_4"
+    },
+    "name": "锦草软饮",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -256px",
+      "color": "#526d71",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#60"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_seed_1"
+    },
+    "name": "锦草种子",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px -128px",
+      "color": "#979e75",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#7"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.crystal_shell"
+    },
+    "name": "晶体外壳",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px 0px",
+      "color": "#947543",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#27"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.crystal_powder"
+    },
+    "name": "晶体外壳粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px 0px",
+      "color": "#6c431e",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#28"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.furnance_1"
+    },
+    "name": "精炼炉",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -384px",
+      "color": "#aa9f99",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 5,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#79"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_food_3"
+    },
+    "name": "精选柑实罐头",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -256px",
+      "color": "#838882",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#59"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_rec_hp_3"
+    },
+    "name": "精选荞愈胶囊",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -256px",
+      "color": "#b5959c",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#63"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.settlement-tundra_coupon"
+    },
+    "name": "据点供货(四号谷地)",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -320px",
+      "color": "#c5c8b4",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#89"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.settlement-jinlong_coupon"
+    },
+    "name": "据点供货(武陵)",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -320px",
+      "color": "#8ca0a0",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#88"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_powder"
+    },
+    "name": "蓝铁粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -64px",
+      "color": "#36526a",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#44"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_nugget"
+    },
+    "name": "蓝铁块",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -64px",
+      "color": "#618095",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#43"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_ore"
+    },
+    "name": "蓝铁矿",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -64px",
+      "color": "#59708d",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#42"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_bottle"
+    },
+    "name": "蓝铁瓶",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -64px",
+      "color": "#3b597b",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#47"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_bottle-liquid_plant_grass_1"
+    },
+    "name": "蓝铁瓶(锦草溶液)",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -576px",
+      "color": "#7b909a",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#52"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_bottle-liquid_water"
+    },
+    "name": "蓝铁瓶(清水)",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -576px",
+      "color": "#44869e",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#51"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_bottle-liquid_plant_grass_2"
+    },
+    "name": "蓝铁瓶(芽针溶液)",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -576px",
+      "color": "#6c8c7a",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#53"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.equip_script_2"
+    },
+    "name": "蓝铁装备原件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -320px",
+      "color": "#8898bf",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#66"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.crystal_enr"
+    },
+    "name": "密制晶体",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px 0px",
+      "color": "#746937",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#30"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.cmpt_mc_1"
+    },
+    "name": "配件机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -384px",
+      "color": "#848580",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#76"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_1"
+    },
+    "name": "荞花",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -192px",
+      "color": "#605926",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#1"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_powder_1"
+    },
+    "name": "荞花粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -192px",
+      "color": "#ad6c66",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#2"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_seed_1"
+    },
+    "name": "荞花种子",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -192px",
+      "color": "#9e6244",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#0"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_rec_hp_1"
+    },
+    "name": "荞愈胶囊",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -256px",
+      "color": "#b39497",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#61"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_water"
+    },
+    "name": "清水",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -128px",
+      "color": "#5ae5f9",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#54"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.power_sta_1"
+    },
+    "name": "热能池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -384px",
+      "color": "#939da1",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#85"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_3"
+    },
+    "name": "砂叶",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -192px",
+      "color": "#917729",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#5"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_powder_3"
+    },
+    "name": "砂叶粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-512px -192px",
+      "color": "#9c7008",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#6"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_seed_3"
+    },
+    "name": "砂叶种子",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -192px",
+      "color": "#856812",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#4"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.pump_1"
+    },
+    "name": "水泵",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -384px",
+      "color": "#8f8d87",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#86"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.shaper_1"
+    },
+    "name": "塑形机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -448px",
+      "color": "#919291",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#90"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.carbon_powder"
+    },
+    "name": "碳粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px 0px",
+      "color": "#4c4c4c",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#12"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.carbon_mtl"
+    },
+    "name": "碳块",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px 0px",
+      "color": "#3e4048",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#11"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.xiranite_oven_1"
+    },
+    "name": "天有洪炉",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -448px",
+      "color": "#a2a79a",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#94"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_cmpt"
+    },
+    "name": "铁制零件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -64px",
+      "color": "#6e81a9",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#49"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_bbflower_1"
+    },
+    "name": "酮化灌木",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -128px",
+      "color": "#635c3e",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#18"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_bbflower_powder_1"
+    },
+    "name": "酮化灌木粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -128px",
+      "color": "#7c7436",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#19"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_bbflower_seed_1"
+    },
+    "name": "酮化树种",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px -128px",
+      "color": "#aca368",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#17"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.carbon_enr"
+    },
+    "name": "稳定碳块",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px 0px",
+      "color": "#484b53",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#25"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.jinlong_coupon"
+    },
+    "name": "武陵调度券",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -320px",
+      "color": "#8ca0a0",
+      "size": 64
+    },
+    "tags": [
+      "settlement"
+    ],
+    "detailPath": "items.json#75"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.xiranite_powder"
+    },
+    "name": "息壤",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -256px",
+      "color": "#335246",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#56"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.equip_script_4"
+    },
+    "name": "息壤装备原件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -320px",
+      "color": "#5d5644",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#68"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_enr_powder_2"
+    },
+    "name": "细磨柑实粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-320px -192px",
+      "color": "#90845b",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#16"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_moss_enr_powder_1"
+    },
+    "name": "细磨荞花粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -192px",
+      "color": "#896361",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#3"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_2"
+    },
+    "name": "芽针",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -128px",
+      "color": "#5c5f4b",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#21"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_powder_2"
+    },
+    "name": "芽针粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px -128px",
+      "color": "#b3907a",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#22"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_plant_grass_2"
+    },
+    "name": "芽针溶液",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px -64px",
+      "color": "#c2ed7c",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#23"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_rec_hp_4"
+    },
+    "name": "芽针针剂",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px -256px",
+      "color": "#a69690",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#64"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.plant_grass_seed_2"
+    },
+    "name": "芽针种子",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -192px",
+      "color": "#9e7f6a",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#20"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.thickener_1"
+    },
+    "name": "研磨机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -448px",
+      "color": "#898a8a",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#91"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_xiranite"
+    },
+    "name": "液化息壤",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -128px",
+      "color": "#467866",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#55"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_food_2"
+    },
+    "name": "优质柑实罐头",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -256px",
+      "color": "#878c69",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#58"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.bottled_rec_hp_2"
+    },
+    "name": "优质荞愈胶囊",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-640px -256px",
+      "color": "#bca2a2",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#62"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.originium_ore"
+    },
+    "name": "源矿",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -128px",
+      "color": "#805f3c",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#26"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.originium_powder"
+    },
+    "name": "源石粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-256px -128px",
+      "color": "#4d3c2b",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#31"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.crystal_enr_powder"
+    },
+    "name": "致密晶体粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-448px 0px",
+      "color": "#9e6439",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#29"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.iron_enr_powder"
+    },
+    "name": "致密蓝铁粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -64px",
+      "color": "#5b7e97",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#45"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.carbon_enr_powder"
+    },
+    "name": "致密碳粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px 0px",
+      "color": "#484848",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#24"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.originium_enr_powder"
+    },
+    "name": "致密源石粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -128px",
+      "color": "#76532f",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#32"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.proc_battery_2"
+    },
+    "name": "中容谷地电池",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-384px -320px",
+      "color": "#9c999d",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#70"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.planter_1"
+    },
+    "name": "种植机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-576px -384px",
+      "color": "#7c827f",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#84"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.winder_1"
+    },
+    "name": "装备原件机",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -448px",
+      "color": "#979593",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#93"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.quartz_powder"
+    },
+    "name": "紫晶粉末",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-128px -256px",
+      "color": "#62507b",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#35"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.quartz_sand"
+    },
+    "name": "紫晶矿",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-192px -256px",
+      "color": "#5d486c",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#33"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.glass_cmpt"
+    },
+    "name": "紫晶零件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-768px 0px",
+      "color": "#9294a1",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#40"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.quartz_glass"
+    },
+    "name": "紫晶纤维",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-64px -256px",
+      "color": "#715f92",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#34"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.glass_bottle"
+    },
+    "name": "紫晶质瓶",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "-704px 0px",
+      "color": "#5c4c7d",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#38"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.equip_script_1"
+    },
+    "name": "紫晶装备原件",
+    "iconSprite": {
+      "url": "/packs/aef/icons.webp",
+      "position": "0px -320px",
+      "color": "#a2a0b0",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#65"
+  }
+]

@@ -49,6 +49,13 @@ function parseAmount(v) {
   return 1;
 }
 
+function toLiteItem(itemDef, detailPath) {
+  const lite = { ...itemDef, detailPath };
+  delete lite.wiki;
+  delete lite.recipes;
+  return lite;
+}
+
 function parseCliArgs(argv) {
   const out = {};
   for (let i = 0; i < argv.length; i += 1) {
@@ -266,6 +273,10 @@ Options:
     };
   });
 
+  const itemsLite = items
+    .map((item, index) => toLiteItem(item, `items.json#${index}`))
+    .sort((a, b) => String(a?.name || '').localeCompare(String(b?.name || '')));
+
   const recipesRaw = Array.isArray(data.recipes) ? data.recipes : [];
 
   const maxByMachine = new Map();
@@ -396,6 +407,7 @@ Options:
     version,
     files: {
       items: 'items.json',
+      itemsLite: 'itemsLite.json',
       tags: 'tags.json',
       recipeTypes: 'recipeTypes.json',
       recipes: 'recipes.json',
@@ -403,6 +415,7 @@ Options:
   });
 
   writeJson(path.join(outDir, 'items.json'), items);
+  writeJson(path.join(outDir, 'itemsLite.json'), itemsLite);
   writeJson(path.join(outDir, 'recipeTypes.json'), recipeTypes);
   writeJson(path.join(outDir, 'recipes.json'), recipes);
   writeJson(path.join(outDir, 'tags.json'), tags);

@@ -6,6 +6,7 @@ This project converts upstream `factoriolab-zmd` data into JEI pack files:
 
 - `manifest.json`
 - `items.json`
+- `itemsLite.json`
 - `tags.json`
 - `recipeTypes.json`
 - `recipes.json`
