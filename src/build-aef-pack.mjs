@@ -11,7 +11,7 @@ const DEFAULT_OUT_DIR = 'dist';
 const DEFAULT_PACK_ID = 'aef';
 const DEFAULT_GAME_ID = 'aef';
 const DEFAULT_DISPLAY_NAME = 'Arknights:Endfield';
-const DEFAULT_ASSET_BASE_URL = 'https://thejeiwebproject.github.io/The_factoriolab-zmd_DataSource';
+const DEFAULT_ASSET_BASE_URL = '';
 
 // Default values for machine properties when not specified
 const DEFAULT_MACHINE_SPEED = 1;      // 1x speed
@@ -98,6 +98,14 @@ function parseCliArgs(argv) {
     throw new Error(`Unknown argument: ${token}`);
   }
   return out;
+}
+
+function buildAssetUrl(baseUrl, fileName) {
+  const base = String(baseUrl ?? '').trim();
+  if (!base) {
+    return fileName;
+  }
+  return `${base.replace(/\/+$/, '')}/${fileName}`;
 }
 
 function writePagesServiceFiles(outDir, displayName, packId, version) {
@@ -229,7 +237,7 @@ Options:
   --pack-id <id>         Manifest packId (default: ${DEFAULT_PACK_ID})
   --game-id <id>         Manifest gameId (default: ${DEFAULT_GAME_ID})
   --display-name <name>  Manifest displayName (default: "${DEFAULT_DISPLAY_NAME}")
-  --asset-base-url <u>   Absolute base URL for pack assets (default: ${DEFAULT_ASSET_BASE_URL})
+  --asset-base-url <u>   Optional URL/path prefix for pack assets (default: relative: icons.webp)
   --help, -h             Show help
 `);
     return;
@@ -240,8 +248,8 @@ Options:
   const packId = cli.packId ?? DEFAULT_PACK_ID;
   const gameId = cli.gameId ?? DEFAULT_GAME_ID;
   const displayName = cli.displayName ?? DEFAULT_DISPLAY_NAME;
-  const assetBaseUrl = String(cli.assetBaseUrl ?? DEFAULT_ASSET_BASE_URL).trim().replace(/\/+$/, '');
-  const iconSpriteUrl = `${assetBaseUrl}/icons.webp`;
+  const assetBaseUrl = cli.assetBaseUrl ?? DEFAULT_ASSET_BASE_URL;
+  const iconSpriteUrl = buildAssetUrl(assetBaseUrl, 'icons.webp');
 
   if (!fs.existsSync(source)) {
     throw new Error(`Source file not found: ${source}`);
