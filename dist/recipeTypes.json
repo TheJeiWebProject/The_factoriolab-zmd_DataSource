@@ -1,157 +1,5 @@
 [
   {
-    "key": "aef:machine/seedcol_1",
-    "displayName": "采种机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.seedcol_1",
-      "name": "采种机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 10,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/dismantler_1",
-    "displayName": "拆解机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.dismantler_1",
-      "name": "拆解机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      },
-      {
-        "slotId": "out2",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 3,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 20,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/miner_2",
-    "displayName": "电驱矿机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.miner_2",
-      "name": "电驱矿机"
-    },
-    "slots": [
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 5,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
     "key": "aef:machine/miner_3",
     "displayName": "二型电驱矿机",
     "renderer": "slot_layout",
@@ -264,53 +112,12 @@
     }
   },
   {
-    "key": "aef:machine/liquid_cleaner_1",
-    "displayName": "废水处理机",
+    "key": "aef:machine/shaper_1",
+    "displayName": "塑形机",
     "renderer": "slot_layout",
     "machine": {
-      "id": "aef.vanilla.liquid_cleaner_1",
-      "name": "废水处理机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 50,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/grinder_1",
-    "displayName": "粉碎机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.grinder_1",
-      "name": "粉碎机"
+      "id": "aef.vanilla.shaper_1",
+      "name": "塑形机"
     },
     "slots": [
       {
@@ -349,7 +156,69 @@
       }
     },
     "defaults": {
-      "power": 5,
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/xiranite_oven_1",
+    "displayName": "天有洪炉",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.xiranite_oven_1",
+      "name": "天有洪炉"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0
@@ -418,12 +287,53 @@
     }
   },
   {
-    "key": "aef:machine/filling_pd_mc_1",
-    "displayName": "灌装机",
+    "key": "aef:machine/liquid_cleaner_1",
+    "displayName": "废水处理机",
     "renderer": "slot_layout",
     "machine": {
-      "id": "aef.vanilla.filling_pd_mc_1",
-      "name": "灌装机"
+      "id": "aef.vanilla.liquid_cleaner_1",
+      "name": "废水处理机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/dismantler_1",
+    "displayName": "拆解机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.dismantler_1",
+      "name": "拆解机"
     },
     "slots": [
       {
@@ -438,18 +348,17 @@
         "label": "In"
       },
       {
-        "slotId": "in2",
-        "io": "input",
+        "slotId": "out1",
+        "io": "output",
         "accept": [
-          "item",
-          "tag"
+          "item"
         ],
-        "x": 1,
+        "x": 2,
         "y": 0,
-        "label": "In"
+        "label": "Out"
       },
       {
-        "slotId": "out1",
+        "slotId": "out2",
         "io": "output",
         "accept": [
           "item"
@@ -474,78 +383,6 @@
     },
     "defaults": {
       "power": 20,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/furnance_1",
-    "displayName": "精炼炉",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.furnance_1",
-      "name": "精炼炉"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "in2",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 1,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 3,
-        "y": 0,
-        "label": "Out"
-      },
-      {
-        "slotId": "out2",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 4,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 5,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0
@@ -631,98 +468,6 @@
         "x": 2,
         "y": 0,
         "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 100,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/cmpt_mc_1",
-    "displayName": "配件机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.cmpt_mc_1",
-      "name": "配件机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 20,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/power_sta_1",
-    "displayName": "热能池",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.power_sta_1",
-      "name": "热能池"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
       }
     ],
     "paramSchema": {
@@ -837,63 +582,12 @@
     }
   },
   {
-    "key": "aef:machine/shaper_1",
-    "displayName": "塑形机",
+    "key": "aef:machine/filling_pd_mc_1",
+    "displayName": "灌装机",
     "renderer": "slot_layout",
     "machine": {
-      "id": "aef.vanilla.shaper_1",
-      "name": "塑形机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 10,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
-    "key": "aef:machine/xiranite_oven_1",
-    "displayName": "天有洪炉",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.xiranite_oven_1",
-      "name": "天有洪炉"
+      "id": "aef.vanilla.filling_pd_mc_1",
+      "name": "灌装机"
     },
     "slots": [
       {
@@ -943,7 +637,88 @@
       }
     },
     "defaults": {
-      "power": 50,
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/power_sta_1",
+    "displayName": "热能池",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.power_sta_1",
+      "name": "热能池"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/miner_2",
+    "displayName": "电驱矿机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.miner_2",
+      "name": "电驱矿机"
+    },
+    "slots": [
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 5,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0
@@ -1074,6 +849,129 @@
     }
   },
   {
+    "key": "aef:machine/grinder_1",
+    "displayName": "粉碎机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.grinder_1",
+      "name": "粉碎机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 5,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/furnance_1",
+    "displayName": "精炼炉",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.furnance_1",
+      "name": "精炼炉"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      },
+      {
+        "slotId": "out2",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 4,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 5,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/winder_1",
     "displayName": "装备原件机",
     "renderer": "slot_layout",
@@ -1111,6 +1009,108 @@
           "item"
         ],
         "x": 3,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/cmpt_mc_1",
+    "displayName": "配件机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.cmpt_mc_1",
+      "name": "配件机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/seedcol_1",
+    "displayName": "采种机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.seedcol_1",
+      "name": "采种机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
         "y": 0,
         "label": "Out"
       }
