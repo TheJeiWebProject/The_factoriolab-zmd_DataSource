@@ -1366,6 +1366,43 @@
   },
   {
     "key": {
+      "id": "aef.vanilla.__miner_water"
+    },
+    "name": "清水",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-256px -128px",
+      "color": "#5ae5f9",
+      "size": 64
+    },
+    "tags": [
+      "__internal"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.__miner_pump_1"
+    },
+    "name": "水泵(水驱矿机)",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-384px -448px",
+      "color": "#8f8d87",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": {
       "id": "aef.vanilla.cmpt_mc_1"
     },
     "name": "配件机",

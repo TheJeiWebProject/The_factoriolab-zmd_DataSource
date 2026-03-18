@@ -103,8 +103,14 @@
         "aef.vanilla.tundra_coupon"
       ]
     },
+    "aef:__internal": {
+      "values": [
+        "aef.vanilla.__miner_water"
+      ]
+    },
     "aef:machine": {
       "values": [
+        "aef.vanilla.__miner_pump_1",
         "aef.vanilla.cmpt_mc_1",
         "aef.vanilla.dismantler_1",
         "aef.vanilla.filling_pd_mc_1",

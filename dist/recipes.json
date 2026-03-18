@@ -1466,7 +1466,7 @@
     "slotContents": {
       "in1": {
         "kind": "item",
-        "id": "aef.vanilla.liquid_water",
+        "id": "aef.vanilla.__miner_water",
         "amount": 1
       },
       "out1": {
@@ -2793,6 +2793,20 @@
     "params": {
       "time": 10,
       "cost": 30
+    }
+  },
+  {
+    "id": "aef:__miner_water@__miner_pump_1",
+    "type": "aef:machine/__miner_pump_1",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.__miner_water",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 1
     }
   }
 ]

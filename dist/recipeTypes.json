@@ -531,6 +531,46 @@
     }
   },
   {
+    "key": "aef:machine/__miner_pump_1",
+    "displayName": "水泵(水驱矿机)",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.__miner_pump_1",
+      "name": "水泵(水驱矿机)"
+    },
+    "slots": [
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/miner_4",
     "displayName": "水驱矿机",
     "renderer": "slot_layout",

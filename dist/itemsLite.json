@@ -52,7 +52,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#98"
+    "detailPath": "items.json#100"
   },
   {
     "key": {
@@ -136,7 +136,7 @@
     "belt": {
       "speed": 0.5
     },
-    "detailPath": "items.json#112"
+    "detailPath": "items.json#114"
   },
   {
     "key": {
@@ -191,7 +191,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#100"
+    "detailPath": "items.json#102"
   },
   {
     "key": {
@@ -214,7 +214,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#107"
+    "detailPath": "items.json#109"
   },
   {
     "key": {
@@ -269,7 +269,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#111"
+    "detailPath": "items.json#113"
   },
   {
     "key": {
@@ -308,7 +308,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#109"
+    "detailPath": "items.json#111"
   },
   {
     "key": {
@@ -347,7 +347,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#96"
+    "detailPath": "items.json#98"
   },
   {
     "key": {
@@ -418,7 +418,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#92"
+    "detailPath": "items.json#94"
   },
   {
     "key": {
@@ -441,7 +441,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#106"
+    "detailPath": "items.json#108"
   },
   {
     "key": {
@@ -464,7 +464,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#105"
+    "detailPath": "items.json#107"
   },
   {
     "key": {
@@ -599,7 +599,30 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#103"
+    "detailPath": "items.json#105"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.__miner_pump_1"
+    },
+    "name": "水泵(水驱矿机)",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-384px -448px",
+      "color": "#8f8d87",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 10,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#92"
   },
   {
     "key": {
@@ -622,7 +645,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#99"
+    "detailPath": "items.json#101"
   },
   {
     "key": {
@@ -671,6 +694,22 @@
       "material"
     ],
     "detailPath": "items.json#61"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.__miner_water"
+    },
+    "name": "清水",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-256px -128px",
+      "color": "#5ae5f9",
+      "size": 64
+    },
+    "tags": [
+      "__internal"
+    ],
+    "detailPath": "items.json#91"
   },
   {
     "key": {
@@ -725,7 +764,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#93"
+    "detailPath": "items.json#95"
   },
   {
     "key": {
@@ -748,7 +787,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#102"
+    "detailPath": "items.json#104"
   },
   {
     "key": {
@@ -771,7 +810,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#97"
+    "detailPath": "items.json#99"
   },
   {
     "key": {
@@ -842,7 +881,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#108"
+    "detailPath": "items.json#110"
   },
   {
     "key": {
@@ -897,7 +936,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#101"
+    "detailPath": "items.json#103"
   },
   {
     "key": {
@@ -930,7 +969,7 @@
       "belt-and-pipe",
       "pipe"
     ],
-    "detailPath": "items.json#113"
+    "detailPath": "items.json#115"
   },
   {
     "key": {
@@ -953,7 +992,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#95"
+    "detailPath": "items.json#97"
   },
   {
     "key": {
@@ -976,7 +1015,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#94"
+    "detailPath": "items.json#96"
   },
   {
     "key": {
@@ -1495,7 +1534,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#110"
+    "detailPath": "items.json#112"
   },
   {
     "key": {
@@ -1662,7 +1701,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#91"
+    "detailPath": "items.json#93"
   },
   {
     "key": {
@@ -1733,7 +1772,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#104"
+    "detailPath": "items.json#106"
   },
   {
     "key": {
