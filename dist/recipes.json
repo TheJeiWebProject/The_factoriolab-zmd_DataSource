@@ -224,6 +224,30 @@
     }
   },
   {
+    "id": "aef:liquid_plant_grass_1@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_1",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
     "id": "aef:carbon_powder-plant_moss_powder_1@furnance_1",
     "type": "aef:machine/furnance_1",
     "slotContents": {
@@ -540,6 +564,30 @@
   {
     "id": "aef:liquid_plant_grass_2@mix_pool_1",
     "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_plant_grass_2@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
     "slotContents": {
       "in1": {
         "kind": "item",
@@ -1528,6 +1576,64 @@
     }
   },
   {
+    "id": "aef:copper_enr@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_copper_enr",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_enr@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_copper_enr",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
     "id": "aef:copper_bottle@shaper_1",
     "type": "aef:machine/shaper_1",
     "slotContents": {
@@ -1563,6 +1669,25 @@
     },
     "params": {
       "time": 2
+    }
+  },
+  {
+    "id": "aef:copper_enr_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
     }
   },
   {
@@ -1614,17 +1739,181 @@
     }
   },
   {
-    "id": "aef:liquid_water@pump_1",
-    "type": "aef:machine/pump_1",
+    "id": "aef:liquid_copper@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
     "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      },
       "out1": {
         "kind": "item",
-        "id": "aef.vanilla.liquid_water",
+        "id": "aef.vanilla.liquid_copper",
         "amount": 1
       }
     },
     "params": {
-      "time": 1
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_copper@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_copper",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_copper_enr@liquid_purifier_1",
+    "type": "aef:machine/liquid_purifier_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_copper",
+        "amount": 4
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_copper_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_powder@xiranite_oven_1",
+    "type": "aef:machine/xiranite_oven_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_poly@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_poly@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_sewage",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:xiranite_enr_powder@xiranite_oven_1",
+    "type": "aef:machine/xiranite_oven_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 10
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
     }
   },
   {
@@ -1652,22 +1941,70 @@
     }
   },
   {
-    "id": "aef:xiranite_powder@xiranite_oven_1",
-    "type": "aef:machine/xiranite_oven_1",
+    "id": "aef:liquid_xiranite@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
     "slotContents": {
       "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.carbon_enr",
-        "amount": 2
-      },
-      "in2": {
         "kind": "item",
         "id": "aef.vanilla.liquid_water",
         "amount": 1
       },
-      "out1": {
+      "in2": {
         "kind": "item",
         "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_xiranite_enr@mix_pool_1",
+    "type": "aef:machine/mix_pool_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_enr",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_xiranite_enr@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_enr",
         "amount": 1
       }
     },
@@ -1705,32 +2042,84 @@
     }
   },
   {
-    "id": "aef:xiranite_poly@mix_pool_1",
-    "type": "aef:machine/mix_pool_1",
+    "id": "aef:liquid_xiranite_poly@mix_pool_2",
+    "type": "aef:machine/mix_pool_2",
     "slotContents": {
       "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.iron_powder",
-        "amount": 1
-      },
-      "in2": {
-        "kind": "item",
-        "id": "aef.vanilla.liquid_xiranite_poly",
-        "amount": 2
-      },
-      "out1": {
         "kind": "item",
         "id": "aef.vanilla.liquid_sewage",
         "amount": 1
       },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_lowpoly",
+        "amount": 1
+      },
       "out2": {
         "kind": "item",
-        "id": "aef.vanilla.xiranite_poly",
+        "id": "aef.vanilla.liquid_xiranite_poly",
         "amount": 1
       }
     },
     "params": {
       "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_xiranite_poly-purifier@liquid_purifier_1",
+    "type": "aef:machine/liquid_purifier_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_lowpoly",
+        "amount": 4
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      },
+      "out2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_xiranite_poly",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:liquid_water@pump_1",
+    "type": "aef:machine/pump_1",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_water",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 1
+    }
+  },
+  {
+    "id": "aef:liquid_acid@pump_2",
+    "type": "aef:machine/pump_2",
+    "slotContents": {
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_acid",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 1
     }
   },
   {
@@ -2134,6 +2523,30 @@
       "out1": {
         "kind": "item",
         "id": "aef.vanilla.equip_script_4_1",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:equip_script_4_2@winder_1",
+    "type": "aef:machine/winder_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr_cmpt",
+        "amount": 2
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_4_2",
         "amount": 1
       }
     },
@@ -2656,26 +3069,6 @@
     }
   },
   {
-    "id": "aef:jinlong_coupon-xiranite_powder@settlement-jinlong_coupon",
-    "type": "aef:machine/settlement-jinlong_coupon",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_powder",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.jinlong_coupon",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 2,
-      "cost": 150
-    }
-  },
-  {
     "id": "aef:jinlong_coupon-copper_cmpt@settlement-jinlong_coupon",
     "type": "aef:machine/settlement-jinlong_coupon",
     "slotContents": {
@@ -2696,6 +3089,66 @@
     }
   },
   {
+    "id": "aef:jinlong_coupon-copper_enr_cmpt@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr_cmpt",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 48
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-xiranite_powder@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2,
+      "cost": 150
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-xiranite_enr_powder@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 27
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
     "id": "aef:jinlong_coupon-bottled_food_4@settlement-jinlong_coupon",
     "type": "aef:machine/settlement-jinlong_coupon",
     "slotContents": {
@@ -2708,6 +3161,26 @@
         "kind": "item",
         "id": "aef.vanilla.jinlong_coupon",
         "amount": 16
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-bottled_food_5@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_5",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 22
       }
     },
     "params": {

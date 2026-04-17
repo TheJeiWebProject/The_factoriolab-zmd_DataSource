@@ -40,6 +40,46 @@
     }
   },
   {
+    "key": "aef:machine/pump_2",
+    "displayName": "二型耐酸水泵",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.pump_2",
+      "name": "二型耐酸水泵"
+    },
+    "slots": [
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/mix_pool_1",
     "displayName": "反应池",
     "renderer": "slot_layout",
@@ -328,6 +368,78 @@
     }
   },
   {
+    "key": "aef:machine/mix_pool_2",
+    "displayName": "扩容反应池",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.mix_pool_2",
+      "name": "扩容反应池"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      },
+      {
+        "slotId": "out2",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 4,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/dismantler_1",
     "displayName": "拆解机",
     "renderer": "slot_layout",
@@ -485,6 +597,67 @@
     },
     "defaults": {
       "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/liquid_purifier_1",
+    "displayName": "提纯机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.liquid_purifier_1",
+      "name": "提纯机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      },
+      {
+        "slotId": "out2",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0

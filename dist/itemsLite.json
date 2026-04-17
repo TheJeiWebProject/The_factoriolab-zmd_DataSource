@@ -6,14 +6,14 @@
     "name": "中容武陵电池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -384px",
+      "position": "-640px -384px",
       "color": "#5c6857",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#87"
+    "detailPath": "items.json#95"
   },
   {
     "key": {
@@ -22,14 +22,14 @@
     "name": "中容谷地电池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -320px",
+      "position": "-448px -384px",
       "color": "#9c999d",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#84"
+    "detailPath": "items.json#92"
   },
   {
     "key": {
@@ -38,7 +38,7 @@
     "name": "二型电驱矿机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -448px",
+      "position": "-576px -448px",
       "color": "#918a89",
       "size": 64
     },
@@ -52,7 +52,30 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#100"
+    "detailPath": "items.json#109"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.pump_2"
+    },
+    "name": "二型耐酸水泵",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "0px 0px",
+      "color": "#f4f6f6",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 20,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#116"
   },
   {
     "key": {
@@ -61,14 +84,14 @@
     "name": "优质柑实罐头",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -256px",
+      "position": "-256px -320px",
       "color": "#878c69",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#69"
+    "detailPath": "items.json#76"
   },
   {
     "key": {
@@ -77,14 +100,14 @@
     "name": "优质芽针针剂",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -320px",
+      "position": "-768px -320px",
       "color": "#9c8077",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#77"
+    "detailPath": "items.json#84"
   },
   {
     "key": {
@@ -93,14 +116,14 @@
     "name": "优质荞愈胶囊",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -320px",
+      "position": "-576px -320px",
       "color": "#bca2a2",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#74"
+    "detailPath": "items.json#81"
   },
   {
     "key": {
@@ -109,14 +132,14 @@
     "name": "优质锦草软饮",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -320px",
+      "position": "-448px -320px",
       "color": "#5a866a",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#72"
+    "detailPath": "items.json#79"
   },
   {
     "key": {
@@ -136,7 +159,7 @@
     "belt": {
       "speed": 0.5
     },
-    "detailPath": "items.json#114"
+    "detailPath": "items.json#125"
   },
   {
     "key": {
@@ -145,14 +168,14 @@
     "name": "低容武陵电池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -384px",
+      "position": "-576px -384px",
       "color": "#6a8872",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#86"
+    "detailPath": "items.json#94"
   },
   {
     "key": {
@@ -161,14 +184,14 @@
     "name": "低容谷地电池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -320px",
+      "position": "-384px -384px",
       "color": "#9e9f99",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#83"
+    "detailPath": "items.json#91"
   },
   {
     "key": {
@@ -177,7 +200,7 @@
     "name": "反应池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -448px",
+      "position": "-704px -448px",
       "color": "#898b8d",
       "size": 64
     },
@@ -191,7 +214,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#102"
+    "detailPath": "items.json#111"
   },
   {
     "key": {
@@ -200,7 +223,7 @@
     "name": "塑形机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -448px",
+      "position": "-128px -512px",
       "color": "#919291",
       "size": 64
     },
@@ -214,7 +237,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#109"
+    "detailPath": "items.json#120"
   },
   {
     "key": {
@@ -223,14 +246,14 @@
     "name": "壤晶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -256px",
+      "position": "-64px -320px",
       "color": "#3b423d",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#67"
+    "detailPath": "items.json#66"
   },
   {
     "key": {
@@ -239,14 +262,14 @@
     "name": "壤晶废液",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -128px",
+      "position": "-768px -128px",
       "color": "#386443",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#65"
+    "detailPath": "items.json#70"
   },
   {
     "key": {
@@ -255,7 +278,7 @@
     "name": "天有洪炉",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -448px",
+      "position": "-384px -512px",
       "color": "#a2a79a",
       "size": 64
     },
@@ -269,7 +292,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#113"
+    "detailPath": "items.json#124"
   },
   {
     "key": {
@@ -278,7 +301,7 @@
     "name": "密制晶体",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px 0px",
+      "position": "-64px -64px",
       "color": "#746937",
       "size": 64
     },
@@ -294,7 +317,7 @@
     "name": "封装机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -448px",
+      "position": "-256px -512px",
       "color": "#868888",
       "size": 64
     },
@@ -308,7 +331,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#111"
+    "detailPath": "items.json#122"
   },
   {
     "key": {
@@ -317,14 +340,14 @@
     "name": "工业爆炸物",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -384px",
+      "position": "-704px -384px",
       "color": "#8c7e7a",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#88"
+    "detailPath": "items.json#96"
   },
   {
     "key": {
@@ -333,7 +356,7 @@
     "name": "废水处理机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -384px",
+      "position": "-448px -448px",
       "color": "#7a7c7d",
       "size": 64
     },
@@ -347,7 +370,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#98"
+    "detailPath": "items.json#106"
   },
   {
     "key": {
@@ -356,14 +379,14 @@
     "name": "息壤",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -256px",
+      "position": "-128px -320px",
       "color": "#335246",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#64"
+    "detailPath": "items.json#65"
   },
   {
     "key": {
@@ -372,14 +395,14 @@
     "name": "息壤装备原件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -320px",
+      "position": "-256px -384px",
       "color": "#5d5644",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#81"
+    "detailPath": "items.json#88"
   },
   {
     "key": {
@@ -388,14 +411,37 @@
     "name": "惰性壤晶废液",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -128px",
+      "position": "-704px -128px",
       "color": "#265b40",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#66"
+    "detailPath": "items.json#71"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.mix_pool_2"
+    },
+    "name": "扩容反应池",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "0px 0px",
+      "color": "#f4f6f6",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
+    "detailPath": "items.json#112"
   },
   {
     "key": {
@@ -404,7 +450,7 @@
     "name": "拆解机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -384px",
+      "position": "-192px -448px",
       "color": "#98988e",
       "size": 64
     },
@@ -418,7 +464,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#94"
+    "detailPath": "items.json#102"
   },
   {
     "key": {
@@ -427,7 +473,7 @@
     "name": "据点供货(四号谷地)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -384px",
+      "position": "-832px -384px",
       "color": "#c5c8b4",
       "size": 64
     },
@@ -441,7 +487,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#108"
+    "detailPath": "items.json#119"
   },
   {
     "key": {
@@ -450,7 +496,7 @@
     "name": "据点供货(武陵)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -384px",
+      "position": "-768px -384px",
       "color": "#8ca0a0",
       "size": 64
     },
@@ -464,6 +510,29 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
+    "detailPath": "items.json#118"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_purifier_1"
+    },
+    "name": "提纯机",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "0px 0px",
+      "color": "#f4f6f6",
+      "size": 64
+    },
+    "tags": [
+      "machine",
+      "machine"
+    ],
+    "machine": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    },
     "detailPath": "items.json#107"
   },
   {
@@ -473,7 +542,7 @@
     "name": "晶体外壳",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -64px",
+      "position": "-192px -64px",
       "color": "#947543",
       "size": 64
     },
@@ -489,7 +558,7 @@
     "name": "晶体外壳粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -64px",
+      "position": "-128px -64px",
       "color": "#6c431e",
       "size": 64
     },
@@ -505,7 +574,7 @@
     "name": "柑实",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -192px",
+      "position": "-832px -192px",
       "color": "#65681f",
       "size": 64
     },
@@ -521,7 +590,7 @@
     "name": "柑实种子",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -256px",
+      "position": "-448px -256px",
       "color": "#928029",
       "size": 64
     },
@@ -537,7 +606,7 @@
     "name": "柑实粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -192px",
+      "position": "-256px -256px",
       "color": "#d5c274",
       "size": 64
     },
@@ -553,14 +622,14 @@
     "name": "柑实罐头",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -256px",
+      "position": "-192px -320px",
       "color": "#7f847c",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#68"
+    "detailPath": "items.json#75"
   },
   {
     "key": {
@@ -569,14 +638,14 @@
     "name": "武陵调度券",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -384px",
+      "position": "-768px -384px",
       "color": "#8ca0a0",
       "size": 64
     },
     "tags": [
       "settlement"
     ],
-    "detailPath": "items.json#90"
+    "detailPath": "items.json#98"
   },
   {
     "key": {
@@ -585,7 +654,7 @@
     "name": "水泵",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -448px",
+      "position": "0px -512px",
       "color": "#8f8d87",
       "size": 64
     },
@@ -599,7 +668,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#105"
+    "detailPath": "items.json#115"
   },
   {
     "key": {
@@ -608,7 +677,7 @@
     "name": "水泵(水驱矿机)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -448px",
+      "position": "0px -512px",
       "color": "#8f8d87",
       "size": 64
     },
@@ -622,7 +691,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#92"
+    "detailPath": "items.json#100"
   },
   {
     "key": {
@@ -631,7 +700,7 @@
     "name": "水驱矿机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -448px",
+      "position": "-640px -448px",
       "color": "#8e8e8a",
       "size": 64
     },
@@ -645,7 +714,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#101"
+    "detailPath": "items.json#110"
   },
   {
     "key": {
@@ -654,14 +723,30 @@
     "name": "污水",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -128px",
+      "position": "-512px -128px",
       "color": "#606060",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#62"
+    "detailPath": "items.json#74"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_acid"
+    },
+    "name": "沉积酸",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-192px -128px",
+      "color": "#ba9c66",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#73"
   },
   {
     "key": {
@@ -670,14 +755,30 @@
     "name": "液化息壤",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -128px",
+      "position": "-832px -128px",
       "color": "#467866",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#63"
+    "detailPath": "items.json#68"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_xiranite_enr"
+    },
+    "name": "液化重息壤",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-640px -128px",
+      "color": "#567950",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#69"
   },
   {
     "key": {
@@ -686,14 +787,14 @@
     "name": "清水",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -128px",
+      "position": "-576px -128px",
       "color": "#5ae5f9",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#61"
+    "detailPath": "items.json#72"
   },
   {
     "key": {
@@ -702,14 +803,14 @@
     "name": "清水",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -128px",
+      "position": "-576px -128px",
       "color": "#5ae5f9",
       "size": 64
     },
     "tags": [
       "__internal"
     ],
-    "detailPath": "items.json#91"
+    "detailPath": "items.json#99"
   },
   {
     "key": {
@@ -718,7 +819,7 @@
     "name": "源石粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -128px",
+      "position": "-128px -192px",
       "color": "#4d3c2b",
       "size": 64
     },
@@ -734,7 +835,7 @@
     "name": "源矿",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -128px",
+      "position": "-64px -192px",
       "color": "#805f3c",
       "size": 64
     },
@@ -750,7 +851,7 @@
     "name": "灌装机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -384px",
+      "position": "-256px -448px",
       "color": "#808183",
       "size": 64
     },
@@ -764,7 +865,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#95"
+    "detailPath": "items.json#103"
   },
   {
     "key": {
@@ -773,7 +874,7 @@
     "name": "热能池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -448px",
+      "position": "-832px -448px",
       "color": "#939da1",
       "size": 64
     },
@@ -787,7 +888,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#104"
+    "detailPath": "items.json#114"
   },
   {
     "key": {
@@ -796,7 +897,7 @@
     "name": "电驱矿机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -448px",
+      "position": "-512px -448px",
       "color": "#868785",
       "size": 64
     },
@@ -810,7 +911,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#99"
+    "detailPath": "items.json#108"
   },
   {
     "key": {
@@ -819,7 +920,7 @@
     "name": "砂叶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -192px",
+      "position": "0px -256px",
       "color": "#917729",
       "size": 64
     },
@@ -835,7 +936,7 @@
     "name": "砂叶种子",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -256px",
+      "position": "-512px -256px",
       "color": "#856812",
       "size": 64
     },
@@ -851,7 +952,7 @@
     "name": "砂叶粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -192px",
+      "position": "-320px -256px",
       "color": "#9c7008",
       "size": 64
     },
@@ -867,7 +968,7 @@
     "name": "研磨机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -448px",
+      "position": "-192px -512px",
       "color": "#898a8a",
       "size": 64
     },
@@ -881,7 +982,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#110"
+    "detailPath": "items.json#121"
   },
   {
     "key": {
@@ -922,7 +1023,7 @@
     "name": "种植机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -448px",
+      "position": "-768px -448px",
       "color": "#7c827f",
       "size": 64
     },
@@ -936,7 +1037,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#103"
+    "detailPath": "items.json#113"
   },
   {
     "key": {
@@ -969,7 +1070,7 @@
       "belt-and-pipe",
       "pipe"
     ],
-    "detailPath": "items.json#115"
+    "detailPath": "items.json#126"
   },
   {
     "key": {
@@ -978,7 +1079,7 @@
     "name": "粉碎机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -384px",
+      "position": "-384px -448px",
       "color": "#939799",
       "size": 64
     },
@@ -992,7 +1093,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#97"
+    "detailPath": "items.json#105"
   },
   {
     "key": {
@@ -1001,7 +1102,7 @@
     "name": "精炼炉",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -384px",
+      "position": "-320px -448px",
       "color": "#aa9f99",
       "size": 64
     },
@@ -1015,7 +1116,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#96"
+    "detailPath": "items.json#104"
   },
   {
     "key": {
@@ -1024,14 +1125,14 @@
     "name": "精选柑实罐头",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -256px",
+      "position": "-320px -320px",
       "color": "#838882",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#70"
+    "detailPath": "items.json#77"
   },
   {
     "key": {
@@ -1040,14 +1141,14 @@
     "name": "精选荞愈胶囊",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -320px",
+      "position": "-640px -320px",
       "color": "#b5959c",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#75"
+    "detailPath": "items.json#82"
   },
   {
     "key": {
@@ -1056,7 +1157,7 @@
     "name": "紫晶矿",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -256px",
+      "position": "-832px -256px",
       "color": "#5d486c",
       "size": 64
     },
@@ -1072,7 +1173,7 @@
     "name": "紫晶粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -256px",
+      "position": "-768px -256px",
       "color": "#62507b",
       "size": 64
     },
@@ -1088,7 +1189,7 @@
     "name": "紫晶纤维",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -256px",
+      "position": "-704px -256px",
       "color": "#715f92",
       "size": 64
     },
@@ -1104,14 +1205,14 @@
     "name": "紫晶装备原件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -320px",
+      "position": "-832px -320px",
       "color": "#a2a0b0",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#78"
+    "detailPath": "items.json#85"
   },
   {
     "key": {
@@ -1120,7 +1221,7 @@
     "name": "紫晶质瓶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -64px",
+      "position": "-256px -64px",
       "color": "#5c4c7d",
       "size": 64
     },
@@ -1136,7 +1237,7 @@
     "name": "紫晶零件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -64px",
+      "position": "-320px -64px",
       "color": "#9294a1",
       "size": 64
     },
@@ -1152,7 +1253,7 @@
     "name": "细磨柑实粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -192px",
+      "position": "-128px -256px",
       "color": "#90845b",
       "size": 64
     },
@@ -1168,7 +1269,7 @@
     "name": "细磨荞花粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -192px",
+      "position": "-64px -256px",
       "color": "#896361",
       "size": 64
     },
@@ -1184,7 +1285,7 @@
     "name": "致密晶体粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px 0px",
+      "position": "0px -64px",
       "color": "#9e6439",
       "size": 64
     },
@@ -1200,7 +1301,7 @@
     "name": "致密源石粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -128px",
+      "position": "0px -192px",
       "color": "#76532f",
       "size": 64
     },
@@ -1232,7 +1333,7 @@
     "name": "致密蓝铁粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -64px",
+      "position": "-768px -64px",
       "color": "#5b7e97",
       "size": 64
     },
@@ -1248,7 +1349,7 @@
     "name": "芽针",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -192px",
+      "position": "-448px -192px",
       "color": "#5c5f4b",
       "size": 64
     },
@@ -1264,7 +1365,7 @@
     "name": "芽针溶液",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -128px",
+      "position": "-448px -128px",
       "color": "#c2ed7c",
       "size": 64
     },
@@ -1280,7 +1381,7 @@
     "name": "芽针种子",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -192px",
+      "position": "-704px -192px",
       "color": "#9e7f6a",
       "size": 64
     },
@@ -1296,7 +1397,7 @@
     "name": "芽针粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -192px",
+      "position": "-576px -192px",
       "color": "#b3907a",
       "size": 64
     },
@@ -1312,14 +1413,14 @@
     "name": "芽针针剂",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -320px",
+      "position": "-704px -320px",
       "color": "#a69690",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#76"
+    "detailPath": "items.json#83"
   },
   {
     "key": {
@@ -1328,14 +1429,14 @@
     "name": "荞愈胶囊",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -320px",
+      "position": "-512px -320px",
       "color": "#b39497",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#73"
+    "detailPath": "items.json#80"
   },
   {
     "key": {
@@ -1344,7 +1445,7 @@
     "name": "荞花",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -192px",
+      "position": "-768px -192px",
       "color": "#605926",
       "size": 64
     },
@@ -1360,7 +1461,7 @@
     "name": "荞花种子",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -256px",
+      "position": "-384px -256px",
       "color": "#9e6244",
       "size": 64
     },
@@ -1376,7 +1477,7 @@
     "name": "荞花粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -192px",
+      "position": "-192px -256px",
       "color": "#ad6c66",
       "size": 64
     },
@@ -1392,7 +1493,7 @@
     "name": "蓝铁块",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -64px",
+      "position": "0px -128px",
       "color": "#618095",
       "size": 64
     },
@@ -1408,7 +1509,7 @@
     "name": "蓝铁瓶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-384px -64px",
+      "position": "-512px -64px",
       "color": "#3b597b",
       "size": 64
     },
@@ -1424,7 +1525,7 @@
     "name": "蓝铁瓶(清水)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -576px",
+      "position": "-384px -640px",
       "color": "#44869e",
       "size": 64
     },
@@ -1440,7 +1541,7 @@
     "name": "蓝铁瓶(芽针溶液)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -576px",
+      "position": "-320px -640px",
       "color": "#6c8c7a",
       "size": 64
     },
@@ -1456,7 +1557,7 @@
     "name": "蓝铁瓶(锦草溶液)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px -576px",
+      "position": "-256px -640px",
       "color": "#7b909a",
       "size": 64
     },
@@ -1472,7 +1573,7 @@
     "name": "蓝铁矿",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -64px",
+      "position": "-64px -128px",
       "color": "#59708d",
       "size": 64
     },
@@ -1488,7 +1589,7 @@
     "name": "蓝铁粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -128px",
+      "position": "-128px -128px",
       "color": "#36526a",
       "size": 64
     },
@@ -1504,14 +1605,14 @@
     "name": "蓝铁装备原件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -320px",
+      "position": "0px -384px",
       "color": "#8898bf",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#79"
+    "detailPath": "items.json#86"
   },
   {
     "key": {
@@ -1520,7 +1621,7 @@
     "name": "装备原件机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -448px",
+      "position": "-320px -512px",
       "color": "#979593",
       "size": 64
     },
@@ -1534,7 +1635,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#112"
+    "detailPath": "items.json#123"
   },
   {
     "key": {
@@ -1543,14 +1644,14 @@
     "name": "谷地调度券",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -384px",
+      "position": "-832px -384px",
       "color": "#c5c8b4",
       "size": 64
     },
     "tags": [
       "settlement"
     ],
-    "detailPath": "items.json#89"
+    "detailPath": "items.json#97"
   },
   {
     "key": {
@@ -1559,7 +1660,7 @@
     "name": "赤铜块",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px 0px",
+      "position": "-704px 0px",
       "color": "#8b3b30",
       "size": 64
     },
@@ -1567,6 +1668,22 @@
       "material"
     ],
     "detailPath": "items.json#55"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_copper"
+    },
+    "name": "赤铜溶液",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-320px -128px",
+      "color": "#b84a46",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#63"
   },
   {
     "key": {
@@ -1582,7 +1699,7 @@
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#57"
+    "detailPath": "items.json#58"
   },
   {
     "key": {
@@ -1591,14 +1708,14 @@
     "name": "赤铜瓶(芽针溶液)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -576px",
+      "position": "-512px -576px",
       "color": "#89865a",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#60"
+    "detailPath": "items.json#62"
   },
   {
     "key": {
@@ -1607,14 +1724,14 @@
     "name": "赤铜瓶(锦草溶液)",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -512px",
+      "position": "-448px -576px",
       "color": "#968982",
       "size": 64
     },
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#59"
+    "detailPath": "items.json#61"
   },
   {
     "key": {
@@ -1623,7 +1740,7 @@
     "name": "赤铜矿",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-640px 0px",
+      "position": "-768px 0px",
       "color": "#ab6860",
       "size": 64
     },
@@ -1639,7 +1756,7 @@
     "name": "赤铜粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px 0px",
+      "position": "-832px 0px",
       "color": "#a25f52",
       "size": 64
     },
@@ -1655,14 +1772,14 @@
     "name": "赤铜装备原件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -320px",
+      "position": "-128px -384px",
       "color": "#71433f",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#82"
+    "detailPath": "items.json#89"
   },
   {
     "key": {
@@ -1678,7 +1795,71 @@
     "tags": [
       "material"
     ],
-    "detailPath": "items.json#58"
+    "detailPath": "items.json#59"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.copper_enr"
+    },
+    "name": "赫铜块",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-640px 0px",
+      "color": "#db9084",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#57"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.liquid_copper_enr"
+    },
+    "name": "赫铜溶液",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-256px -128px",
+      "color": "#eaafa0",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#64"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.equip_script_4_2"
+    },
+    "name": "赫铜装备原件",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-192px -384px",
+      "color": "#b3746c",
+      "size": 64
+    },
+    "tags": [
+      "product"
+    ],
+    "detailPath": "items.json#90"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.copper_enr_cmpt"
+    },
+    "name": "赫铜零件",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "-576px 0px",
+      "color": "#b88072",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#60"
   },
   {
     "key": {
@@ -1687,7 +1868,7 @@
     "name": "配件机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -384px",
+      "position": "-128px -448px",
       "color": "#848580",
       "size": 64
     },
@@ -1701,7 +1882,7 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#93"
+    "detailPath": "items.json#101"
   },
   {
     "key": {
@@ -1710,7 +1891,7 @@
     "name": "酮化树种",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -128px",
+      "position": "-320px -192px",
       "color": "#aca368",
       "size": 64
     },
@@ -1726,7 +1907,7 @@
     "name": "酮化灌木",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -128px",
+      "position": "-192px -192px",
       "color": "#635c3e",
       "size": 64
     },
@@ -1742,7 +1923,7 @@
     "name": "酮化灌木粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-768px -128px",
+      "position": "-256px -192px",
       "color": "#7c7436",
       "size": 64
     },
@@ -1758,7 +1939,7 @@
     "name": "采种机",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -448px",
+      "position": "-64px -512px",
       "color": "#757c76",
       "size": 64
     },
@@ -1772,7 +1953,23 @@
       "moduleSlots": 0,
       "beaconSlots": 0
     },
-    "detailPath": "items.json#106"
+    "detailPath": "items.json#117"
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.xiranite_enr_powder"
+    },
+    "name": "重息壤",
+    "iconSprite": {
+      "url": "icons.webp",
+      "position": "0px -320px",
+      "color": "#366139",
+      "size": 64
+    },
+    "tags": [
+      "material"
+    ],
+    "detailPath": "items.json#67"
   },
   {
     "key": {
@@ -1781,7 +1978,7 @@
     "name": "钢制零件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-576px -64px",
+      "position": "-704px -64px",
       "color": "#5e748d",
       "size": 64
     },
@@ -1797,7 +1994,7 @@
     "name": "钢块",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-704px -64px",
+      "position": "-832px -64px",
       "color": "#56829c",
       "size": 64
     },
@@ -1813,7 +2010,7 @@
     "name": "钢质瓶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -64px",
+      "position": "-640px -64px",
       "color": "#5b6d83",
       "size": 64
     },
@@ -1829,7 +2026,7 @@
     "name": "铁制零件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-448px -64px",
+      "position": "-576px -64px",
       "color": "#6e81a9",
       "size": 64
     },
@@ -1845,7 +2042,7 @@
     "name": "锦草",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -192px",
+      "position": "-384px -192px",
       "color": "#7a8462",
       "size": 64
     },
@@ -1861,7 +2058,7 @@
     "name": "锦草溶液",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-64px -128px",
+      "position": "-384px -128px",
       "color": "#e4f6e3",
       "size": 64
     },
@@ -1877,7 +2074,7 @@
     "name": "锦草种子",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -192px",
+      "position": "-640px -192px",
       "color": "#979e75",
       "size": 64
     },
@@ -1893,7 +2090,7 @@
     "name": "锦草粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-128px -192px",
+      "position": "-512px -192px",
       "color": "#babca0",
       "size": 64
     },
@@ -1909,14 +2106,14 @@
     "name": "锦草软饮",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-832px -256px",
+      "position": "-384px -320px",
       "color": "#526d71",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#71"
+    "detailPath": "items.json#78"
   },
   {
     "key": {
@@ -1925,14 +2122,14 @@
     "name": "高容谷地电池",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "0px -384px",
+      "position": "-512px -384px",
       "color": "#9e999c",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#85"
+    "detailPath": "items.json#93"
   },
   {
     "key": {
@@ -1941,7 +2138,7 @@
     "name": "高晶粉末",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-192px -256px",
+      "position": "-576px -256px",
       "color": "#b1afc1",
       "size": 64
     },
@@ -1957,7 +2154,7 @@
     "name": "高晶纤维",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -256px",
+      "position": "-640px -256px",
       "color": "#9998a5",
       "size": 64
     },
@@ -1973,14 +2170,14 @@
     "name": "高晶装备原件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-512px -320px",
+      "position": "-64px -384px",
       "color": "#a2a4b0",
       "size": 64
     },
     "tags": [
       "product"
     ],
-    "detailPath": "items.json#80"
+    "detailPath": "items.json#87"
   },
   {
     "key": {
@@ -1989,7 +2186,7 @@
     "name": "高晶质瓶",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-256px -64px",
+      "position": "-384px -64px",
       "color": "#76758f",
       "size": 64
     },
@@ -2005,7 +2202,7 @@
     "name": "高晶零件",
     "iconSprite": {
       "url": "icons.webp",
-      "position": "-320px -64px",
+      "position": "-448px -64px",
       "color": "#969199",
       "size": 64
     },
