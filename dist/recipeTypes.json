@@ -440,67 +440,6 @@
     }
   },
   {
-    "key": "aef:machine/dismantler_1",
-    "displayName": "拆解机",
-    "renderer": "slot_layout",
-    "machine": {
-      "id": "aef.vanilla.dismantler_1",
-      "name": "拆解机"
-    },
-    "slots": [
-      {
-        "slotId": "in1",
-        "io": "input",
-        "accept": [
-          "item",
-          "tag"
-        ],
-        "x": 0,
-        "y": 0,
-        "label": "In"
-      },
-      {
-        "slotId": "out1",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 2,
-        "y": 0,
-        "label": "Out"
-      },
-      {
-        "slotId": "out2",
-        "io": "output",
-        "accept": [
-          "item"
-        ],
-        "x": 3,
-        "y": 0,
-        "label": "Out"
-      }
-    ],
-    "paramSchema": {
-      "time": {
-        "displayName": "Time",
-        "unit": "s",
-        "format": "duration"
-      },
-      "usage": {
-        "displayName": "Usage"
-      },
-      "cost": {
-        "displayName": "Cost"
-      }
-    },
-    "defaults": {
-      "power": 20,
-      "speed": 1,
-      "moduleSlots": 0,
-      "beaconSlots": 0
-    }
-  },
-  {
     "key": "aef:machine/settlement-tundra_coupon",
     "displayName": "据点供货(四号谷地)",
     "renderer": "slot_layout",

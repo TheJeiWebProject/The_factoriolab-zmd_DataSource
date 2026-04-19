@@ -1,5 +1,17 @@
 {
   "item": {
+    "aef:activity": {
+      "values": [
+        "aef.vanilla.activity_xiranite_bottle",
+        "aef.vanilla.activity_xiranite_cmpt",
+        "aef.vanilla.activity_xiranite_enr_bottle",
+        "aef.vanilla.activity_xiranite_enr_cmpt",
+        "aef.vanilla.activity_xiranite_enr_hulu",
+        "aef.vanilla.activity_xiranite_enr_tool",
+        "aef.vanilla.activity_xiranite_hulu",
+        "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2"
+      ]
+    },
     "aef:material": {
       "values": [
         "aef.vanilla.carbon_enr",
@@ -11,6 +23,7 @@
         "aef.vanilla.copper_bottle-liquid_plant_grass_2",
         "aef.vanilla.copper_cmpt",
         "aef.vanilla.copper_enr",
+        "aef.vanilla.copper_enr_bottle",
         "aef.vanilla.copper_enr_cmpt",
         "aef.vanilla.copper_nugget",
         "aef.vanilla.copper_ore",
@@ -26,7 +39,6 @@
         "aef.vanilla.iron_bottle",
         "aef.vanilla.iron_bottle-liquid_plant_grass_1",
         "aef.vanilla.iron_bottle-liquid_plant_grass_2",
-        "aef.vanilla.iron_bottle-liquid_water",
         "aef.vanilla.iron_cmpt",
         "aef.vanilla.iron_enr",
         "aef.vanilla.iron_enr_bottle",
