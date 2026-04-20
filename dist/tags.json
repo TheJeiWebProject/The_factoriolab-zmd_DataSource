@@ -1,17 +1,5 @@
 {
   "item": {
-    "aef:activity": {
-      "values": [
-        "aef.vanilla.activity_xiranite_bottle",
-        "aef.vanilla.activity_xiranite_cmpt",
-        "aef.vanilla.activity_xiranite_enr_bottle",
-        "aef.vanilla.activity_xiranite_enr_cmpt",
-        "aef.vanilla.activity_xiranite_enr_hulu",
-        "aef.vanilla.activity_xiranite_enr_tool",
-        "aef.vanilla.activity_xiranite_hulu",
-        "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2"
-      ]
-    },
     "aef:material": {
       "values": [
         "aef.vanilla.carbon_enr",
@@ -121,6 +109,18 @@
       "values": [
         "aef.vanilla.jinlong_coupon",
         "aef.vanilla.tundra_coupon"
+      ]
+    },
+    "aef:activity": {
+      "values": [
+        "aef.vanilla.activity_xiranite_bottle",
+        "aef.vanilla.activity_xiranite_cmpt",
+        "aef.vanilla.activity_xiranite_enr_bottle",
+        "aef.vanilla.activity_xiranite_enr_cmpt",
+        "aef.vanilla.activity_xiranite_enr_hulu",
+        "aef.vanilla.activity_xiranite_enr_tool",
+        "aef.vanilla.activity_xiranite_hulu",
+        "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2"
       ]
     },
     "aef:__internal": {

@@ -1,177 +1,5 @@
 [
   {
-    "id": "aef:activity_xiranite_bottle@shaper_1",
-    "type": "aef:machine/shaper_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_powder",
-        "amount": 2
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_bottle",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 2
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_cmpt@cmpt_mc_1",
-    "type": "aef:machine/cmpt_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_powder",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_cmpt",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 2
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_hulu@tools_asm_mc_1",
-    "type": "aef:machine/tools_asm_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_bottle",
-        "amount": 5
-      },
-      "in2": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_cmpt",
-        "amount": 5
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_hulu",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 10
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_enr_bottle@shaper_1",
-    "type": "aef:machine/shaper_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_enr_powder",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_bottle",
-        "amount": 2
-      }
-    },
-    "params": {
-      "time": 20
-    }
-  },
-  {
-    "id": "aef:xiranite_enr_bottle-liquid_plant_grass_2@filling_pd_mc_1",
-    "type": "aef:machine/filling_pd_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_bottle",
-        "amount": 1
-      },
-      "in2": {
-        "kind": "item",
-        "id": "aef.vanilla.liquid_plant_grass_2",
-        "amount": 5
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 10
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_enr_cmpt@cmpt_mc_1",
-    "type": "aef:machine/cmpt_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_enr_powder",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_cmpt",
-        "amount": 2
-      }
-    },
-    "params": {
-      "time": 20
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_enr_tool@tools_asm_mc_1",
-    "type": "aef:machine/tools_asm_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_cmpt",
-        "amount": 1
-      },
-      "in2": {
-        "kind": "item",
-        "id": "aef.vanilla.copper_enr",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_tool",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 10
-    }
-  },
-  {
-    "id": "aef:activity_xiranite_enr_hulu@tools_asm_mc_1",
-    "type": "aef:machine/tools_asm_mc_1",
-    "slotContents": {
-      "in1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_tool",
-        "amount": 1
-      },
-      "in2": {
-        "kind": "item",
-        "id": "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2",
-        "amount": 1
-      },
-      "out1": {
-        "kind": "item",
-        "id": "aef.vanilla.activity_xiranite_enr_hulu",
-        "amount": 1
-      }
-    },
-    "params": {
-      "time": 10
-    }
-  },
-  {
     "id": "aef:plant_moss_seed_1@seedcol_1",
     "type": "aef:machine/seedcol_1",
     "slotContents": {
@@ -3385,6 +3213,178 @@
     "params": {
       "time": 10,
       "cost": 30
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 2
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_bottle",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_cmpt",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 2
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_hulu@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_bottle",
+        "amount": 5
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_cmpt",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_hulu",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_enr_bottle@shaper_1",
+    "type": "aef:machine/shaper_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_bottle",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 20
+    }
+  },
+  {
+    "id": "aef:xiranite_enr_bottle-liquid_plant_grass_2@filling_pd_mc_1",
+    "type": "aef:machine/filling_pd_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_bottle",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.liquid_plant_grass_2",
+        "amount": 5
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_enr_cmpt@cmpt_mc_1",
+    "type": "aef:machine/cmpt_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_powder",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_cmpt",
+        "amount": 2
+      }
+    },
+    "params": {
+      "time": 20
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_enr_tool@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_cmpt",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.copper_enr",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_tool",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
+    }
+  },
+  {
+    "id": "aef:activity_xiranite_enr_hulu@tools_asm_mc_1",
+    "type": "aef:machine/tools_asm_mc_1",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_tool",
+        "amount": 1
+      },
+      "in2": {
+        "kind": "item",
+        "id": "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_hulu",
+        "amount": 1
+      }
+    },
+    "params": {
+      "time": 10
     }
   },
   {
