@@ -1186,6 +1186,57 @@
     }
   },
   {
+    "key": "aef:machine/__domain_transfer",
+    "displayName": "超库存传输",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.__domain_transfer",
+      "name": "超库存传输"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/cmpt_mc_1",
     "displayName": "配件机",
     "renderer": "slot_layout",

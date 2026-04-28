@@ -3388,6 +3388,1167 @@
     }
   },
   {
+    "id": "aef:jinlong_coupon-activity_xiranite_hulu@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_hulu",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 40
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
+    "id": "aef:jinlong_coupon-activity_xiranite_enr_hulu@settlement-jinlong_coupon",
+    "type": "aef:machine/settlement-jinlong_coupon",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.activity_xiranite_enr_hulu",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.jinlong_coupon",
+        "amount": 120
+      }
+    },
+    "params": {
+      "time": 10,
+      "cost": 30
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_food_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_1",
+        "amount": 150
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_food_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_2",
+        "amount": 75
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_food_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_food_3",
+        "amount": 30
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_rec_hp_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_1",
+        "amount": 150
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_rec_hp_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_2",
+        "amount": 75
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_bottled_rec_hp_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.bottled_rec_hp_3",
+        "amount": 30
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_carbon_enr@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_carbon_enr_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_enr_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_carbon_mtl@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_mtl",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_carbon_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.carbon_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_crystal_enr@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_crystal_enr_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_enr_powder",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_crystal_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_crystal_shell@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.crystal_shell",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_equip_script_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_1",
+        "amount": 150
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_equip_script_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_2",
+        "amount": 75
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_equip_script_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.equip_script_3",
+        "amount": 30
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_glass_bottle@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_bottle",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_glass_cmpt@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_cmpt",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_glass_enr_bottle@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_enr_bottle",
+        "amount": 300
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_glass_enr_cmpt@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.glass_enr_cmpt",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_bottle@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_bottle",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_cmpt@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_cmpt",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_enr@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_enr_bottle@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_bottle",
+        "amount": 300
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_enr_cmpt@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_cmpt",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_enr_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_enr_powder",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_nugget@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_nugget",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_iron_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.iron_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_originium_enr_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_enr_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_originium_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.originium_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_bbflower_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_bbflower_powder_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_powder_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_bbflower_seed_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_bbflower_seed_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_powder_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_powder_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_powder_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_seed_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_grass_seed_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_grass_seed_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_3",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_enr_powder_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_enr_powder_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_enr_powder_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_powder_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_powder_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_powder_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_powder_3",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_seed_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_1",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_seed_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_2",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_plant_moss_seed_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.plant_moss_seed_3",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_proc_battery_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_1",
+        "amount": 75
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_proc_battery_2@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_2",
+        "amount": 75
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_proc_battery_3@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_battery_3",
+        "amount": 30
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_proc_bomb_1@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.proc_bomb_1",
+        "amount": 300
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_quartz_enr@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_quartz_enr_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_enr_powder",
+        "amount": 750
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_quartz_glass@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_glass",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
+    "id": "aef:transfer_tundra_quartz_powder@__domain_transfer",
+    "type": "aef:machine/__domain_transfer",
+    "slotContents": {
+      "in1": {
+        "kind": "item",
+        "id": "aef.vanilla.domain_key_tundra",
+        "amount": 1
+      },
+      "out1": {
+        "kind": "item",
+        "id": "aef.vanilla.quartz_powder",
+        "amount": 1500
+      }
+    },
+    "params": {
+      "time": 3600
+    }
+  },
+  {
     "id": "aef:__miner_water@__miner_pump_1",
     "type": "aef:machine/__miner_pump_1",
     "slotContents": {

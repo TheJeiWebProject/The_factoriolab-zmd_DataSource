@@ -123,6 +123,11 @@
         "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2"
       ]
     },
+    "aef:__domain_transfer": {
+      "values": [
+        "aef.vanilla.domain_key_tundra"
+      ]
+    },
     "aef:__internal": {
       "values": [
         "aef.vanilla.__miner_water"
@@ -130,6 +135,7 @@
     },
     "aef:machine": {
       "values": [
+        "aef.vanilla.__domain_transfer",
         "aef.vanilla.__miner_pump_1",
         "aef.vanilla.cmpt_mc_1",
         "aef.vanilla.dismantler_1",
@@ -148,7 +154,9 @@
         "aef.vanilla.pump_1",
         "aef.vanilla.pump_2",
         "aef.vanilla.seedcol_1",
+        "aef.vanilla.settlement-jinlong",
         "aef.vanilla.settlement-jinlong_coupon",
+        "aef.vanilla.settlement-tundra",
         "aef.vanilla.settlement-tundra_coupon",
         "aef.vanilla.shaper_1",
         "aef.vanilla.thickener_1",
