@@ -111,18 +111,6 @@
         "aef.vanilla.tundra_coupon"
       ]
     },
-    "aef:activity": {
-      "values": [
-        "aef.vanilla.activity_xiranite_bottle",
-        "aef.vanilla.activity_xiranite_cmpt",
-        "aef.vanilla.activity_xiranite_enr_bottle",
-        "aef.vanilla.activity_xiranite_enr_cmpt",
-        "aef.vanilla.activity_xiranite_enr_hulu",
-        "aef.vanilla.activity_xiranite_enr_tool",
-        "aef.vanilla.activity_xiranite_hulu",
-        "aef.vanilla.xiranite_enr_bottle-liquid_plant_grass_2"
-      ]
-    },
     "aef:__domain_transfer": {
       "values": [
         "aef.vanilla.domain_key_tundra"
@@ -142,8 +130,10 @@
         "aef.vanilla.filling_pd_mc_1",
         "aef.vanilla.furnance_1",
         "aef.vanilla.grinder_1",
+        "aef.vanilla.liquid_clean_gate",
         "aef.vanilla.liquid_cleaner_1",
         "aef.vanilla.liquid_purifier_1",
+        "aef.vanilla.liquid_recycle_gate",
         "aef.vanilla.miner_2",
         "aef.vanilla.miner_3",
         "aef.vanilla.miner_4",

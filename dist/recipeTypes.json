@@ -80,6 +80,98 @@
     }
   },
   {
+    "key": "aef:machine/liquid_recycle_gate",
+    "displayName": "净水节点(产物排出口)",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.liquid_recycle_gate",
+      "name": "净水节点(产物排出口)"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/liquid_clean_gate",
+    "displayName": "净水节点(污水接入口)",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.liquid_clean_gate",
+      "name": "净水节点(污水接入口)"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/mix_pool_1",
     "displayName": "反应池",
     "renderer": "slot_layout",
