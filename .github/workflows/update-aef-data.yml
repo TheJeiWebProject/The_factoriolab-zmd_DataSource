@@ -73,7 +73,7 @@ jobs:
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
-          FORCE_UPDATE_INPUT: ${{ github.event_name == 'workflow_dispatch' && (inputs.force_update && 'true' || 'false') || 'false' }}
+          FORCE_UPDATE_INPUT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || false }}
         run: |
           set -euo pipefail
           current="${{ steps.upstream.outputs.sha }}"
@@ -209,7 +209,7 @@ jobs:
         run: |
           echo "Skipping build and commit."
           echo "Workflow event: ${{ github.event_name }}"
-          echo "force_update: ${{ github.event_name == 'workflow_dispatch' && (inputs.force_update && 'true' || 'false') || 'false' }}"
+          echo "force_update: ${{ steps.check.outputs.force_build }}"
           echo "upstream commit: ${{ steps.upstream.outputs.sha }}"
           echo "previous commit: ${{ steps.previous.outputs.sha }}"
           echo "force build: ${{ steps.check.outputs.force_build }}"
