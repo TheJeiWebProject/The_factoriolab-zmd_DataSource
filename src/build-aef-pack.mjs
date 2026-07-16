@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { sliceImage } from './slice-images.mjs';
+import { sliceImage, effectiveTileSize } from './slice-images.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -397,15 +397,17 @@ Options:
     let iconSprite;
     if (icon) {
       if (adaptiveSplit) {
-        // Compute which tile this icon falls in within the sprite sheet
-        const effW = Math.round(baseTile * srcScale / targetScale);
-        const effH = Math.round(baseTile * srcScale / targetScale);
+        // Compute which tile this icon falls in within the sprite sheet.
+        // Uses effectiveTileSize to stay consistent with the slicing logic.
+        const effW = effectiveTileSize(baseTile, srcScale, targetScale);
+        const effH = effectiveTileSize(baseTile, srcScale, targetScale);
         const { x, y } = parseCssPosition(icon.position ?? '0px 0px');
         const tileCol = Math.floor(x / effW);
         const tileRow = Math.floor(y / effH);
         const tileFile = `tiles/icons__s${srcScale}__r${tileRow}_c${tileCol}.png`;
         iconSprite = {
           url: buildAssetUrl(assetBaseUrl, tileFile),
+          // Each tile contains exactly one icon at the top-left corner (0, 0).
           position: '0px 0px',
           ...(icon.color ? { color: icon.color } : {}),
           size: baseTile,
@@ -415,7 +417,7 @@ Options:
           url: iconSpriteUrl,
           position: icon.position ?? '0px 0px',
           ...(icon.color ? { color: icon.color } : {}),
-          size: 64,
+          size: baseTile,
         };
       }
     }
