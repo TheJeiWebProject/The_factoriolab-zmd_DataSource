@@ -139,6 +139,12 @@ It will:
 - `target_scale` (number, default `1`)
 - `edge_policy` (`crop` or `pad`, default `crop`)
 - `base_tile` (string, optional override; leave empty for auto-derive)
+- `force_update` (boolean, default `false`; only for manual runs)
+
+When `force_update=true` in a manual run, the workflow ignores upstream-commit
+unchanged checks and forces a rebuild, snapshot refresh, and commit attempt to
+overwrite the previously generated output. Scheduled runs keep the original
+behavior and still skip when upstream commit is unchanged.
 
 The workflow prints the effective config, sliced image/tile counts, and manifest path.
 If `adaptive_split=true` but tiles/manifest are not produced, the workflow fails instead
