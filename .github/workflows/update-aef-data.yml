@@ -74,13 +74,13 @@ jobs:
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
-          FORCE_UPDATE_INPUT_RAW: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || '' }}
+          FORCE_UPDATE_INPUT_FROM_DISPATCH: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || '' }}
         run: |
           set -euo pipefail
           current="${{ steps.upstream.outputs.sha }}"
           previous="${{ steps.previous.outputs.sha }}"
           force_update_input='false'
-          if [ "$FORCE_UPDATE_INPUT_RAW" = 'true' ]; then
+          if [ "$FORCE_UPDATE_INPUT_FROM_DISPATCH" = 'true' ]; then
             force_update_input='true'
           fi
 
@@ -92,7 +92,7 @@ jobs:
 
           should_build='false'
           force_build='false'
-          reason='default: no build'
+          reason='no changes and no force override'
 
           if [ "$EVENT_NAME" = 'workflow_dispatch' ] && [ "$force_update_input" = 'true' ]; then
             should_build='true'
