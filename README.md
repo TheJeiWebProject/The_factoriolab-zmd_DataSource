@@ -11,6 +11,7 @@ This project converts upstream `factoriolab` data into JEI pack files:
 - `recipeTypes.json`
 - `recipes.json`
 - `source-meta.json`
+- `image-slice-manifest.json` *(only when `--adaptive-split` is enabled)*
 
 Pages deployment helper files are also generated in `dist/`:
 `.nojekyll`, `_headers`, `edgeone.json`, `index.html`.
@@ -51,6 +52,67 @@ or if your upstream repo is at `../factoriolab`:
 ```bash
 npm run build:local
 ```
+
+## Adaptive Image Slicing
+
+By default the build copies the upstream sprite sheet (`icons.webp`) directly to
+`dist/`.  Pass `--adaptive-split` to pre-split the sprite sheet into individual
+tile images instead:
+
+```bash
+node src/build-aef-pack.mjs \
+  --source upstream/src/data/aef/data.json \
+  --out-dir dist \
+  --adaptive-split
+```
+
+When enabled:
+
+- Tiles are written to `dist/tiles/` using the naming pattern
+  `{base}__s{scale}__r{row}_c{col}.png`.
+- Each item's `iconSprite.url` is updated to point to the corresponding tile
+  file instead of the full sprite sheet.
+- A `dist/image-slice-manifest.json` is generated describing the mapping from
+  the original sprite sheet to individual tiles.
+
+### Adaptive slicing options
+
+| Option | Default | Description |
+|---|---|---|
+| `--adaptive-split` / `--no-adaptive-split` | disabled | Enable or disable tile splitting. |
+| `--base-tile <n>` | `64` | Logical tile size in pixels used as the base for scale calculation. |
+| `--target-scale <n>` | `1` | Desired output scale factor. |
+| `--edge-policy crop\|pad` | `crop` | How to handle tiles at the right/bottom edges when the image is not an exact multiple of the tile size. `crop` keeps only the real pixel area; `pad` extends the tile to full size with transparent pixels. |
+
+### Source scale metadata
+
+The source `data.json` can carry an optional `iconScale` field at the top
+level to indicate that each icon in the sprite sheet occupies
+`baseTile × iconScale` pixels rather than exactly `baseTile` pixels.
+
+```json
+{ "iconScale": 2, "icons": [ ... ] }
+```
+
+The effective pixel tile size is then computed as:
+
+```
+effectiveTileW = round(baseTile * iconScale / targetScale)
+effectiveTileH = round(baseTile * iconScale / targetScale)
+cols            = ceil(imageW / effectiveTileW)
+rows            = ceil(imageH / effectiveTileH)
+```
+
+If `iconScale` is absent the build defaults to `1`.
+
+## Tests
+
+```bash
+npm test
+```
+
+Unit and integration tests cover scale calculations, grid computation, edge
+cropping/padding, manifest correctness, and module API.
 
 ## Automation
 
