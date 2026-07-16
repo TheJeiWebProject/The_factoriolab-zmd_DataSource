@@ -244,6 +244,68 @@
     }
   },
   {
+    "key": "aef:machine/phase_trans_2",
+    "displayName": "固气转化机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.phase_trans_2",
+      "name": "固气转化机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
     "key": "aef:machine/shaper_1",
     "displayName": "塑形机",
     "renderer": "slot_layout",
@@ -264,12 +326,23 @@
         "label": "In"
       },
       {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
         "slotId": "out1",
         "io": "output",
         "accept": [
           "item"
         ],
-        "x": 2,
+        "x": 3,
         "y": 0,
         "label": "Out"
       }
@@ -654,17 +727,90 @@
         "label": "In"
       },
       {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
         "slotId": "out1",
         "io": "output",
         "accept": [
           "item"
         ],
-        "x": 2,
+        "x": 3,
         "y": 0,
         "label": "Out"
       },
       {
         "slotId": "out2",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 4,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/gas_reactor_1",
+    "displayName": "气体反应炉",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.gas_reactor_1",
+      "name": "气体反应炉"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
         "io": "output",
         "accept": [
           "item"
@@ -689,6 +835,46 @@
     },
     "defaults": {
       "power": 50,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/gas_pump_1",
+    "displayName": "气体收集泵",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.gas_pump_1",
+      "name": "气体收集泵"
+    },
+    "slots": [
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 2,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 100,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0
@@ -820,6 +1006,68 @@
     },
     "defaults": {
       "power": 100,
+      "speed": 1,
+      "moduleSlots": 0,
+      "beaconSlots": 0
+    }
+  },
+  {
+    "key": "aef:machine/phase_trans_1",
+    "displayName": "液气转化机",
+    "renderer": "slot_layout",
+    "machine": {
+      "id": "aef.vanilla.phase_trans_1",
+      "name": "液气转化机"
+    },
+    "slots": [
+      {
+        "slotId": "in1",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 0,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "in2",
+        "io": "input",
+        "accept": [
+          "item",
+          "tag"
+        ],
+        "x": 1,
+        "y": 0,
+        "label": "In"
+      },
+      {
+        "slotId": "out1",
+        "io": "output",
+        "accept": [
+          "item"
+        ],
+        "x": 3,
+        "y": 0,
+        "label": "Out"
+      }
+    ],
+    "paramSchema": {
+      "time": {
+        "displayName": "Time",
+        "unit": "s",
+        "format": "duration"
+      },
+      "usage": {
+        "displayName": "Usage"
+      },
+      "cost": {
+        "displayName": "Cost"
+      }
+    },
+    "defaults": {
+      "power": 50,
       "speed": 1,
       "moduleSlots": 0,
       "beaconSlots": 0
