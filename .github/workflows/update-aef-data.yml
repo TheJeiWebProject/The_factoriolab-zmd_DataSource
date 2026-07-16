@@ -88,17 +88,17 @@ jobs:
 
           should_build='false'
           force_build='false'
-          reason='upstream unchanged'
-
-          if [ "$changed" = 'true' ]; then
-            should_build='true'
-            reason='upstream changed'
-          fi
+          reason='default: no build'
 
           if [ "$EVENT_NAME" = 'workflow_dispatch' ] && [ "$FORCE_UPDATE_INPUT" = 'true' ]; then
             should_build='true'
             force_build='true'
             reason='manual force_update=true (ignore unchanged upstream commit)'
+          elif [ "$changed" = 'true' ]; then
+            should_build='true'
+            reason='upstream changed'
+          else
+            reason='upstream unchanged'
           fi
 
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
