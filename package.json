@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node src/build-aef-pack.mjs",
     "build:local": "node src/build-aef-pack.mjs --source ../factoriolab/src/data/aef/data.json --out-dir dist",
-    "test": "node --test src/slice-images.test.mjs src/build-aef-pack.test.mjs"
+    "test": "node --test src/slice-images.test.mjs src/build-aef-pack.test.mjs src/update-aef-workflow.test.mjs"
   },
   "engines": {
     "node": ">=20"
