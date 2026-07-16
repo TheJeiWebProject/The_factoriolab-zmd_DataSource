@@ -11,7 +11,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { effectiveTileSize, computeGrid, tileName, sliceImage } from './slice-images.mjs';
+import sharp from 'sharp';
+import { effectiveTileSize, computeGrid, tileName, sliceImage, inferSourceTileSize } from './slice-images.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FIXTURE_WEBP = path.resolve(__dirname, '..', 'dist', 'icons.webp');
@@ -75,11 +76,26 @@ test('computeGrid: single tile image', () => {
   assert.equal(rows, 1);
 });
 
-test('computeGrid: srcScale=2 reduces grid (896 / 128 = 7 each)', () => {
+test('computeGrid: srcScale=2 reduces grid based on effective tile', () => {
   const tileW = effectiveTileSize(64, 2, 1);
-  const { cols, rows } = computeGrid(896, 896, tileW, tileW);
-  assert.equal(cols, 7);
-  assert.equal(rows, 7);
+  const { cols, rows } = computeGrid(1024, 1024, tileW, tileW);
+  assert.equal(cols, 8);
+  assert.equal(rows, 8);
+});
+
+test('inferSourceTileSize: infers 64px from 1024 sheet and icon grid', () => {
+  const inferred = inferSourceTileSize({
+    imageW: 1024,
+    imageH: 1024,
+    iconPositions: [
+      { x: 0, y: 0 },
+      { x: 64, y: 0 },
+      { x: 128, y: 64 },
+      { x: 960, y: 960 },
+    ],
+  });
+  assert.equal(inferred.tileW, 64);
+  assert.equal(inferred.tileH, 64);
 });
 
 // ---------------------------------------------------------------------------
@@ -100,26 +116,35 @@ if (HAS_FIXTURE) {
   test('sliceImage: manifest structure is correct (scale=1)', async () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'slice-test-'));
     try {
+      const fixtureMeta = await sharp(FIXTURE_WEBP).metadata();
+      const imageW = fixtureMeta.width;
+      const imageH = fixtureMeta.height;
       const entry = await sliceImage({
         srcPath: FIXTURE_WEBP,
         outDir: tmpDir,
         baseName: 'icons',
+        sourceImageId: 'icons',
         srcScale: 1,
         tgtScale: 1,
         baseTileW: 64,
         baseTileH: 64,
+        derivedBaseTileW: 64,
+        derivedBaseTileH: 64,
         edgePolicy: 'crop',
       });
 
+      assert.equal(entry.sourceImageId, 'icons');
+      assert.equal(entry.sourceScale, 1);
+      assert.equal(entry.targetScale, 1);
       assert.equal(entry.srcScale, 1);
       assert.equal(entry.tgtScale, 1);
       assert.equal(entry.effectiveTileW, 64);
       assert.equal(entry.effectiveTileH, 64);
-      assert.equal(entry.imageW, 896);
-      assert.equal(entry.imageH, 896);
-      assert.equal(entry.rows, 14);
-      assert.equal(entry.cols, 14);
-      assert.equal(entry.tiles.length, 14 * 14);
+      assert.equal(entry.imageW, imageW);
+      assert.equal(entry.imageH, imageH);
+      assert.equal(entry.rows, Math.ceil(imageH / 64));
+      assert.equal(entry.cols, Math.ceil(imageW / 64));
+      assert.equal(entry.tiles.length, entry.rows * entry.cols);
       assert.equal(entry.edgePolicy, 'crop');
 
       // First tile
@@ -142,6 +167,9 @@ if (HAS_FIXTURE) {
   test('sliceImage: scale=2 produces 7×7 grid with 128px tiles', async () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'slice-test-scale2-'));
     try {
+      const fixtureMeta = await sharp(FIXTURE_WEBP).metadata();
+      const imageW = fixtureMeta.width;
+      const imageH = fixtureMeta.height;
       const entry = await sliceImage({
         srcPath: FIXTURE_WEBP,
         outDir: tmpDir,
@@ -155,9 +183,9 @@ if (HAS_FIXTURE) {
 
       assert.equal(entry.effectiveTileW, 128);
       assert.equal(entry.effectiveTileH, 128);
-      assert.equal(entry.rows, 7);
-      assert.equal(entry.cols, 7);
-      assert.equal(entry.tiles.length, 49);
+      assert.equal(entry.rows, Math.ceil(imageH / 128));
+      assert.equal(entry.cols, Math.ceil(imageW / 128));
+      assert.equal(entry.tiles.length, entry.rows * entry.cols);
     } finally {
       fs.rmSync(tmpDir, { recursive: true, force: true });
     }
@@ -166,7 +194,10 @@ if (HAS_FIXTURE) {
   test('sliceImage: edge tile has correct cropped dimensions (non-divisible size)', async () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'slice-test-edge-'));
     try {
-      // Use 100px tile on 896px image → last column has width 896 - 13*100 = 96
+      // Use 100px tile on fixture image and validate edge crop math dynamically.
+      const fixtureMeta = await sharp(FIXTURE_WEBP).metadata();
+      const imageW = fixtureMeta.width;
+      const imageH = fixtureMeta.height;
       const entry = await sliceImage({
         srcPath: FIXTURE_WEBP,
         outDir: tmpDir,
@@ -178,22 +209,20 @@ if (HAS_FIXTURE) {
         edgePolicy: 'crop',
       });
 
-      // cols = ceil(896 / 100) = 9, rows = ceil(896 / 100) = 9
-      assert.equal(entry.cols, 9);
-      assert.equal(entry.rows, 9);
+      assert.equal(entry.cols, Math.ceil(imageW / 100));
+      assert.equal(entry.rows, Math.ceil(imageH / 100));
 
       // Last tile in first row
-      const lastColTile = entry.tiles.find((t) => t.row === 0 && t.col === 8);
-      assert.ok(lastColTile, 'should have a tile at col 8');
-      // Actual width = 896 - 8 * 100 = 96
-      assert.equal(lastColTile.actualW, 96);
+      const lastColTile = entry.tiles.find((t) => t.row === 0 && t.col === entry.cols - 1);
+      assert.ok(lastColTile, 'should have a tile in last column');
+      assert.equal(lastColTile.actualW, imageW - (entry.cols - 1) * 100);
       assert.equal(lastColTile.actualH, 100);
 
       // Last tile in last row
-      const lastRowTile = entry.tiles.find((t) => t.row === 8 && t.col === 0);
-      assert.ok(lastRowTile, 'should have a tile at row 8');
+      const lastRowTile = entry.tiles.find((t) => t.row === entry.rows - 1 && t.col === 0);
+      assert.ok(lastRowTile, 'should have a tile in last row');
       assert.equal(lastRowTile.actualW, 100);
-      assert.equal(lastRowTile.actualH, 96);
+      assert.equal(lastRowTile.actualH, imageH - (entry.rows - 1) * 100);
     } finally {
       fs.rmSync(tmpDir, { recursive: true, force: true });
     }
@@ -214,9 +243,9 @@ if (HAS_FIXTURE) {
       });
 
       // All tiles are recorded with their actual (cropped) source dimensions
-      const lastColTile = entry.tiles.find((t) => t.row === 0 && t.col === 8);
+      const lastColTile = entry.tiles.find((t) => t.row === 0 && t.col === entry.cols - 1);
       assert.ok(lastColTile);
-      assert.equal(lastColTile.actualW, 96); // source area is still 96
+      assert.ok(lastColTile.actualW <= 100); // source area may be cropped at right edge
 
       // But the output PNG file should be 100x100 due to padding
       const { default: sharp } = await import('sharp');

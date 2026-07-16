@@ -23,6 +23,51 @@ export function effectiveTileSize(baseTile, srcScale, tgtScale) {
   return Math.round(baseTile * srcScale / tgtScale);
 }
 
+function gcd(a, b) {
+  let x = Math.abs(a);
+  let y = Math.abs(b);
+  while (y !== 0) {
+    const t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
+
+/**
+ * Infer per-icon tile size in source-image pixels from source image dimensions
+ * and icon background-position metadata.
+ *
+ * @param {object} opts
+ * @param {number} opts.imageW
+ * @param {number} opts.imageH
+ * @param {Array<{x:number,y:number}>} opts.iconPositions
+ * @returns {{ tileW: number, tileH: number, method: string }}
+ */
+export function inferSourceTileSize({ imageW, imageH, iconPositions }) {
+  const xs = iconPositions.map((p) => p.x).filter((n) => Number.isFinite(n) && n >= 0);
+  const ys = iconPositions.map((p) => p.y).filter((n) => Number.isFinite(n) && n >= 0);
+
+  const inferAxis = (size, values, axis) => {
+    let axisGcd = size;
+    for (const v of values) {
+      axisGcd = gcd(axisGcd, v);
+    }
+    if (axisGcd === 0) {
+      return { value: size, method: `${axis}-fallback-image-size` };
+    }
+    return { value: axisGcd, method: `${axis}-gcd(image-size+positions)` };
+  };
+
+  const w = inferAxis(imageW, xs, 'x');
+  const h = inferAxis(imageH, ys, 'y');
+  return {
+    tileW: Math.max(1, w.value),
+    tileH: Math.max(1, h.value),
+    method: `${w.method};${h.method}`,
+  };
+}
+
 /**
  * Compute the grid dimensions for a sprite sheet.
  *
@@ -80,6 +125,11 @@ export async function sliceImage(opts) {
     tgtScale = 1,
     baseTileW = 64,
     baseTileH = 64,
+    sourceTileW,
+    sourceTileH,
+    derivedBaseTileW,
+    derivedBaseTileH,
+    sourceImageId,
     edgePolicy = 'crop',
   } = opts;
 
@@ -88,8 +138,12 @@ export async function sliceImage(opts) {
   const imageW = meta.width;
   const imageH = meta.height;
 
-  const tileW = effectiveTileSize(baseTileW, srcScale, tgtScale);
-  const tileH = effectiveTileSize(baseTileH, srcScale, tgtScale);
+  const tileW = Number.isFinite(sourceTileW) && sourceTileW > 0
+    ? Math.round(sourceTileW)
+    : effectiveTileSize(baseTileW, srcScale, tgtScale);
+  const tileH = Number.isFinite(sourceTileH) && sourceTileH > 0
+    ? Math.round(sourceTileH)
+    : effectiveTileSize(baseTileH, srcScale, tgtScale);
   const { cols, rows } = computeGrid(imageW, imageH, tileW, tileH);
 
   fs.mkdirSync(outDir, { recursive: true });
@@ -136,10 +190,15 @@ export async function sliceImage(opts) {
   }
 
   return {
+    sourceImageId: sourceImageId ?? baseName,
     baseName,
     srcPath,
+    sourceScale: srcScale,
+    targetScale: tgtScale,
     srcScale,
     tgtScale,
+    derivedBaseTileW: Number.isFinite(derivedBaseTileW) ? derivedBaseTileW : baseTileW,
+    derivedBaseTileH: Number.isFinite(derivedBaseTileH) ? derivedBaseTileH : baseTileH,
     baseTileW,
     baseTileH,
     effectiveTileW: tileW,
@@ -157,8 +216,14 @@ export async function sliceImage(opts) {
  * @typedef {object} SliceManifestEntry
  * @property {string}   baseName          Base name of the source image.
  * @property {string}   srcPath           Source image path.
+ * @property {number}   sourceScale       Source scale factor (alias of srcScale).
+ * @property {number}   targetScale       Target scale factor (alias of tgtScale).
  * @property {number}   srcScale          Source scale factor.
  * @property {number}   tgtScale          Target scale factor.
+ * @property {number}   derivedBaseTileW  Base/reference tile width derived from
+ *                                        source tile + scale conversion.
+ * @property {number}   derivedBaseTileH  Base/reference tile height derived from
+ *                                        source tile + scale conversion.
  * @property {number}   baseTileW         Logical tile width.
  * @property {number}   baseTileH         Logical tile height.
  * @property {number}   effectiveTileW    Pixel tile width in source image.
