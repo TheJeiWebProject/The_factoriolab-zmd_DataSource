@@ -13,10 +13,10 @@ test('workflow_dispatch defines force_update boolean input with default false', 
   assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data even when upstream commit is unchanged'"), 'Missing force_update description');
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+type:\s+boolean\n/);
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+default:\s+false\n/);
+  assert.match(workflow, /FORCE_UPDATE_INPUT_FROM_DISPATCH:\s+\$\{\{\s*github\.event_name == 'workflow_dispatch' && inputs\.force_update \|\| ''\s*\}\}/);
 });
 
-test('force_update affects build gate and logs decision context', () => {
-  assert.match(workflow, /FORCE_UPDATE_INPUT_FROM_DISPATCH:\s+\$\{\{\s*github\.event_name == 'workflow_dispatch' && inputs\.force_update \|\| ''\s*\}\}/);
+test('force_update input is wired through env vars into build decision and logs', () => {
   assert.match(workflow, /if \[ "\$FORCE_UPDATE_INPUT_FROM_DISPATCH" = 'true' \]; then/);
   assert.match(workflow, /if \[ "\$force_update_input" = 'true' \]/);
   assert.match(workflow, /echo "should_build=\$should_build" >> "\$GITHUB_OUTPUT"/);
