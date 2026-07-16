@@ -15,11 +15,12 @@ test('workflow_dispatch defines force_update boolean input with default false', 
 });
 
 test('force_update affects build gate and logs decision context', () => {
-  assert.match(workflow, /FORCE_UPDATE_INPUT:\s+\$\{\{\s*github\.event_name == 'workflow_dispatch' && inputs\.force_update \|\| false\s*\}\}/);
-  assert.match(workflow, /if \[ "\$EVENT_NAME" = 'workflow_dispatch' \] && \[ "\$FORCE_UPDATE_INPUT" = 'true' \]/);
+  assert.match(workflow, /FORCE_UPDATE_INPUT_RAW:\s+\$\{\{\s*github\.event_name == 'workflow_dispatch'/);
+  assert.match(workflow, /if \[ "\$FORCE_UPDATE_INPUT_RAW" = 'true' \]; then/);
+  assert.match(workflow, /if \[ "\$EVENT_NAME" = 'workflow_dispatch' \] && \[ "\$force_update_input" = 'true' \]/);
   assert.match(workflow, /echo "should_build=\$should_build" >> "\$GITHUB_OUTPUT"/);
   assert.match(workflow, /if:\s+steps\.check\.outputs\.should_build == 'true'/);
   assert.match(workflow, /echo "Workflow event: \$EVENT_NAME"/);
-  assert.match(workflow, /echo "force_update: \$FORCE_UPDATE_INPUT"/);
+  assert.match(workflow, /echo "force_update: \$force_update_input"/);
   assert.match(workflow, /echo "decision reason: \$reason"/);
 });

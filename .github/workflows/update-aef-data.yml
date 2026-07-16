@@ -74,11 +74,15 @@ jobs:
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
-          FORCE_UPDATE_INPUT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || false }}
+          FORCE_UPDATE_INPUT_RAW: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || '' }}
         run: |
           set -euo pipefail
           current="${{ steps.upstream.outputs.sha }}"
           previous="${{ steps.previous.outputs.sha }}"
+          force_update_input='false'
+          if [ "$FORCE_UPDATE_INPUT_RAW" = 'true' ]; then
+            force_update_input='true'
+          fi
 
           if [ -n "$current" ] && [ "$current" = "$previous" ]; then
             changed='false'
@@ -90,7 +94,7 @@ jobs:
           force_build='false'
           reason='default: no build'
 
-          if [ "$EVENT_NAME" = 'workflow_dispatch' ] && [ "$FORCE_UPDATE_INPUT" = 'true' ]; then
+          if [ "$EVENT_NAME" = 'workflow_dispatch' ] && [ "$force_update_input" = 'true' ]; then
             should_build='true'
             force_build='true'
             reason='manual force_update=true (ignore unchanged upstream commit)'
@@ -107,7 +111,7 @@ jobs:
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
 
           echo "Workflow event: $EVENT_NAME"
-          echo "force_update: $FORCE_UPDATE_INPUT"
+          echo "force_update: $force_update_input"
           echo "upstream commit: ${current:-<empty>}"
           echo "previous commit: ${previous:-<empty>}"
           echo "upstream changed: $changed"
