@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { sliceImage, effectiveTileSize } from './slice-images.mjs';
+import sharp from 'sharp';
+import { sliceImage, inferSourceTileSize } from './slice-images.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -283,7 +284,9 @@ Options:
   --asset-base-url <u>   Optional URL/path prefix for pack assets (default: relative: icons.webp)
   --adaptive-split       Enable adaptive image slicing (splits sprite sheet into tiles)
   --no-adaptive-split    Disable adaptive image slicing (default: ${DEFAULT_ADAPTIVE_SPLIT})
-  --base-tile <n>        Base tile size in pixels (default: ${DEFAULT_BASE_TILE})
+  --base-tile <n>        Optional override for logical tile size at target scale.
+                         If omitted, the build derives tile size from source image dimensions
+                         and source scale metadata to avoid fixed-size assumptions.
   --target-scale <n>     Target output scale (default: ${DEFAULT_TARGET_SCALE})
   --edge-policy <p>      Edge tile policy: crop|pad (default: ${DEFAULT_EDGE_POLICY})
   --help, -h             Show help
@@ -298,10 +301,20 @@ Options:
   const displayName = cli.displayName ?? DEFAULT_DISPLAY_NAME;
   const assetBaseUrl = cli.assetBaseUrl ?? DEFAULT_ASSET_BASE_URL;
   const adaptiveSplit = cli.adaptiveSplit ?? DEFAULT_ADAPTIVE_SPLIT;
-  const baseTile = cli.baseTile ?? DEFAULT_BASE_TILE;
+  // `baseTileOverride` is optional: adaptive mode derives base tile from source
+  // image dimensions + scale metadata unless this override is explicitly set.
+  const baseTileOverride = Number.isFinite(cli.baseTile) && cli.baseTile > 0 ? cli.baseTile : null;
+  const legacyBaseTile = cli.baseTile ?? DEFAULT_BASE_TILE;
   const targetScale = cli.targetScale ?? DEFAULT_TARGET_SCALE;
   const edgePolicy = cli.edgePolicy ?? DEFAULT_EDGE_POLICY;
   const iconSpriteUrl = buildAssetUrl(assetBaseUrl, 'icons.webp');
+
+  if (!Number.isFinite(targetScale) || targetScale <= 0) {
+    throw new Error(`Invalid --target-scale value: ${targetScale}`);
+  }
+  if (!['crop', 'pad'].includes(edgePolicy)) {
+    throw new Error(`Invalid --edge-policy value: ${edgePolicy}. Expected crop|pad`);
+  }
 
   if (!fs.existsSync(source)) {
     throw new Error(`Source file not found: ${source}`);
@@ -340,6 +353,85 @@ Options:
         fuelCategory: it.fuelCategory || 'chemical',
       });
     }
+  }
+
+  const iconSheetSrc = path.resolve(path.dirname(source), 'icons.webp');
+  const iconSheetDst = path.join(outDir, 'icons.webp');
+  let sliceEntry = null;
+  if (fs.existsSync(iconSheetSrc)) {
+    ensureDir(outDir);
+    fs.copyFileSync(iconSheetSrc, iconSheetDst);
+  }
+
+  if (adaptiveSplit) {
+    if (!fs.existsSync(iconSheetSrc)) {
+      throw new Error(`Adaptive split enabled but icon sheet is missing: ${iconSheetSrc}`);
+    }
+
+    const iconMeta = await sharp(iconSheetSrc).metadata();
+    if (!iconMeta.width || !iconMeta.height) {
+      throw new Error(`Unable to read icon sheet dimensions from: ${iconSheetSrc}`);
+    }
+
+    const iconPositions = iconsRaw.map((icon) => parseCssPosition(icon.position ?? '0px 0px'));
+    const inferredSourceTile = inferSourceTileSize({
+      imageW: iconMeta.width,
+      imageH: iconMeta.height,
+      iconPositions,
+    });
+    const derivedBaseTileW = baseTileOverride ?? Math.round(inferredSourceTile.tileW * targetScale / srcScale);
+    const derivedBaseTileH = baseTileOverride ?? Math.round(inferredSourceTile.tileH * targetScale / srcScale);
+    if (derivedBaseTileW !== derivedBaseTileH) {
+      throw new Error(
+        `Non-square derived tile size is not supported by iconSprite.size: ` +
+        `${derivedBaseTileW}x${derivedBaseTileH}. Please set --base-tile override if needed.`,
+      );
+    }
+
+    const tilesDir = path.join(outDir, 'tiles');
+    sliceEntry = await sliceImage({
+      srcPath: iconSheetSrc,
+      outDir: tilesDir,
+      baseName: 'icons',
+      sourceImageId: 'icons',
+      srcScale,
+      tgtScale: targetScale,
+      sourceTileW: inferredSourceTile.tileW,
+      sourceTileH: inferredSourceTile.tileH,
+      derivedBaseTileW,
+      derivedBaseTileH,
+      baseTileW: derivedBaseTileW,
+      baseTileH: derivedBaseTileH,
+      edgePolicy,
+    });
+    writeJson(path.join(outDir, 'image-slice-manifest.json'), sliceEntry);
+    console.log('[adaptive-split] effective config:', JSON.stringify({
+      enabled: true,
+      sourceScale: srcScale,
+      targetScale,
+      edgePolicy,
+      imageW: iconMeta.width,
+      imageH: iconMeta.height,
+      sourceTileW: inferredSourceTile.tileW,
+      sourceTileH: inferredSourceTile.tileH,
+      inferredFrom: inferredSourceTile.method,
+      derivedBaseTileW,
+      derivedBaseTileH,
+      baseTileOverride,
+      manifestPath: path.join(outDir, 'image-slice-manifest.json'),
+    }));
+    console.log(
+      `[adaptive-split] sliced images=1 tiles=${sliceEntry.tiles.length} ` +
+      `grid=${sliceEntry.cols}x${sliceEntry.rows} output=${tilesDir}`,
+    );
+  } else {
+    console.log('[adaptive-split] effective config:', JSON.stringify({
+      enabled: false,
+      sourceScale: srcScale,
+      targetScale,
+      edgePolicy,
+      baseTileFallback: legacyBaseTile,
+    }));
   }
 
   const items = itemsRaw.map((it) => {
@@ -397,10 +489,13 @@ Options:
     let iconSprite;
     if (icon) {
       if (adaptiveSplit) {
-        // Compute which tile this icon falls in within the sprite sheet.
-        // Uses effectiveTileSize to stay consistent with the slicing logic.
-        const effW = effectiveTileSize(baseTile, srcScale, targetScale);
-        const effH = effectiveTileSize(baseTile, srcScale, targetScale);
+        if (!sliceEntry) {
+          throw new Error('Adaptive split is enabled but no slice manifest entry was produced.');
+        }
+        // Compute which tile this icon falls in within the sprite sheet using
+        // the effective tile size from the generated slice manifest.
+        const effW = sliceEntry.effectiveTileW;
+        const effH = sliceEntry.effectiveTileH;
         const { x, y } = parseCssPosition(icon.position ?? '0px 0px');
         const tileCol = Math.floor(x / effW);
         const tileRow = Math.floor(y / effH);
@@ -410,14 +505,14 @@ Options:
           // Each tile contains exactly one icon at the top-left corner (0, 0).
           position: '0px 0px',
           ...(icon.color ? { color: icon.color } : {}),
-          size: baseTile,
+          size: Math.round(sliceEntry.derivedBaseTileW),
         };
       } else {
         iconSprite = {
           url: iconSpriteUrl,
           position: icon.position ?? '0px 0px',
           ...(icon.color ? { color: icon.color } : {}),
-          size: baseTile,
+          size: legacyBaseTile,
         };
       }
     }
@@ -552,31 +647,6 @@ Options:
   }
 
   ensureDir(outDir);
-  const iconSheetSrc = path.resolve(path.dirname(source), 'icons.webp');
-  const iconSheetDst = path.join(outDir, 'icons.webp');
-  if (fs.existsSync(iconSheetSrc)) {
-    fs.copyFileSync(iconSheetSrc, iconSheetDst);
-  }
-
-  // Adaptive image slicing
-  if (adaptiveSplit && fs.existsSync(iconSheetSrc)) {
-    const tilesDir = path.join(outDir, 'tiles');
-    const sliceEntry = await sliceImage({
-      srcPath: iconSheetSrc,
-      outDir: tilesDir,
-      baseName: 'icons',
-      srcScale,
-      tgtScale: targetScale,
-      baseTileW: baseTile,
-      baseTileH: baseTile,
-      edgePolicy,
-    });
-    writeJson(path.join(outDir, 'image-slice-manifest.json'), sliceEntry);
-    console.log(
-      `Sliced icons.webp into ${sliceEntry.tiles.length} tiles ` +
-      `(${sliceEntry.cols}×${sliceEntry.rows}) in ${tilesDir}`,
-    );
-  }
 
   writeJson(path.join(outDir, 'manifest.json'), {
     packId,

@@ -4,6 +4,30 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      adaptive_split:
+        description: 'Enable adaptive image slicing'
+        required: false
+        type: boolean
+        default: true
+      target_scale:
+        description: 'Target scale used for source->logical tile conversion'
+        required: false
+        type: number
+        default: 1
+      edge_policy:
+        description: 'Edge tile policy'
+        required: false
+        type: choice
+        options:
+          - crop
+          - pad
+        default: crop
+      base_tile:
+        description: 'Optional logical tile override at target scale (empty = auto-derived)'
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -71,10 +95,66 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         env:
           UPSTREAM_COMMIT: ${{ steps.upstream.outputs.sha }}
-        run: >
-          node src/build-aef-pack.mjs
-          --source upstream/src/data/aef/data.json
-          --out-dir dist
+          INPUT_ADAPTIVE_SPLIT: ${{ github.event_name == 'workflow_dispatch' && (inputs.adaptive_split && 'true' || 'false') || 'true' }}
+          INPUT_TARGET_SCALE: ${{ github.event_name == 'workflow_dispatch' && inputs.target_scale || '1' }}
+          INPUT_EDGE_POLICY: ${{ github.event_name == 'workflow_dispatch' && inputs.edge_policy || 'crop' }}
+          INPUT_BASE_TILE: ${{ github.event_name == 'workflow_dispatch' && inputs.base_tile || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(
+            "--source" "upstream/src/data/aef/data.json"
+            "--out-dir" "dist"
+            "--target-scale" "${INPUT_TARGET_SCALE}"
+            "--edge-policy" "${INPUT_EDGE_POLICY}"
+          )
+          if [ "${INPUT_ADAPTIVE_SPLIT}" = "true" ]; then
+            args+=("--adaptive-split")
+          else
+            args+=("--no-adaptive-split")
+          fi
+          if [ -n "${INPUT_BASE_TILE}" ]; then
+            args+=("--base-tile" "${INPUT_BASE_TILE}")
+          fi
+
+          echo "Build config: adaptive_split=${INPUT_ADAPTIVE_SPLIT} target_scale=${INPUT_TARGET_SCALE} edge_policy=${INPUT_EDGE_POLICY} base_tile=${INPUT_BASE_TILE:-<auto>}"
+          node src/build-aef-pack.mjs "${args[@]}"
+
+      - name: Validate adaptive split outputs
+        if: steps.check.outputs.changed == 'true' && (github.event_name != 'workflow_dispatch' || inputs.adaptive_split == true)
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+
+          const outDir = path.resolve('dist');
+          const manifestPath = path.join(outDir, 'image-slice-manifest.json');
+          if (!fs.existsSync(manifestPath)) {
+            throw new Error(`adaptive split enabled but manifest missing: ${manifestPath}`);
+          }
+          const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+          if (!Array.isArray(manifest.tiles) || manifest.tiles.length === 0) {
+            throw new Error('adaptive split enabled but no tiles recorded in manifest');
+          }
+          const firstTile = manifest.tiles[0];
+          const firstTilePath = path.join(outDir, 'tiles', firstTile.filename);
+          if (!fs.existsSync(firstTilePath)) {
+            throw new Error(`manifest tile file missing: ${firstTilePath}`);
+          }
+          const items = JSON.parse(fs.readFileSync(path.join(outDir, 'items.json'), 'utf8'));
+          const iconSpriteItems = items.filter((item) => item.iconSprite && item.iconSprite.url);
+          const unsliced = iconSpriteItems.filter((item) => item.iconSprite.url.endsWith('icons.webp'));
+          if (unsliced.length > 0) {
+            throw new Error(`adaptive split enabled but ${unsliced.length} items still reference icons.webp`);
+          }
+          const tileReferenced = iconSpriteItems.filter((item) => item.iconSprite.url.includes('/tiles/') || item.iconSprite.url.startsWith('tiles/'));
+          if (tileReferenced.length === 0) {
+            throw new Error('adaptive split enabled but no item references tile assets');
+          }
+          console.log(`Adaptive split validation passed: tiles=${manifest.tiles.length}, tileReferences=${tileReferenced.length}, manifest=${manifestPath}`);
+          NODE
 
       - name: Update upstream snapshot
         if: steps.check.outputs.changed == 'true'

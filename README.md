@@ -80,7 +80,7 @@ When enabled:
 | Option | Default | Description |
 |---|---|---|
 | `--adaptive-split` / `--no-adaptive-split` | disabled | Enable or disable tile splitting. |
-| `--base-tile <n>` | `64` | Logical tile size in pixels used as the base for scale calculation. |
+| `--base-tile <n>` | auto-derived | Optional override for logical tile size at target scale. By default, the converter derives base tile from source image dimensions + icon positions + source scale metadata. |
 | `--target-scale <n>` | `1` | Desired output scale factor. |
 | `--edge-policy crop\|pad` | `crop` | How to handle tiles at the right/bottom edges when the image is not an exact multiple of the tile size. `crop` keeps only the real pixel area; `pad` extends the tile to full size with transparent pixels. |
 
@@ -94,16 +94,19 @@ level to indicate that each icon in the sprite sheet occupies
 { "iconScale": 2, "icons": [ ... ] }
 ```
 
-The effective pixel tile size is then computed as:
+The converter now infers source-tile size from the source sprite sheet dimensions and icon position grid, then derives logical base tile by scale conversion:
 
 ```
-effectiveTileW = round(baseTile * iconScale / targetScale)
-effectiveTileH = round(baseTile * iconScale / targetScale)
+sourceTileW     = inferred from (imageW, icon positions)
+sourceTileH     = inferred from (imageH, icon positions)
+derivedBaseTile = sourceTile * targetScale / iconScale
+effectiveTileW  = sourceTileW
+effectiveTileH  = sourceTileH
 cols            = ceil(imageW / effectiveTileW)
 rows            = ceil(imageH / effectiveTileH)
 ```
 
-If `iconScale` is absent the build defaults to `1`.
+`--base-tile` is only an explicit override. If `iconScale` is absent the build defaults to `1`.
 
 ## Tests
 
@@ -127,7 +130,19 @@ It will:
 3. Copy upstream `LICENSE` into `UPSTREAM_LICENSE`.
 4. Rebuild `dist/`.
 5. Update `UPSTREAM_SNAPSHOT.json`.
-6. Commit and push if there are changes.
+6. Validate adaptive split outputs (manifest, tile files, and item references) when slicing is enabled.
+7. Commit and push if there are changes.
+
+### Manual workflow inputs (`update-aef-data.yml`)
+
+- `adaptive_split` (boolean, default `true`)
+- `target_scale` (number, default `1`)
+- `edge_policy` (`crop` or `pad`, default `crop`)
+- `base_tile` (string, optional override; leave empty for auto-derive)
+
+The workflow prints the effective config, sliced image/tile counts, and manifest path.
+If `adaptive_split=true` but tiles/manifest are not produced, the workflow fails instead
+of silently falling back to `icons.webp`.
 
 By default, `iconSprite.url` is generated as relative path `icons.webp`.
 If needed, you can override with `--asset-base-url`.
