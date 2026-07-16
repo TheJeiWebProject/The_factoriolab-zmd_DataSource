@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { sliceImage } from './slice-images.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,6 +13,12 @@ const DEFAULT_PACK_ID = 'aef';
 const DEFAULT_GAME_ID = 'aef';
 const DEFAULT_DISPLAY_NAME = 'Arknights:Endfield';
 const DEFAULT_ASSET_BASE_URL = '';
+
+// Adaptive image slicing defaults
+const DEFAULT_ADAPTIVE_SPLIT = false;
+const DEFAULT_BASE_TILE = 64;
+const DEFAULT_TARGET_SCALE = 1;
+const DEFAULT_EDGE_POLICY = 'crop';
 
 // Default values for machine properties when not specified
 const DEFAULT_MACHINE_SPEED = 1;      // 1x speed
@@ -95,6 +102,29 @@ function parseCliArgs(argv) {
       i += 1;
       continue;
     }
+    if (token === '--adaptive-split') {
+      out.adaptiveSplit = true;
+      continue;
+    }
+    if (token === '--no-adaptive-split') {
+      out.adaptiveSplit = false;
+      continue;
+    }
+    if (token === '--base-tile' && argv[i + 1]) {
+      out.baseTile = parseInt(argv[i + 1], 10);
+      i += 1;
+      continue;
+    }
+    if (token === '--target-scale' && argv[i + 1]) {
+      out.targetScale = parseFloat(argv[i + 1]);
+      i += 1;
+      continue;
+    }
+    if (token === '--edge-policy' && argv[i + 1]) {
+      out.edgePolicy = argv[i + 1];
+      i += 1;
+      continue;
+    }
     throw new Error(`Unknown argument: ${token}`);
   }
   return out;
@@ -108,7 +138,7 @@ function buildAssetUrl(baseUrl, fileName) {
   return `${base.replace(/\/+$/, '')}/${fileName}`;
 }
 
-function writePagesServiceFiles(outDir, displayName, packId, version) {
+function writePagesServiceFiles(outDir, displayName, packId, version, hasSliceManifest = false) {
   // Prevent GitHub Pages from excluding underscore-prefixed paths.
   fs.writeFileSync(path.join(outDir, '.nojekyll'), '', 'utf8');
 
@@ -170,6 +200,7 @@ function writePagesServiceFiles(outDir, displayName, packId, version) {
     <li><a href="recipeTypes.json">recipeTypes.json</a></li>
     <li><a href="recipes.json">recipes.json</a></li>
     <li><a href="source-meta.json">source-meta.json</a></li>
+    ${hasSliceManifest ? '<li><a href="image-slice-manifest.json">image-slice-manifest.json</a></li>' : ''}
   </ul>
 </body>
 </html>`;
@@ -225,7 +256,19 @@ function buildSlots(maxIn, maxOut, maxCat) {
   return slots;
 }
 
-function main() {
+
+/**
+ * Parse a CSS position string like "-576px -256px" into {x, y} pixel values.
+ * Values are the absolute pixel offsets (negated).
+ */
+function parseCssPosition(position) {
+  if (!position || position === '0px 0px') return { x: 0, y: 0 };
+  const match = position.match(/^(-?\d+)px\s+(-?\d+)px$/);
+  if (!match) return { x: 0, y: 0 };
+  return { x: Math.abs(parseInt(match[1], 10)), y: Math.abs(parseInt(match[2], 10)) };
+}
+
+async function main() {
   const cli = parseCliArgs(process.argv.slice(2));
   if (cli.help) {
     console.log(`Usage:
@@ -238,6 +281,11 @@ Options:
   --game-id <id>         Manifest gameId (default: ${DEFAULT_GAME_ID})
   --display-name <name>  Manifest displayName (default: "${DEFAULT_DISPLAY_NAME}")
   --asset-base-url <u>   Optional URL/path prefix for pack assets (default: relative: icons.webp)
+  --adaptive-split       Enable adaptive image slicing (splits sprite sheet into tiles)
+  --no-adaptive-split    Disable adaptive image slicing (default: ${DEFAULT_ADAPTIVE_SPLIT})
+  --base-tile <n>        Base tile size in pixels (default: ${DEFAULT_BASE_TILE})
+  --target-scale <n>     Target output scale (default: ${DEFAULT_TARGET_SCALE})
+  --edge-policy <p>      Edge tile policy: crop|pad (default: ${DEFAULT_EDGE_POLICY})
   --help, -h             Show help
 `);
     return;
@@ -249,6 +297,10 @@ Options:
   const gameId = cli.gameId ?? DEFAULT_GAME_ID;
   const displayName = cli.displayName ?? DEFAULT_DISPLAY_NAME;
   const assetBaseUrl = cli.assetBaseUrl ?? DEFAULT_ASSET_BASE_URL;
+  const adaptiveSplit = cli.adaptiveSplit ?? DEFAULT_ADAPTIVE_SPLIT;
+  const baseTile = cli.baseTile ?? DEFAULT_BASE_TILE;
+  const targetScale = cli.targetScale ?? DEFAULT_TARGET_SCALE;
+  const edgePolicy = cli.edgePolicy ?? DEFAULT_EDGE_POLICY;
   const iconSpriteUrl = buildAssetUrl(assetBaseUrl, 'icons.webp');
 
   if (!fs.existsSync(source)) {
@@ -258,6 +310,8 @@ Options:
   const data = readJson(source);
 
   const version = data?.version?.['arknights-endfield'] ?? 'unknown';
+  // Source scale: read from data.iconScale (defaults to 1 if not set)
+  const srcScale = isFiniteNumber(data?.iconScale) && data.iconScale > 0 ? data.iconScale : 1;
   const iconsRaw = Array.isArray(data.icons) ? data.icons : [];
   const iconById = new Map(iconsRaw.map((ic) => [ic.id, ic]));
   const categories = Array.isArray(data.categories) ? data.categories : [];
@@ -340,19 +394,36 @@ Options:
       };
     }
 
+    let iconSprite;
+    if (icon) {
+      if (adaptiveSplit) {
+        // Compute which tile this icon falls in within the sprite sheet
+        const effW = Math.round(baseTile * srcScale / targetScale);
+        const effH = Math.round(baseTile * srcScale / targetScale);
+        const { x, y } = parseCssPosition(icon.position ?? '0px 0px');
+        const tileCol = Math.floor(x / effW);
+        const tileRow = Math.floor(y / effH);
+        const tileFile = `tiles/icons__s${srcScale}__r${tileRow}_c${tileCol}.png`;
+        iconSprite = {
+          url: buildAssetUrl(assetBaseUrl, tileFile),
+          position: '0px 0px',
+          ...(icon.color ? { color: icon.color } : {}),
+          size: baseTile,
+        };
+      } else {
+        iconSprite = {
+          url: iconSpriteUrl,
+          position: icon.position ?? '0px 0px',
+          ...(icon.color ? { color: icon.color } : {}),
+          size: 64,
+        };
+      }
+    }
+
     return {
       key: { id: namespacedItemId(it.id) },
       name: it.name ?? it.id,
-      ...(icon
-        ? {
-          iconSprite: {
-            url: iconSpriteUrl,
-            position: icon.position ?? '0px 0px',
-            ...(icon.color ? { color: icon.color } : {}),
-            size: 64,
-          },
-        }
-        : {}),
+      ...(iconSprite ? { iconSprite } : {}),
       ...(tags.length ? { tags } : {}),
       ...extraData,
     };
@@ -485,6 +556,26 @@ Options:
     fs.copyFileSync(iconSheetSrc, iconSheetDst);
   }
 
+  // Adaptive image slicing
+  if (adaptiveSplit && fs.existsSync(iconSheetSrc)) {
+    const tilesDir = path.join(outDir, 'tiles');
+    const sliceEntry = await sliceImage({
+      srcPath: iconSheetSrc,
+      outDir: tilesDir,
+      baseName: 'icons',
+      srcScale,
+      tgtScale: targetScale,
+      baseTileW: baseTile,
+      baseTileH: baseTile,
+      edgePolicy,
+    });
+    writeJson(path.join(outDir, 'image-slice-manifest.json'), sliceEntry);
+    console.log(
+      `Sliced icons.webp into ${sliceEntry.tiles.length} tiles ` +
+      `(${sliceEntry.cols}×${sliceEntry.rows}) in ${tilesDir}`,
+    );
+  }
+
   writeJson(path.join(outDir, 'manifest.json'), {
     packId,
     gameId,
@@ -523,9 +614,9 @@ Options:
     upstreamCommit: process.env.UPSTREAM_COMMIT ?? null,
     generatedAt: new Date().toISOString(),
   });
-  writePagesServiceFiles(outDir, displayName, packId, version);
+  writePagesServiceFiles(outDir, displayName, packId, version, adaptiveSplit);
 
   console.log(`Wrote AEF pack to ${outDir}`);
 }
 
-main();
+main().catch((err) => { console.error(err); process.exit(1); });

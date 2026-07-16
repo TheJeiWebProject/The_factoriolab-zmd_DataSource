@@ -6,9 +6,13 @@
   "type": "module",
   "scripts": {
     "build": "node src/build-aef-pack.mjs",
-    "build:local": "node src/build-aef-pack.mjs --source ../factoriolab/src/data/aef/data.json --out-dir dist"
+    "build:local": "node src/build-aef-pack.mjs --source ../factoriolab/src/data/aef/data.json --out-dir dist",
+    "test": "node --test src/slice-images.test.mjs"
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
   }
 }
