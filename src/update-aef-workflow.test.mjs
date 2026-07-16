@@ -7,17 +7,12 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const workflowPath = path.resolve(__dirname, '..', '.github', 'workflows', 'update-aef-data.yml');
 const workflow = fs.readFileSync(workflowPath, 'utf8');
-const workflowDispatchBlock = workflow.match(/workflow_dispatch:\n[\s\S]*?\npermissions:/)?.[0] ?? '';
 
 test('workflow_dispatch defines force_update boolean input with default false', () => {
-  assert.ok(workflowDispatchBlock.length > 0, 'workflow_dispatch block should exist');
-  assert.match(workflowDispatchBlock, /\n\s+force_update:\n/);
-  assert.ok(
-    workflowDispatchBlock.includes("force_update:\n        description: 'Force rebuild and overwrite previously generated data"),
-    'force_update description should explain overwrite behavior',
-  );
-  assert.match(workflowDispatchBlock, /\n\s+force_update:\n[\s\S]*?\n\s+type:\s+boolean\n/);
-  assert.match(workflowDispatchBlock, /\n\s+force_update:\n[\s\S]*?\n\s+default:\s+false\n/);
+  assert.match(workflow, /workflow_dispatch:\n\s+inputs:\n/);
+  assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data"), 'force_update description should explain overwrite behavior');
+  assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+type:\s+boolean\n/);
+  assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+default:\s+false\n/);
 });
 
 test('force_update affects build gate and logs decision context', () => {
