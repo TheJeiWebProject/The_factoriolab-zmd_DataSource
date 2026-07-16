@@ -10,7 +10,7 @@ const workflow = fs.readFileSync(workflowPath, 'utf8');
 
 test('workflow_dispatch defines force_update boolean input with default false', () => {
   assert.match(workflow, /workflow_dispatch:\n\s+inputs:\n/);
-  assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data"), 'force_update description should explain overwrite behavior');
+  assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data even when upstream commit is unchanged'"), 'force_update description should explain overwrite behavior');
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+type:\s+boolean\n/);
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+default:\s+false\n/);
 });
@@ -18,7 +18,7 @@ test('workflow_dispatch defines force_update boolean input with default false', 
 test('force_update affects build gate and logs decision context', () => {
   assert.match(workflow, /FORCE_UPDATE_INPUT_FROM_DISPATCH:\s+\$\{\{\s*github\.event_name == 'workflow_dispatch' && inputs\.force_update \|\| ''\s*\}\}/);
   assert.match(workflow, /if \[ "\$FORCE_UPDATE_INPUT_FROM_DISPATCH" = 'true' \]; then/);
-  assert.match(workflow, /if \[ "\$EVENT_NAME" = 'workflow_dispatch' \] && \[ "\$force_update_input" = 'true' \]/);
+  assert.match(workflow, /if \[ "\$force_update_input" = 'true' \]/);
   assert.match(workflow, /echo "should_build=\$should_build" >> "\$GITHUB_OUTPUT"/);
   assert.match(workflow, /if:\s+steps\.check\.outputs\.should_build == 'true'/);
   assert.match(workflow, /echo "Workflow event: \$EVENT_NAME"/);

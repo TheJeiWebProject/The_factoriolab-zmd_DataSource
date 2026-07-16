@@ -94,7 +94,7 @@ jobs:
           force_build='false'
           reason='no changes and no force override'
 
-          if [ "$EVENT_NAME" = 'workflow_dispatch' ] && [ "$force_update_input" = 'true' ]; then
+          if [ "$force_update_input" = 'true' ]; then
             should_build='true'
             force_build='true'
             reason='manual force_update=true (ignore unchanged upstream commit)'
@@ -216,7 +216,7 @@ jobs:
           set -euo pipefail
           echo "Skipping build and commit."
           echo "Workflow event: ${{ github.event_name }}"
-          echo "force_update: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || false }}"
+          echo "force_update: ${{ steps.check.outputs.force_build }}"
           echo "upstream commit: ${{ steps.upstream.outputs.sha }}"
           echo "previous commit: ${{ steps.previous.outputs.sha }}"
           echo "force build: ${{ steps.check.outputs.force_build }}"
