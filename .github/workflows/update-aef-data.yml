@@ -216,10 +216,10 @@ jobs:
           set -euo pipefail
           echo "Skipping build and commit."
           echo "Workflow event: ${{ github.event_name }}"
-          echo "force_update: ${{ steps.check.outputs.force_build }}"
+          echo "force_update_input: ${{ github.event_name == 'workflow_dispatch' && inputs.force_update || false }}"
           echo "upstream commit: ${{ steps.upstream.outputs.sha }}"
           echo "previous commit: ${{ steps.previous.outputs.sha }}"
-          echo "force build: ${{ steps.check.outputs.force_build }}"
+          echo "force_build: ${{ steps.check.outputs.force_build }}"
           echo "decision reason: ${{ steps.check.outputs.reason }}"
 
       - name: Commit and push changes

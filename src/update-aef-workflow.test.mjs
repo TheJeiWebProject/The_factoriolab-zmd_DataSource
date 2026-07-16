@@ -10,7 +10,7 @@ const workflow = fs.readFileSync(workflowPath, 'utf8');
 
 test('workflow_dispatch defines force_update boolean input with default false', () => {
   assert.match(workflow, /workflow_dispatch:\n\s+inputs:\n/);
-  assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data even when upstream commit is unchanged'"), 'force_update description should explain overwrite behavior');
+  assert.ok(workflow.includes("description: 'Force rebuild and overwrite previously generated data even when upstream commit is unchanged'"), 'Missing force_update description');
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+type:\s+boolean\n/);
   assert.match(workflow, /workflow_dispatch:\n[\s\S]*?\n\s+force_update:\n[\s\S]*?\n\s+default:\s+false\n/);
 });
