@@ -1868,9 +1868,9 @@
     },
     "name": "蓝铁瓶(芽针溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r11_c8.png",
+      "url": "tiles/icons__s1__r11_c9.png",
       "position": "0px 0px",
-      "color": "#6d8f79",
+      "color": "#6c8d7a",
       "size": 64
     },
     "tags": [
@@ -1884,9 +1884,9 @@
     },
     "name": "蓝铁瓶(锦草溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r11_c7.png",
+      "url": "tiles/icons__s1__r11_c8.png",
       "position": "0px 0px",
-      "color": "#7a9299",
+      "color": "#799399",
       "size": 64
     },
     "tags": [
