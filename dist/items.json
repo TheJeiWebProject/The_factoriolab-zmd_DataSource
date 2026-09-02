@@ -5,9 +5,9 @@
     },
     "name": "荞花种子",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c13.png",
+      "url": "tiles/icons__s1__r5_c8.png",
       "position": "0px 0px",
-      "color": "#9f6147",
+      "color": "#9c6246",
       "size": 64
     },
     "tags": [
@@ -20,9 +20,9 @@
     },
     "name": "荞花",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c5.png",
+      "url": "tiles/icons__s1__r5_c0.png",
       "position": "0px 0px",
-      "color": "#615926",
+      "color": "#615b24",
       "size": 64
     },
     "tags": [
@@ -35,9 +35,9 @@
     },
     "name": "荞花粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c10.png",
+      "url": "tiles/icons__s1__r5_c5.png",
       "position": "0px 0px",
-      "color": "#ad6e65",
+      "color": "#ac6d66",
       "size": 64
     },
     "tags": [
@@ -50,9 +50,9 @@
     },
     "name": "细磨荞花粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c8.png",
+      "url": "tiles/icons__s1__r5_c3.png",
       "position": "0px 0px",
-      "color": "#886263",
+      "color": "#8a6363",
       "size": 64
     },
     "tags": [
@@ -65,9 +65,9 @@
     },
     "name": "砂叶种子",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c15.png",
+      "url": "tiles/icons__s1__r5_c10.png",
       "position": "0px 0px",
-      "color": "#866b13",
+      "color": "#846911",
       "size": 64
     },
     "tags": [
@@ -80,9 +80,9 @@
     },
     "name": "砂叶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c7.png",
+      "url": "tiles/icons__s1__r5_c2.png",
       "position": "0px 0px",
-      "color": "#92742b",
+      "color": "#927529",
       "size": 64
     },
     "tags": [
@@ -95,9 +95,9 @@
     },
     "name": "砂叶粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c12.png",
+      "url": "tiles/icons__s1__r5_c7.png",
       "position": "0px 0px",
-      "color": "#9d7208",
+      "color": "#9e700a",
       "size": 64
     },
     "tags": [
@@ -110,9 +110,9 @@
     },
     "name": "锦草种子",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c3.png",
+      "url": "tiles/icons__s1__r4_c14.png",
       "position": "0px 0px",
-      "color": "#969c77",
+      "color": "#959c75",
       "size": 64
     },
     "tags": [
@@ -125,9 +125,9 @@
     },
     "name": "锦草",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c15.png",
+      "url": "tiles/icons__s1__r4_c10.png",
       "position": "0px 0px",
-      "color": "#7a8760",
+      "color": "#798661",
       "size": 64
     },
     "tags": [
@@ -140,9 +140,9 @@
     },
     "name": "锦草粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c1.png",
+      "url": "tiles/icons__s1__r4_c12.png",
       "position": "0px 0px",
-      "color": "#b8bca2",
+      "color": "#b9bea0",
       "size": 64
     },
     "tags": [
@@ -155,9 +155,9 @@
     },
     "name": "锦草溶液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c1.png",
+      "url": "tiles/icons__s1__r3_c12.png",
       "position": "0px 0px",
-      "color": "#e4f5e2",
+      "color": "#e5f6e2",
       "size": 64
     },
     "tags": [
@@ -170,9 +170,9 @@
     },
     "name": "碳块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c7.png",
+      "url": "tiles/icons__s1__r1_c2.png",
       "position": "0px 0px",
-      "color": "#3e404a",
+      "color": "#3f4049",
       "size": 64
     },
     "tags": [
@@ -185,9 +185,9 @@
     },
     "name": "碳粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c8.png",
+      "url": "tiles/icons__s1__r1_c3.png",
       "position": "0px 0px",
-      "color": "#4c4e4e",
+      "color": "#4e4d4c",
       "size": 64
     },
     "tags": [
@@ -200,9 +200,9 @@
     },
     "name": "柑实种子",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c14.png",
+      "url": "tiles/icons__s1__r5_c9.png",
       "position": "0px 0px",
-      "color": "#918029",
+      "color": "#918028",
       "size": 64
     },
     "tags": [
@@ -215,9 +215,9 @@
     },
     "name": "柑实",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c6.png",
+      "url": "tiles/icons__s1__r5_c1.png",
       "position": "0px 0px",
-      "color": "#67681d",
+      "color": "#66691e",
       "size": 64
     },
     "tags": [
@@ -230,9 +230,9 @@
     },
     "name": "柑实粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c11.png",
+      "url": "tiles/icons__s1__r5_c6.png",
       "position": "0px 0px",
-      "color": "#d6c075",
+      "color": "#d4c175",
       "size": 64
     },
     "tags": [
@@ -245,9 +245,9 @@
     },
     "name": "细磨柑实粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c9.png",
+      "url": "tiles/icons__s1__r5_c4.png",
       "position": "0px 0px",
-      "color": "#93855a",
+      "color": "#91865b",
       "size": 64
     },
     "tags": [
@@ -260,9 +260,9 @@
     },
     "name": "酮化树种",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c14.png",
+      "url": "tiles/icons__s1__r4_c9.png",
       "position": "0px 0px",
-      "color": "#ada169",
+      "color": "#afa16a",
       "size": 64
     },
     "tags": [
@@ -275,9 +275,9 @@
     },
     "name": "酮化灌木",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c12.png",
+      "url": "tiles/icons__s1__r4_c7.png",
       "position": "0px 0px",
-      "color": "#615e3e",
+      "color": "#625c3f",
       "size": 64
     },
     "tags": [
@@ -290,9 +290,9 @@
     },
     "name": "酮化灌木粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c13.png",
+      "url": "tiles/icons__s1__r4_c8.png",
       "position": "0px 0px",
-      "color": "#7d7536",
+      "color": "#7c7637",
       "size": 64
     },
     "tags": [
@@ -305,9 +305,9 @@
     },
     "name": "芽针种子",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c4.png",
+      "url": "tiles/icons__s1__r4_c15.png",
       "position": "0px 0px",
-      "color": "#9d7e68",
+      "color": "#9e7f6b",
       "size": 64
     },
     "tags": [
@@ -320,9 +320,9 @@
     },
     "name": "芽针",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c0.png",
+      "url": "tiles/icons__s1__r4_c11.png",
       "position": "0px 0px",
-      "color": "#5d5e49",
+      "color": "#5e5c49",
       "size": 64
     },
     "tags": [
@@ -335,9 +335,9 @@
     },
     "name": "芽针粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r4_c2.png",
+      "url": "tiles/icons__s1__r4_c13.png",
       "position": "0px 0px",
-      "color": "#b39179",
+      "color": "#b3917b",
       "size": 64
     },
     "tags": [
@@ -350,9 +350,9 @@
     },
     "name": "芽针溶液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c2.png",
+      "url": "tiles/icons__s1__r3_c13.png",
       "position": "0px 0px",
-      "color": "#c2ec7d",
+      "color": "#c1ed7e",
       "size": 64
     },
     "tags": [
@@ -365,9 +365,9 @@
     },
     "name": "致密碳粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c5.png",
+      "url": "tiles/icons__s1__r1_c0.png",
       "position": "0px 0px",
-      "color": "#48494b",
+      "color": "#494a49",
       "size": 64
     },
     "tags": [
@@ -380,9 +380,9 @@
     },
     "name": "稳定碳块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c6.png",
+      "url": "tiles/icons__s1__r1_c1.png",
       "position": "0px 0px",
-      "color": "#494951",
+      "color": "#494952",
       "size": 64
     },
     "tags": [
@@ -395,9 +395,9 @@
     },
     "name": "源矿",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c10.png",
+      "url": "tiles/icons__s1__r4_c5.png",
       "position": "0px 0px",
-      "color": "#815c3d",
+      "color": "#815d3e",
       "size": 64
     },
     "tags": [
@@ -410,9 +410,9 @@
     },
     "name": "晶体外壳",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c7.png",
+      "url": "tiles/icons__s1__r2_c2.png",
       "position": "0px 0px",
-      "color": "#967441",
+      "color": "#977741",
       "size": 64
     },
     "tags": [
@@ -425,9 +425,9 @@
     },
     "name": "晶体外壳粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c6.png",
+      "url": "tiles/icons__s1__r2_c1.png",
       "position": "0px 0px",
-      "color": "#6c431d",
+      "color": "#6c411e",
       "size": 64
     },
     "tags": [
@@ -440,9 +440,9 @@
     },
     "name": "致密晶体粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c4.png",
+      "url": "tiles/icons__s1__r1_c15.png",
       "position": "0px 0px",
-      "color": "#9c663b",
+      "color": "#9e643b",
       "size": 64
     },
     "tags": [
@@ -455,9 +455,9 @@
     },
     "name": "密制晶体",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c5.png",
+      "url": "tiles/icons__s1__r2_c0.png",
       "position": "0px 0px",
-      "color": "#756936",
+      "color": "#756b35",
       "size": 64
     },
     "tags": [
@@ -470,9 +470,9 @@
     },
     "name": "源石粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c11.png",
+      "url": "tiles/icons__s1__r4_c6.png",
       "position": "0px 0px",
-      "color": "#4e3d2a",
+      "color": "#4f3c29",
       "size": 64
     },
     "tags": [
@@ -485,9 +485,9 @@
     },
     "name": "致密源石粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c9.png",
+      "url": "tiles/icons__s1__r4_c4.png",
       "position": "0px 0px",
-      "color": "#76512e",
+      "color": "#75522c",
       "size": 64
     },
     "tags": [
@@ -500,9 +500,9 @@
     },
     "name": "紫晶矿",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c4.png",
+      "url": "tiles/icons__s1__r5_c15.png",
       "position": "0px 0px",
-      "color": "#5d4a6f",
+      "color": "#5e4a6c",
       "size": 64
     },
     "tags": [
@@ -515,9 +515,9 @@
     },
     "name": "紫晶纤维",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c2.png",
+      "url": "tiles/icons__s1__r5_c13.png",
       "position": "0px 0px",
-      "color": "#725d91",
+      "color": "#715d93",
       "size": 64
     },
     "tags": [
@@ -530,9 +530,9 @@
     },
     "name": "紫晶粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c3.png",
+      "url": "tiles/icons__s1__r5_c14.png",
       "position": "0px 0px",
-      "color": "#62537b",
+      "color": "#615079",
       "size": 64
     },
     "tags": [
@@ -545,9 +545,9 @@
     },
     "name": "高晶粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c0.png",
+      "url": "tiles/icons__s1__r5_c11.png",
       "position": "0px 0px",
-      "color": "#b1afc0",
+      "color": "#b0adc3",
       "size": 64
     },
     "tags": [
@@ -560,9 +560,9 @@
     },
     "name": "高晶纤维",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c1.png",
+      "url": "tiles/icons__s1__r5_c12.png",
       "position": "0px 0px",
-      "color": "#9a99a6",
+      "color": "#999aa6",
       "size": 64
     },
     "tags": [
@@ -575,9 +575,9 @@
     },
     "name": "紫晶质瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c1.png",
+      "url": "tiles/icons__s1__r2_c12.png",
       "position": "0px 0px",
-      "color": "#5c4d7e",
+      "color": "#5c4c7c",
       "size": 64
     },
     "tags": [
@@ -590,9 +590,9 @@
     },
     "name": "高晶质瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c3.png",
+      "url": "tiles/icons__s1__r2_c14.png",
       "position": "0px 0px",
-      "color": "#77748e",
+      "color": "#75778d",
       "size": 64
     },
     "tags": [
@@ -605,9 +605,9 @@
     },
     "name": "紫晶零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c2.png",
+      "url": "tiles/icons__s1__r2_c13.png",
       "position": "0px 0px",
-      "color": "#9397a1",
+      "color": "#9195a0",
       "size": 64
     },
     "tags": [
@@ -620,9 +620,9 @@
     },
     "name": "高晶零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c4.png",
+      "url": "tiles/icons__s1__r2_c15.png",
       "position": "0px 0px",
-      "color": "#95929a",
+      "color": "#969299",
       "size": 64
     },
     "tags": [
@@ -635,9 +635,9 @@
     },
     "name": "蓝铁矿",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c12.png",
+      "url": "tiles/icons__s1__r3_c7.png",
       "position": "0px 0px",
-      "color": "#58708c",
+      "color": "#5a718d",
       "size": 64
     },
     "tags": [
@@ -650,9 +650,9 @@
     },
     "name": "蓝铁块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c11.png",
+      "url": "tiles/icons__s1__r3_c6.png",
       "position": "0px 0px",
-      "color": "#628295",
+      "color": "#628095",
       "size": 64
     },
     "tags": [
@@ -665,9 +665,9 @@
     },
     "name": "蓝铁粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c13.png",
+      "url": "tiles/icons__s1__r3_c8.png",
       "position": "0px 0px",
-      "color": "#355168",
+      "color": "#35526b",
       "size": 64
     },
     "tags": [
@@ -680,9 +680,9 @@
     },
     "name": "致密蓝铁粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c9.png",
+      "url": "tiles/icons__s1__r3_c4.png",
       "position": "0px 0px",
-      "color": "#597d96",
+      "color": "#597e94",
       "size": 64
     },
     "tags": [
@@ -695,9 +695,9 @@
     },
     "name": "钢块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c10.png",
+      "url": "tiles/icons__s1__r3_c5.png",
       "position": "0px 0px",
-      "color": "#54829c",
+      "color": "#56809e",
       "size": 64
     },
     "tags": [
@@ -710,9 +710,9 @@
     },
     "name": "蓝铁瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c5.png",
+      "url": "tiles/icons__s1__r3_c0.png",
       "position": "0px 0px",
-      "color": "#39597a",
+      "color": "#395b79",
       "size": 64
     },
     "tags": [
@@ -725,9 +725,9 @@
     },
     "name": "钢质瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c7.png",
+      "url": "tiles/icons__s1__r3_c2.png",
       "position": "0px 0px",
-      "color": "#5a6f80",
+      "color": "#5a6c81",
       "size": 64
     },
     "tags": [
@@ -740,9 +740,9 @@
     },
     "name": "铁制零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c6.png",
+      "url": "tiles/icons__s1__r3_c1.png",
       "position": "0px 0px",
-      "color": "#6f83a9",
+      "color": "#6c81aa",
       "size": 64
     },
     "tags": [
@@ -755,9 +755,9 @@
     },
     "name": "钢制零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c8.png",
+      "url": "tiles/icons__s1__r3_c3.png",
       "position": "0px 0px",
-      "color": "#5d768c",
+      "color": "#5f758d",
       "size": 64
     },
     "tags": [
@@ -770,9 +770,9 @@
     },
     "name": "蓝铁瓶(锦草溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r11_c8.png",
+      "url": "tiles/icons__s1__r12_c6.png",
       "position": "0px 0px",
-      "color": "#799399",
+      "color": "#799199",
       "size": 64
     },
     "tags": [
@@ -785,9 +785,9 @@
     },
     "name": "蓝铁瓶(芽针溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r11_c9.png",
+      "url": "tiles/icons__s1__r12_c7.png",
       "position": "0px 0px",
-      "color": "#6c8d7a",
+      "color": "#6e8f78",
       "size": 64
     },
     "tags": [
@@ -800,9 +800,9 @@
     },
     "name": "赤铜矿",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c2.png",
+      "url": "tiles/icons__s1__r1_c13.png",
       "position": "0px 0px",
-      "color": "#ab6861",
+      "color": "#aa6962",
       "size": 64
     },
     "tags": [
@@ -815,9 +815,9 @@
     },
     "name": "赤铜块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c1.png",
+      "url": "tiles/icons__s1__r1_c12.png",
       "position": "0px 0px",
-      "color": "#893932",
+      "color": "#893a31",
       "size": 64
     },
     "tags": [
@@ -830,9 +830,9 @@
     },
     "name": "赤铜粉末",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c3.png",
+      "url": "tiles/icons__s1__r1_c14.png",
       "position": "0px 0px",
-      "color": "#a25d50",
+      "color": "#a05d51",
       "size": 64
     },
     "tags": [
@@ -845,9 +845,9 @@
     },
     "name": "赫铜块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c13.png",
+      "url": "tiles/icons__s1__r1_c8.png",
       "position": "0px 0px",
-      "color": "#d89186",
+      "color": "#d99287",
       "size": 64
     },
     "tags": [
@@ -860,9 +860,9 @@
     },
     "name": "灼铜块",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c15.png",
+      "url": "tiles/icons__s1__r1_c10.png",
       "position": "0px 0px",
-      "color": "#e6a289",
+      "color": "#e4a388",
       "size": 64
     },
     "tags": [
@@ -875,9 +875,9 @@
     },
     "name": "赤铜耐压罐",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c0.png",
+      "url": "tiles/icons__s1__r1_c11.png",
       "position": "0px 0px",
-      "color": "#816665",
+      "color": "#826767",
       "size": 64
     },
     "tags": [
@@ -890,9 +890,9 @@
     },
     "name": "分离芯",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c8.png",
+      "url": "tiles/icons__s1__r2_c3.png",
       "position": "0px 0px",
-      "color": "#717273",
+      "color": "#737072",
       "size": 64
     },
     "tags": [
@@ -905,9 +905,9 @@
     },
     "name": "赤铜零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c10.png",
+      "url": "tiles/icons__s1__r1_c5.png",
       "position": "0px 0px",
-      "color": "#7d5149",
+      "color": "#7d514a",
       "size": 64
     },
     "tags": [
@@ -920,9 +920,9 @@
     },
     "name": "赫铜零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c12.png",
+      "url": "tiles/icons__s1__r1_c7.png",
       "position": "0px 0px",
-      "color": "#b98271",
+      "color": "#ba8071",
       "size": 64
     },
     "tags": [
@@ -935,9 +935,9 @@
     },
     "name": "灼铜零件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c14.png",
+      "url": "tiles/icons__s1__r1_c9.png",
       "position": "0px 0px",
-      "color": "#ad7261",
+      "color": "#ac7162",
       "size": 64
     },
     "tags": [
@@ -950,9 +950,9 @@
     },
     "name": "赤铜溶液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c0.png",
+      "url": "tiles/icons__s1__r3_c11.png",
       "position": "0px 0px",
-      "color": "#b94b45",
+      "color": "#ba4946",
       "size": 64
     },
     "tags": [
@@ -965,9 +965,9 @@
     },
     "name": "赫铜溶液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c15.png",
+      "url": "tiles/icons__s1__r3_c10.png",
       "position": "0px 0px",
-      "color": "#eaaea1",
+      "color": "#e9aca1",
       "size": 64
     },
     "tags": [
@@ -980,9 +980,9 @@
     },
     "name": "气态赤铜",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c12.png",
+      "url": "tiles/icons__s1__r2_c7.png",
       "position": "0px 0px",
-      "color": "#d99e95",
+      "color": "#da9f94",
       "size": 64
     },
     "tags": [
@@ -995,9 +995,9 @@
     },
     "name": "气态赫铜",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c10.png",
+      "url": "tiles/icons__s1__r2_c5.png",
       "position": "0px 0px",
-      "color": "#d8bfb8",
+      "color": "#d9bdba",
       "size": 64
     },
     "tags": [
@@ -1010,9 +1010,9 @@
     },
     "name": "气态灼铜",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c11.png",
+      "url": "tiles/icons__s1__r2_c6.png",
       "position": "0px 0px",
-      "color": "#d6a78f",
+      "color": "#d7a78d",
       "size": 64
     },
     "tags": [
@@ -1025,9 +1025,9 @@
     },
     "name": "赤铜瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c9.png",
+      "url": "tiles/icons__s1__r1_c4.png",
       "position": "0px 0px",
-      "color": "#6c494a",
+      "color": "#6c4a4b",
       "size": 64
     },
     "tags": [
@@ -1040,9 +1040,9 @@
     },
     "name": "赫铜瓶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r0_c11.png",
+      "url": "tiles/icons__s1__r1_c6.png",
       "position": "0px 0px",
-      "color": "#926b6e",
+      "color": "#906b6d",
       "size": 64
     },
     "tags": [
@@ -1055,9 +1055,9 @@
     },
     "name": "赤铜瓶(锦草溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r9_c14.png",
+      "url": "tiles/icons__s1__r10_c12.png",
       "position": "0px 0px",
-      "color": "#948b81",
+      "color": "#958a82",
       "size": 64
     },
     "tags": [
@@ -1070,9 +1070,9 @@
     },
     "name": "赤铜瓶(芽针溶液)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r9_c15.png",
+      "url": "tiles/icons__s1__r10_c13.png",
       "position": "0px 0px",
-      "color": "#8a8459",
+      "color": "#89855a",
       "size": 64
     },
     "tags": [
@@ -1085,9 +1085,9 @@
     },
     "name": "息壤",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c7.png",
+      "url": "tiles/icons__s1__r6_c2.png",
       "position": "0px 0px",
-      "color": "#325046",
+      "color": "#305244",
       "size": 64
     },
     "tags": [
@@ -1100,9 +1100,9 @@
     },
     "name": "壤晶",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c6.png",
+      "url": "tiles/icons__s1__r6_c1.png",
       "position": "0px 0px",
-      "color": "#38413d",
+      "color": "#39413e",
       "size": 64
     },
     "tags": [
@@ -1115,9 +1115,9 @@
     },
     "name": "重息壤",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c5.png",
+      "url": "tiles/icons__s1__r6_c0.png",
       "position": "0px 0px",
-      "color": "#34613a",
+      "color": "#356339",
       "size": 64
     },
     "tags": [
@@ -1130,9 +1130,9 @@
     },
     "name": "壤晶废液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c7.png",
+      "url": "tiles/icons__s1__r4_c2.png",
       "position": "0px 0px",
-      "color": "#3a6541",
+      "color": "#3b6541",
       "size": 64
     },
     "tags": [
@@ -1145,9 +1145,9 @@
     },
     "name": "惰性壤晶废液",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c6.png",
+      "url": "tiles/icons__s1__r4_c1.png",
       "position": "0px 0px",
-      "color": "#265841",
+      "color": "#245842",
       "size": 64
     },
     "tags": [
@@ -1160,9 +1160,9 @@
     },
     "name": "污水",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c3.png",
+      "url": "tiles/icons__s1__r3_c14.png",
       "position": "0px 0px",
-      "color": "#636161",
+      "color": "#616161",
       "size": 64
     },
     "tags": [
@@ -1175,9 +1175,9 @@
     },
     "name": "液化息壤",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c8.png",
+      "url": "tiles/icons__s1__r4_c3.png",
       "position": "0px 0px",
-      "color": "#457a67",
+      "color": "#467867",
       "size": 64
     },
     "tags": [
@@ -1190,9 +1190,9 @@
     },
     "name": "息壤气",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c0.png",
+      "url": "tiles/icons__s1__r2_c11.png",
       "position": "0px 0px",
-      "color": "#a9c3a1",
+      "color": "#aac2a1",
       "size": 64
     },
     "tags": [
@@ -1205,9 +1205,9 @@
     },
     "name": "液化重息壤",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c5.png",
+      "url": "tiles/icons__s1__r4_c0.png",
       "position": "0px 0px",
-      "color": "#567852",
+      "color": "#557a51",
       "size": 64
     },
     "tags": [
@@ -1220,9 +1220,9 @@
     },
     "name": "重息壤气",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c15.png",
+      "url": "tiles/icons__s1__r2_c10.png",
       "position": "0px 0px",
-      "color": "#bac88f",
+      "color": "#b8ca8c",
       "size": 64
     },
     "tags": [
@@ -1235,9 +1235,9 @@
     },
     "name": "清水",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c4.png",
+      "url": "tiles/icons__s1__r3_c15.png",
       "position": "0px 0px",
-      "color": "#59e6f8",
+      "color": "#5ae7f8",
       "size": 64
     },
     "tags": [
@@ -1250,9 +1250,9 @@
     },
     "name": "水蒸气",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c14.png",
+      "url": "tiles/icons__s1__r2_c9.png",
       "position": "0px 0px",
-      "color": "#b4b9c1",
+      "color": "#b5b9c2",
       "size": 64
     },
     "tags": [
@@ -1265,9 +1265,9 @@
     },
     "name": "沉积酸",
     "iconSprite": {
-      "url": "tiles/icons__s1__r2_c14.png",
+      "url": "tiles/icons__s1__r3_c9.png",
       "position": "0px 0px",
-      "color": "#b99f65",
+      "color": "#ba9d66",
       "size": 64
     },
     "tags": [
@@ -1280,9 +1280,9 @@
     },
     "name": "酸气",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c9.png",
+      "url": "tiles/icons__s1__r2_c4.png",
       "position": "0px 0px",
-      "color": "#d8c59a",
+      "color": "#d9c69a",
       "size": 64
     },
     "tags": [
@@ -1295,9 +1295,9 @@
     },
     "name": "惰气",
     "iconSprite": {
-      "url": "tiles/icons__s1__r1_c13.png",
+      "url": "tiles/icons__s1__r2_c8.png",
       "position": "0px 0px",
-      "color": "#6aa5b6",
+      "color": "#69a6b4",
       "size": 64
     },
     "tags": [
@@ -1310,9 +1310,9 @@
     },
     "name": "柑实罐头",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c8.png",
+      "url": "tiles/icons__s1__r6_c3.png",
       "position": "0px 0px",
-      "color": "#7c867e",
+      "color": "#7e867c",
       "size": 64
     },
     "tags": [
@@ -1325,9 +1325,9 @@
     },
     "name": "优质柑实罐头",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c9.png",
+      "url": "tiles/icons__s1__r6_c4.png",
       "position": "0px 0px",
-      "color": "#858c68",
+      "color": "#858e69",
       "size": 64
     },
     "tags": [
@@ -1340,9 +1340,9 @@
     },
     "name": "精选柑实罐头",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c10.png",
+      "url": "tiles/icons__s1__r6_c5.png",
       "position": "0px 0px",
-      "color": "#808981",
+      "color": "#818982",
       "size": 64
     },
     "tags": [
@@ -1355,9 +1355,9 @@
     },
     "name": "锦草软饮",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c11.png",
+      "url": "tiles/icons__s1__r6_c6.png",
       "position": "0px 0px",
-      "color": "#506d73",
+      "color": "#536e71",
       "size": 64
     },
     "tags": [
@@ -1370,9 +1370,9 @@
     },
     "name": "优质锦草软饮",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c12.png",
+      "url": "tiles/icons__s1__r6_c7.png",
       "position": "0px 0px",
-      "color": "#59866a",
+      "color": "#5a8568",
       "size": 64
     },
     "tags": [
@@ -1385,9 +1385,9 @@
     },
     "name": "荞愈胶囊",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c13.png",
+      "url": "tiles/icons__s1__r6_c8.png",
       "position": "0px 0px",
-      "color": "#b19597",
+      "color": "#b19695",
       "size": 64
     },
     "tags": [
@@ -1400,9 +1400,9 @@
     },
     "name": "优质荞愈胶囊",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c14.png",
+      "url": "tiles/icons__s1__r6_c9.png",
       "position": "0px 0px",
-      "color": "#bda0a1",
+      "color": "#bea1a2",
       "size": 64
     },
     "tags": [
@@ -1415,9 +1415,9 @@
     },
     "name": "精选荞愈胶囊",
     "iconSprite": {
-      "url": "tiles/icons__s1__r5_c15.png",
+      "url": "tiles/icons__s1__r6_c10.png",
       "position": "0px 0px",
-      "color": "#b6969c",
+      "color": "#b6959d",
       "size": 64
     },
     "tags": [
@@ -1430,9 +1430,9 @@
     },
     "name": "芽针针剂",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c0.png",
+      "url": "tiles/icons__s1__r6_c11.png",
       "position": "0px 0px",
-      "color": "#a59791",
+      "color": "#a69591",
       "size": 64
     },
     "tags": [
@@ -1445,9 +1445,9 @@
     },
     "name": "优质芽针针剂",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c1.png",
+      "url": "tiles/icons__s1__r6_c12.png",
       "position": "0px 0px",
-      "color": "#9d8176",
+      "color": "#9d8277",
       "size": 64
     },
     "tags": [
@@ -1460,9 +1460,9 @@
     },
     "name": "紫晶装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c2.png",
+      "url": "tiles/icons__s1__r6_c13.png",
       "position": "0px 0px",
-      "color": "#a0a2b0",
+      "color": "#a0a1b2",
       "size": 64
     },
     "tags": [
@@ -1475,9 +1475,9 @@
     },
     "name": "蓝铁装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c3.png",
+      "url": "tiles/icons__s1__r6_c14.png",
       "position": "0px 0px",
-      "color": "#8a9abc",
+      "color": "#8998bc",
       "size": 64
     },
     "tags": [
@@ -1490,9 +1490,9 @@
     },
     "name": "高晶装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c4.png",
+      "url": "tiles/icons__s1__r6_c15.png",
       "position": "0px 0px",
-      "color": "#a1a6b1",
+      "color": "#a2a7b1",
       "size": 64
     },
     "tags": [
@@ -1505,9 +1505,9 @@
     },
     "name": "息壤装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c8.png",
+      "url": "tiles/icons__s1__r7_c3.png",
       "position": "0px 0px",
-      "color": "#5d5645",
+      "color": "#5e5744",
       "size": 64
     },
     "tags": [
@@ -1520,9 +1520,9 @@
     },
     "name": "赤铜装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c5.png",
+      "url": "tiles/icons__s1__r7_c0.png",
       "position": "0px 0px",
-      "color": "#71413e",
+      "color": "#71423c",
       "size": 64
     },
     "tags": [
@@ -1535,9 +1535,9 @@
     },
     "name": "赫铜装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c6.png",
+      "url": "tiles/icons__s1__r7_c1.png",
       "position": "0px 0px",
-      "color": "#b3766d",
+      "color": "#b3756e",
       "size": 64
     },
     "tags": [
@@ -1550,9 +1550,9 @@
     },
     "name": "灼铜装备原件",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c7.png",
+      "url": "tiles/icons__s1__r7_c2.png",
       "position": "0px 0px",
-      "color": "#be7d5c",
+      "color": "#bc7d5d",
       "size": 64
     },
     "tags": [
@@ -1565,9 +1565,9 @@
     },
     "name": "低容谷地电池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c10.png",
+      "url": "tiles/icons__s1__r7_c5.png",
       "position": "0px 0px",
-      "color": "#9e9d99",
+      "color": "#9f9c9a",
       "size": 64
     },
     "tags": [
@@ -1580,9 +1580,9 @@
     },
     "name": "中容谷地电池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c11.png",
+      "url": "tiles/icons__s1__r7_c6.png",
       "position": "0px 0px",
-      "color": "#9e999d",
+      "color": "#9f9b9d",
       "size": 64
     },
     "tags": [
@@ -1595,9 +1595,9 @@
     },
     "name": "高容谷地电池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c12.png",
+      "url": "tiles/icons__s1__r7_c7.png",
       "position": "0px 0px",
-      "color": "#9d9a9f",
+      "color": "#9e999e",
       "size": 64
     },
     "tags": [
@@ -1610,9 +1610,9 @@
     },
     "name": "低容武陵电池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c13.png",
+      "url": "tiles/icons__s1__r7_c8.png",
       "position": "0px 0px",
-      "color": "#688972",
+      "color": "#698a70",
       "size": 64
     },
     "tags": [
@@ -1625,9 +1625,9 @@
     },
     "name": "中容武陵电池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c14.png",
+      "url": "tiles/icons__s1__r7_c9.png",
       "position": "0px 0px",
-      "color": "#5d6854",
+      "color": "#5d6956",
       "size": 64
     },
     "tags": [
@@ -1640,9 +1640,9 @@
     },
     "name": "工业爆炸物",
     "iconSprite": {
-      "url": "tiles/icons__s1__r6_c15.png",
+      "url": "tiles/icons__s1__r7_c10.png",
       "position": "0px 0px",
-      "color": "#8e7f79",
+      "color": "#8c7f79",
       "size": 64
     },
     "tags": [
@@ -1655,9 +1655,9 @@
     },
     "name": "谷地调度券",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c1.png",
+      "url": "tiles/icons__s1__r7_c12.png",
       "position": "0px 0px",
-      "color": "#c7c9b6",
+      "color": "#c5cab7",
       "size": 64
     },
     "tags": [
@@ -1670,13 +1670,178 @@
     },
     "name": "武陵调度券",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c0.png",
+      "url": "tiles/icons__s1__r7_c11.png",
       "position": "0px 0px",
-      "color": "#8da2a0",
+      "color": "#8fa1a0",
       "size": 64
     },
     "tags": [
       "settlement"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_lung"
+    },
+    "name": "息壤龙泡泡",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c13.png",
+      "position": "0px 0px",
+      "color": "#7ca98e",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_enr_lung"
+    },
+    "name": "重息壤龙泡泡",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c11.png",
+      "position": "0px 0px",
+      "color": "#769f7a",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_nugget"
+    },
+    "name": "实验息壤块",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c14.png",
+      "position": "0px 0px",
+      "color": "#3d9a31",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_box"
+    },
+    "name": "实验龙泡泡外壳",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c9.png",
+      "position": "0px 0px",
+      "color": "#84b982",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_copper_xiranite_tool"
+    },
+    "name": "实验铜骨骼",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c8.png",
+      "position": "0px 0px",
+      "color": "#7c8282",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_copper_poly_gas"
+    },
+    "name": "实验息壤铜气",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c5.png",
+      "position": "0px 0px",
+      "color": "#c8a567",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_copper_poly"
+    },
+    "name": "实验息壤铜锭",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c7.png",
+      "position": "0px 0px",
+      "color": "#9ea486",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_copper_poly_cmpt"
+    },
+    "name": "实验息壤铜零件",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c4.png",
+      "position": "0px 0px",
+      "color": "#b99656",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_enr_nugget"
+    },
+    "name": "实验重息壤块",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c12.png",
+      "position": "0px 0px",
+      "color": "#49aa41",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_copper_poly_tool"
+    },
+    "name": "实验息壤铜骨骼",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c6.png",
+      "position": "0px 0px",
+      "color": "#4d7951",
+      "size": 64
+    },
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "key": {
+      "id": "aef.vanilla.activity_xiranite_enr_box"
+    },
+    "name": "实验龙泡泡重壳",
+    "iconSprite": {
+      "url": "tiles/icons__s1__r0_c10.png",
+      "position": "0px 0px",
+      "color": "#75a16d",
+      "size": 64
+    },
+    "tags": [
+      "activity"
     ]
   },
   {
@@ -1700,9 +1865,9 @@
     },
     "name": "清水",
     "iconSprite": {
-      "url": "tiles/icons__s1__r3_c4.png",
+      "url": "tiles/icons__s1__r3_c15.png",
       "position": "0px 0px",
-      "color": "#59e6f8",
+      "color": "#5ae7f8",
       "size": 64
     },
     "tags": [
@@ -1715,9 +1880,9 @@
     },
     "name": "超库存传输",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c4.png",
+      "url": "tiles/icons__s1__r7_c15.png",
       "position": "0px 0px",
-      "color": "#a1927c",
+      "color": "#a2927d",
       "size": 64
     },
     "tags": [
@@ -1737,9 +1902,9 @@
     },
     "name": "水泵(水驱矿机)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c8.png",
+      "url": "tiles/icons__s1__r9_c3.png",
       "position": "0px 0px",
-      "color": "#8d8c85",
+      "color": "#8e8f86",
       "size": 64
     },
     "tags": [
@@ -1759,9 +1924,9 @@
     },
     "name": "配件机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c5.png",
+      "url": "tiles/icons__s1__r8_c0.png",
       "position": "0px 0px",
-      "color": "#878482",
+      "color": "#858683",
       "size": 64
     },
     "tags": [
@@ -1781,9 +1946,9 @@
     },
     "name": "拆解机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c6.png",
+      "url": "tiles/icons__s1__r8_c1.png",
       "position": "0px 0px",
-      "color": "#9b9b8d",
+      "color": "#9b998e",
       "size": 64
     },
     "tags": [
@@ -1803,9 +1968,9 @@
     },
     "name": "灌装机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c7.png",
+      "url": "tiles/icons__s1__r8_c2.png",
       "position": "0px 0px",
-      "color": "#828182",
+      "color": "#838081",
       "size": 64
     },
     "tags": [
@@ -1825,9 +1990,9 @@
     },
     "name": "精炼炉",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c8.png",
+      "url": "tiles/icons__s1__r8_c3.png",
       "position": "0px 0px",
-      "color": "#a99e98",
+      "color": "#aa9c99",
       "size": 64
     },
     "tags": [
@@ -1847,9 +2012,9 @@
     },
     "name": "气体收集泵",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c9.png",
+      "url": "tiles/icons__s1__r8_c4.png",
       "position": "0px 0px",
-      "color": "#a5a5a2",
+      "color": "#a5a6a0",
       "size": 64
     },
     "tags": [
@@ -1869,9 +2034,9 @@
     },
     "name": "气体反应炉",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c10.png",
+      "url": "tiles/icons__s1__r8_c5.png",
       "position": "0px 0px",
-      "color": "#909789",
+      "color": "#92948a",
       "size": 64
     },
     "tags": [
@@ -1891,9 +2056,9 @@
     },
     "name": "粉碎机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c11.png",
+      "url": "tiles/icons__s1__r8_c6.png",
       "position": "0px 0px",
-      "color": "#939598",
+      "color": "#929598",
       "size": 64
     },
     "tags": [
@@ -1913,9 +2078,9 @@
     },
     "name": "净水节点(污水接入口)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c12.png",
+      "url": "tiles/icons__s1__r8_c7.png",
       "position": "0px 0px",
-      "color": "#999a9b",
+      "color": "#989899",
       "size": 64
     },
     "tags": [
@@ -1935,9 +2100,9 @@
     },
     "name": "废水处理机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c13.png",
+      "url": "tiles/icons__s1__r8_c8.png",
       "position": "0px 0px",
-      "color": "#7b7d7f",
+      "color": "#797c7d",
       "size": 64
     },
     "tags": [
@@ -1957,9 +2122,9 @@
     },
     "name": "提纯机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c14.png",
+      "url": "tiles/icons__s1__r8_c9.png",
       "position": "0px 0px",
-      "color": "#8c9291",
+      "color": "#8f9192",
       "size": 64
     },
     "tags": [
@@ -1979,9 +2144,9 @@
     },
     "name": "净水节点(产物排出口)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c12.png",
+      "url": "tiles/icons__s1__r8_c7.png",
       "position": "0px 0px",
-      "color": "#999a9b",
+      "color": "#989899",
       "size": 64
     },
     "tags": [
@@ -2001,9 +2166,9 @@
     },
     "name": "电驱矿机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c15.png",
+      "url": "tiles/icons__s1__r8_c10.png",
       "position": "0px 0px",
-      "color": "#868685",
+      "color": "#868585",
       "size": 64
     },
     "tags": [
@@ -2023,9 +2188,9 @@
     },
     "name": "二型电驱矿机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c0.png",
+      "url": "tiles/icons__s1__r8_c11.png",
       "position": "0px 0px",
-      "color": "#918a8b",
+      "color": "#938988",
       "size": 64
     },
     "tags": [
@@ -2045,9 +2210,9 @@
     },
     "name": "水驱矿机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c1.png",
+      "url": "tiles/icons__s1__r8_c12.png",
       "position": "0px 0px",
-      "color": "#8f8d8a",
+      "color": "#8d8e8a",
       "size": 64
     },
     "tags": [
@@ -2067,9 +2232,9 @@
     },
     "name": "反应池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c2.png",
+      "url": "tiles/icons__s1__r8_c13.png",
       "position": "0px 0px",
-      "color": "#8b888d",
+      "color": "#88898f",
       "size": 64
     },
     "tags": [
@@ -2089,9 +2254,9 @@
     },
     "name": "扩容反应池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c3.png",
+      "url": "tiles/icons__s1__r8_c14.png",
       "position": "0px 0px",
-      "color": "#868479",
+      "color": "#858579",
       "size": 64
     },
     "tags": [
@@ -2111,9 +2276,9 @@
     },
     "name": "液气转化机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c4.png",
+      "url": "tiles/icons__s1__r8_c15.png",
       "position": "0px 0px",
-      "color": "#919690",
+      "color": "#929492",
       "size": 64
     },
     "tags": [
@@ -2133,9 +2298,9 @@
     },
     "name": "固气转化机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c5.png",
+      "url": "tiles/icons__s1__r9_c0.png",
       "position": "0px 0px",
-      "color": "#7e7c7e",
+      "color": "#7c7e7e",
       "size": 64
     },
     "tags": [
@@ -2155,9 +2320,9 @@
     },
     "name": "种植机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c6.png",
+      "url": "tiles/icons__s1__r9_c1.png",
       "position": "0px 0px",
-      "color": "#7e817c",
+      "color": "#7c817e",
       "size": 64
     },
     "tags": [
@@ -2177,9 +2342,9 @@
     },
     "name": "热能池",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c7.png",
+      "url": "tiles/icons__s1__r9_c2.png",
       "position": "0px 0px",
-      "color": "#909ca1",
+      "color": "#919da1",
       "size": 64
     },
     "tags": [
@@ -2199,9 +2364,9 @@
     },
     "name": "水泵",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c8.png",
+      "url": "tiles/icons__s1__r9_c3.png",
       "position": "0px 0px",
-      "color": "#8d8c85",
+      "color": "#8e8f86",
       "size": 64
     },
     "tags": [
@@ -2221,9 +2386,9 @@
     },
     "name": "二型耐酸水泵",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c9.png",
+      "url": "tiles/icons__s1__r9_c4.png",
       "position": "0px 0px",
-      "color": "#8b817a",
+      "color": "#898279",
       "size": 64
     },
     "tags": [
@@ -2243,9 +2408,9 @@
     },
     "name": "采种机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c10.png",
+      "url": "tiles/icons__s1__r9_c5.png",
       "position": "0px 0px",
-      "color": "#767d75",
+      "color": "#747d76",
       "size": 64
     },
     "tags": [
@@ -2265,9 +2430,9 @@
     },
     "name": "据点供货(武陵)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c2.png",
+      "url": "tiles/icons__s1__r7_c13.png",
       "position": "0px 0px",
-      "color": "#7c9995",
+      "color": "#7f9997",
       "size": 64
     },
     "tags": [
@@ -2287,9 +2452,9 @@
     },
     "name": "据点供货(武陵)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c0.png",
+      "url": "tiles/icons__s1__r7_c11.png",
       "position": "0px 0px",
-      "color": "#8da2a0",
+      "color": "#8fa1a0",
       "size": 64
     },
     "tags": [
@@ -2309,9 +2474,9 @@
     },
     "name": "据点供货(四号谷地)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c3.png",
+      "url": "tiles/icons__s1__r7_c14.png",
       "position": "0px 0px",
-      "color": "#9eab78",
+      "color": "#9caa79",
       "size": 64
     },
     "tags": [
@@ -2331,9 +2496,9 @@
     },
     "name": "据点供货(四号谷地)",
     "iconSprite": {
-      "url": "tiles/icons__s1__r7_c1.png",
+      "url": "tiles/icons__s1__r7_c12.png",
       "position": "0px 0px",
-      "color": "#c7c9b6",
+      "color": "#c5cab7",
       "size": 64
     },
     "tags": [
@@ -2353,9 +2518,9 @@
     },
     "name": "塑形机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c11.png",
+      "url": "tiles/icons__s1__r9_c6.png",
       "position": "0px 0px",
-      "color": "#939190",
+      "color": "#919291",
       "size": 64
     },
     "tags": [
@@ -2375,9 +2540,9 @@
     },
     "name": "研磨机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c12.png",
+      "url": "tiles/icons__s1__r9_c7.png",
       "position": "0px 0px",
-      "color": "#898a8a",
+      "color": "#8a8a89",
       "size": 64
     },
     "tags": [
@@ -2397,9 +2562,9 @@
     },
     "name": "封装机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c13.png",
+      "url": "tiles/icons__s1__r9_c8.png",
       "position": "0px 0px",
-      "color": "#84898b",
+      "color": "#858a89",
       "size": 64
     },
     "tags": [
@@ -2419,9 +2584,9 @@
     },
     "name": "装备原件机",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c14.png",
+      "url": "tiles/icons__s1__r9_c9.png",
       "position": "0px 0px",
-      "color": "#959591",
+      "color": "#959592",
       "size": 64
     },
     "tags": [
@@ -2441,9 +2606,9 @@
     },
     "name": "天有洪炉",
     "iconSprite": {
-      "url": "tiles/icons__s1__r8_c15.png",
+      "url": "tiles/icons__s1__r9_c10.png",
       "position": "0px 0px",
-      "color": "#a2a49a",
+      "color": "#a3a499",
       "size": 64
     },
     "tags": [

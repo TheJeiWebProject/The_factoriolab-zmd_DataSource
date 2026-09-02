@@ -124,6 +124,21 @@
         "aef.vanilla.tundra_coupon"
       ]
     },
+    "aef:activity": {
+      "values": [
+        "aef.vanilla.activity_copper_poly",
+        "aef.vanilla.activity_copper_poly_cmpt",
+        "aef.vanilla.activity_copper_poly_gas",
+        "aef.vanilla.activity_copper_poly_tool",
+        "aef.vanilla.activity_copper_xiranite_tool",
+        "aef.vanilla.activity_xiranite_box",
+        "aef.vanilla.activity_xiranite_enr_box",
+        "aef.vanilla.activity_xiranite_enr_lung",
+        "aef.vanilla.activity_xiranite_enr_nugget",
+        "aef.vanilla.activity_xiranite_lung",
+        "aef.vanilla.activity_xiranite_nugget"
+      ]
+    },
     "aef:__domain_transfer": {
       "values": [
         "aef.vanilla.domain_key_tundra"
